@@ -1,0 +1,408 @@
+Reading B:\git\SimQuality-Dashboard\WeightFactors.tsv
+  2 columns, 10 data rows, 
+
+################################################
+
+Processing directory 'TF03-Waermeleitung'
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\EvaluationPeriods.tsv
+  3 columns, 3 data rows, 
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\Reference.tsv
+  6 columns, 743 data rows, 
+  Tout
+  Variante 1
+  Variante 2
+  Variante 3
+  Variante 4
+  Variante 1
+  Variante 2
+  Variante 3
+  Variante 4
+
+-------------------------------------------------------
+
+Reading 'Aixlib.tsv'.
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\Aixlib.tsv
+  6 columns, 743 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Tout'. Skipped.
+    Variante 1
+    Variante 2
+    Variante 3
+    Variante 4
+
+-------------------------------------------------------
+
+Reading 'ETU.tsv'.
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\ETU.tsv
+  6 columns, 743 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Tout'. Skipped.
+    Variante 1
+    Variante 2
+    Variante 3
+    Variante 4
+
+-------------------------------------------------------
+
+Reading 'IDAICE.tsv'.
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\IDAICE.tsv
+  6 columns, 743 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Tout'. Skipped.
+    Variante 1
+    Variante 2
+    Variante 3
+    Variante 4
+
+-------------------------------------------------------
+
+Reading 'NANDRAD.tsv'.
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\NANDRAD.tsv
+  6 columns, 743 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Tout'. Skipped.
+    Variante 1
+    Variante 2
+    Variante 3
+    Variante 4
+
+-------------------------------------------------------
+
+Reading 'NANDRAD2.tsv'.
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\NANDRAD2.tsv
+  6 columns, 743 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Tout'. Skipped.
+    Variante 1
+    Variante 2
+    Variante 3
+    Variante 4
+
+-------------------------------------------------------
+
+Reading 'TAS.tsv'.
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\TAS.tsv
+  6 columns, 743 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Tout'. Skipped.
+    Variante 1
+    Variante 2
+    Variante 3
+    Variante 4
+
+-------------------------------------------------------
+
+Reading 'THERAKLES.tsv'.
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\THERAKLES.tsv
+  6 columns, 743 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Tout'. Skipped.
+    Variante 1
+    Variante 2
+    Variante 3
+    Variante 4
+
+-------------------------------------------------------
+
+Reading 'TRNSYS.tsv'.
+Reading ./test_data\TF03-Waermeleitung\Auswertung/Ergebnisse\TRNSYS.tsv
+  6 columns, 743 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Tout'. Skipped.
+    Variante 1
+    Variante 2
+    Variante 3
+    Variante 4
+
+################################################
+
+Processing directory 'TF04-WaermeleitungSpeicherung'
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\EvaluationPeriods.tsv
+  3 columns, 5 data rows, 
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\Reference.tsv
+  8 columns, 8760 data rows, 
+  Auﬂentemperatur
+  Variante 1 Raum A
+  Variante 2 Raum A
+  Variante 3 Raum A
+  Variante 3 Raum B
+  Variante 4 Raum A
+  Variante 4 Raum B
+  Variante 1 Raum A
+  Variante 2 Raum A
+  Variante 3 Raum A
+  Variante 3 Raum B
+  Variante 4 Raum A
+  Variante 4 Raum B
+
+-------------------------------------------------------
+
+Reading 'Aixlib.tsv'.
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\Aixlib.tsv
+  8 columns, 8760 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Auﬂentemperatur'. Skipped.
+    Variante 1 Raum A
+    Variante 2 Raum A
+    Variante 3 Raum A
+    Variante 3 Raum B
+    Variante 4 Raum A
+    Variante 4 Raum B
+
+-------------------------------------------------------
+
+Reading 'ETU.tsv'.
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\ETU.tsv
+  8 columns, 8760 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Auﬂentemperatur'. Skipped.
+    Variante 1 Raum A
+    Variante 2 Raum A
+    Variante 3 Raum A
+    Variante 3 Raum B
+    Variante 4 Raum A
+    Variante 4 Raum B
+
+-------------------------------------------------------
+
+Reading 'IDAICE.tsv'.
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\IDAICE.tsv
+  8 columns, 8760 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Auﬂentemperatur'. Skipped.
+    Variante 1 Raum A
+    Variante 2 Raum A
+    Variante 3 Raum A
+    Variante 3 Raum B
+    Variante 4 Raum A
+    Variante 4 Raum B
+
+-------------------------------------------------------
+
+Reading 'NANDRAD.tsv'.
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\NANDRAD.tsv
+  8 columns, 8760 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Auﬂentemperatur'. Skipped.
+    Variante 1 Raum A
+    Variante 2 Raum A
+    Variante 3 Raum A
+    Variante 3 Raum B
+    Variante 4 Raum A
+    Variante 4 Raum B
+
+-------------------------------------------------------
+
+Reading 'TAS.tsv'.
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\TAS.tsv
+  8 columns, 8760 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Auﬂentemperatur'. Skipped.
+    Variante 1 Raum A
+    Variante 2 Raum A
+    Variante 3 Raum A
+    Variante 3 Raum B
+    Variante 4 Raum A
+    Variante 4 Raum B
+
+-------------------------------------------------------
+
+Reading 'THERAKLES.tsv'.
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\THERAKLES.tsv
+  4 columns, 8760 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Auﬂentemperatur'. Skipped.
+    Variante 1 Raum A
+    Variante 2 Raum A
+    'THERAKLES.tsv's does not contain the variable Variante 3 Raum A. Skipped
+    'THERAKLES.tsv's does not contain the variable Variante 3 Raum B. Skipped
+    'THERAKLES.tsv's does not contain the variable Variante 4 Raum A. Skipped
+    'THERAKLES.tsv's does not contain the variable Variante 4 Raum B. Skipped
+
+-------------------------------------------------------
+
+Reading 'TRNSYS.tsv'.
+Reading ./test_data\TF04-WaermeleitungSpeicherung\Auswertung/Ergebnisse\TRNSYS.tsv
+  8 columns, 8760 data rows, 
+    'EvaluationPeriods.tsv' does not contain the variable 'Auﬂentemperatur'. Skipped.
+    Variante 1 Raum A
+    Variante 2 Raum A
+    Variante 3 Raum A
+    Variante 3 Raum B
+    Variante 4 Raum A
+    Variante 4 Raum B
+
+################################################
+
+Processing directory 'TF05-Lueftung'
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\EvaluationPeriods.tsv
+  3 columns, 6 data rows, 
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\Reference.tsv
+  9 columns, 8760 data rows, 
+  Variante 1 Raumlufttemperatur
+  Variante 1 Lueftungswaermestrom
+  Variante 2 Raumlufttemperatur
+  Variante 2 Lueftungswaermestrom
+  Variante 3 Raumlufttemperatur
+  Variante 3 Lueftungswaermestrom
+  Variante 4 Raumlufttemperatur
+  Variante 4 Lueftungswaermestrom
+  Variante 1 Raumlufttemperatur
+  Variante 2 Raumlufttemperatur
+  Variante 2 Lueftungswaermestrom
+  Variante 3 Raumlufttemperatur
+  Variante 3 Lueftungswaermestrom
+  Variante 4 Raumlufttemperatur
+  Variante 4 Lueftungswaermestrom
+
+-------------------------------------------------------
+
+Reading 'Aixlib.tsv'.
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\Aixlib.tsv
+  7 columns, 8760 data rows, 
+    Variante 1 Raumlufttemperatur
+    'EvaluationPeriods.tsv' does not contain the variable 'Variante 1 Lueftungswaermestrom'. Skipped.
+    Variante 2 Raumlufttemperatur
+    Variante 2 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 2 Lueftungswaermestrom'
+    Variante 3 Raumlufttemperatur
+    Variante 3 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 3 Lueftungswaermestrom'
+    'Aixlib.tsv's does not contain the variable Variante 4 Raumlufttemperatur. Skipped
+    'Aixlib.tsv's does not contain the variable Variante 4 Lueftungswaermestrom. Skipped
+
+-------------------------------------------------------
+
+Reading 'ETU.tsv'.
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\ETU.tsv
+  9 columns, 8760 data rows, 
+    Variante 1 Raumlufttemperatur
+    'EvaluationPeriods.tsv' does not contain the variable 'Variante 1 Lueftungswaermestrom'. Skipped.
+    Variante 2 Raumlufttemperatur
+    Variante 2 Lueftungswaermestrom
+        divide by zero encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 2 Lueftungswaermestrom'
+    Variante 3 Raumlufttemperatur
+    Variante 3 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 3 Lueftungswaermestrom'
+    Variante 4 Raumlufttemperatur
+    Variante 4 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 4 Lueftungswaermestrom'
+
+-------------------------------------------------------
+
+Reading 'IDAICE.tsv'.
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\IDAICE.tsv
+  7 columns, 8760 data rows, 
+    Variante 1 Raumlufttemperatur
+    'EvaluationPeriods.tsv' does not contain the variable 'Variante 1 Lueftungswaermestrom'. Skipped.
+    Variante 2 Raumlufttemperatur
+    Variante 2 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 2 Lueftungswaermestrom'
+    Variante 3 Raumlufttemperatur
+    Variante 3 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 3 Lueftungswaermestrom'
+    'IDAICE.tsv's does not contain the variable Variante 4 Raumlufttemperatur. Skipped
+    'IDAICE.tsv's does not contain the variable Variante 4 Lueftungswaermestrom. Skipped
+
+-------------------------------------------------------
+
+Reading 'NANDRAD.tsv'.
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\NANDRAD.tsv
+  9 columns, 8760 data rows, 
+    Variante 1 Raumlufttemperatur
+    'EvaluationPeriods.tsv' does not contain the variable 'Variante 1 Lueftungswaermestrom'. Skipped.
+    Variante 2 Raumlufttemperatur
+    Variante 2 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 2 Lueftungswaermestrom'
+    Variante 3 Raumlufttemperatur
+    Variante 3 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 3 Lueftungswaermestrom'
+    Variante 4 Raumlufttemperatur
+    Variante 4 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 4 Lueftungswaermestrom'
+
+-------------------------------------------------------
+
+Reading 'TAS.tsv'.
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\TAS.tsv
+  7 columns, 8760 data rows, 
+    Variante 1 Raumlufttemperatur
+    'EvaluationPeriods.tsv' does not contain the variable 'Variante 1 Lueftungswaermestrom'. Skipped.
+    Variante 2 Raumlufttemperatur
+    Variante 2 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 2 Lueftungswaermestrom'
+    Variante 3 Raumlufttemperatur
+    Variante 3 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 3 Lueftungswaermestrom'
+    'TAS.tsv's does not contain the variable Variante 4 Raumlufttemperatur. Skipped
+    'TAS.tsv's does not contain the variable Variante 4 Lueftungswaermestrom. Skipped
+
+-------------------------------------------------------
+
+Reading 'THERAKLES.tsv'.
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\THERAKLES.tsv
+  7 columns, 8760 data rows, 
+    Variante 1 Raumlufttemperatur
+    'EvaluationPeriods.tsv' does not contain the variable 'Variante 1 Lueftungswaermestrom'. Skipped.
+    Variante 2 Raumlufttemperatur
+    Variante 2 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 2 Lueftungswaermestrom'
+    Variante 3 Raumlufttemperatur
+    Variante 3 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 3 Lueftungswaermestrom'
+    'THERAKLES.tsv's does not contain the variable Variante 4 Raumlufttemperatur. Skipped
+    'THERAKLES.tsv's does not contain the variable Variante 4 Lueftungswaermestrom. Skipped
+
+-------------------------------------------------------
+
+Reading 'TRNSYS.tsv'.
+Reading ./test_data\TF05-Lueftung\Auswertung/Ergebnisse\TRNSYS.tsv
+  9 columns, 8760 data rows, 
+    Variante 1 Raumlufttemperatur
+    'EvaluationPeriods.tsv' does not contain the variable 'Variante 1 Lueftungswaermestrom'. Skipped.
+    Variante 2 Raumlufttemperatur
+    Variante 2 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 2 Lueftungswaermestrom'
+    Variante 3 Raumlufttemperatur
+    Variante 3 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 3 Lueftungswaermestrom'
+    Variante 4 Raumlufttemperatur
+    Variante 4 Lueftungswaermestrom
+        invalid value encountered in log
+        Cannot calculate statistical evaluation for variable 'Variante 4 Lueftungswaermestrom'
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Creating charts of test case TF03-Waermeleitung-Variante 1
+Creating charts of test case TF03-Waermeleitung-Variante 2
+Creating charts of test case TF03-Waermeleitung-Variante 3
+Creating charts of test case TF03-Waermeleitung-Variante 4
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Creating charts of test case TF04-WaermeleitungSpeicherung-Variante 1 Raum A
+Creating charts of test case TF04-WaermeleitungSpeicherung-Variante 2 Raum A
+Creating charts of test case TF04-WaermeleitungSpeicherung-Variante 3 Raum A
+Creating charts of test case TF04-WaermeleitungSpeicherung-Variante 3 Raum B
+Creating charts of test case TF04-WaermeleitungSpeicherung-Variante 4 Raum A
+Creating charts of test case TF04-WaermeleitungSpeicherung-Variante 4 Raum B
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Create new data frame.
+Creating charts of test case TF05-Lueftung-Variante 1 Raumlufttemperatur
+Creating charts of test case TF05-Lueftung-Variante 2 Raumlufttemperatur
+Creating charts of test case TF05-Lueftung-Variante 2 Lueftungswaermestrom
+Creating charts of test case TF05-Lueftung-Variante 3 Raumlufttemperatur
+Creating charts of test case TF05-Lueftung-Variante 3 Lueftungswaermestrom
+Creating charts of test case TF05-Lueftung-Variante 4 Raumlufttemperatur
+Creating charts of test case TF05-Lueftung-Variante 4 Lueftungswaermestrom
