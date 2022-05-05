@@ -49,7 +49,7 @@ app.layout = html.Div(style={"height": "100vh", 'display': 'flex', 'flex-directi
 
                               dcc.Graph(
                                     id='testcase-graph',
-                                    style={'height': 600}
+                                    style={'height': 600},
                               )
                           ], style={'padding': 10, 'flex': "1 1 80%", "height": "100vh"}),
 
@@ -71,7 +71,7 @@ def update_var_dropdown(selected_testcase):
 )
 def update_figure(selected_testcase, selected_variant):
     df = PANDAS[selected_testcase][selected_variant]
-    fig = px.line(df, x="Date and Time", y=df.columns[1:])
+    fig = px.line(df, x="Date and Time", y=df.columns[1:], template="simple_white")
     return fig
 
 
