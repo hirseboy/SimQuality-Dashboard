@@ -1,0 +1,40 @@
+Variable	Start [h]	End [h]
+Variante 1 Raumlufttemperatur	3600	4400
+Variante 1 abs. Strahlung Dach	3600	4400
+Variante 1 abs. Strahlung Boden	3600	4400
+Variante 1 abs. Strahlung Nordwand	3600	4400
+Variante 1 abs. Strahlung Ostwand	3600	4400
+Variante 1 abs. Strahlung Südwand	3600	4400
+Variante 1 abs. Strahlung Westwand	3600	4400
+Variante 1 Oberflächen-Temp. Dach	3600	4400
+Variante 1 Oberflächen-Temp. Boden	3600	4400
+Variante 1 Oberflächen-Temp. Nordwand	3600	4400
+Variante 1 Oberflächen-Temp. Ostwand	3600	4400
+Variante 1 Oberflächen-Temp. Südwand	3600	4400
+Variante 1 Oberflächen-Temp. Westwand	3600	4400
+Variante 1 konv. Wärmeleitung Innen Dach	3600	4400
+Variante 1 konv. Wärmeleitung Innen Boden	3600	4400
+Variante 1 konv. Wärmeleitung Innen Nordwand	3600	4400
+Variante 1 konv. Wärmeleitung Innen Ostwand	3600	4400
+Variante 1 konv. Wärmeleitung Innen Südwand	3600	4400
+Variante 1 konv. Wärmeleitung Innen Westwand	3600	4400
+Variante 2 Raumlufttemperatur	3600	4400
+Variante 2 abs. Strahlung Dach	3600	4400
+Variante 2 abs. Strahlung Boden	3600	4400
+Variante 2 abs. Strahlung Nordwand	3600	4400
+Variante 2 abs. Strahlung Ostwand	3600	4400
+Variante 2 abs. Strahlung Südwand	3600	4400
+Variante 2 abs. Strahlung Westwand	3600	4400
+Variante 2 Oberflächen-Temp. Dach	3600	4400
+Variante 2 Oberflächen-Temp. Boden	3600	4400
+Variante 2 Oberflächen-Temp. Nordwand	3600	4400
+Variante 2 Oberflächen-Temp. Ostwand	3600	4400
+Variante 2 Oberflächen-Temp. Südwand	3600	4400
+Variante 2 Oberflächen-Temp. Westwand	3600	4400
+Variante 2 konv. Wärmeleitung Innen Dach	3600	4400
+Variante 2 konv. Wärmeleitung Innen Boden	3600	4400
+Variante 2 konv. Wärmeleitung Innen Nordwand	3600	4400
+Variante 2 konv. Wärmeleitung Innen Ostwand	3600	4400
+Variante 2 konv. Wärmeleitung Innen Südwand	3600	4400
+Variante 2 konv. Wärmeleitung Innen Westwand	3600	4400
+
