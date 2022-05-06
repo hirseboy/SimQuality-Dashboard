@@ -8,13 +8,16 @@
 
 import os
 import sys
-import plotly.graph_objects as go
-import pandas as pd
 
-from TSVContainer import TSVContainer
-from ProcessDirectory import processDirectory
-from colorama import *
+import pandas
+import pandas as pd
+import plotly.graph_objects as go
+from typing import Dict
+
 from PrintFuncs import *
+from ProcessDirectory import processDirectory, CaseResults
+from TSVContainer import TSVContainer
+from dataclasses import dataclass
 
 BADGES = {
     0: "Failed",
@@ -23,30 +26,13 @@ BADGES = {
     3: "Bronze"
 }
 
-TOOLCOLORS = {
-    "Reference": "#000000",
-    "ETU": "#8ae234",
-    "IDAICE": "#e50c0c",
-    "NANDRAD": "#ffc120",
-    "NANDRAD2": "#ffc120",
-    "Aixlib": "#7c00bf",
-    "TRNSYS": "#0369a3",
-    "TAS": "#ffd74c",
-    "THERAKLES": "#d36118"
-}
+@dataclass
+class SimQualityData:
+    name: str
+    testCaseDescription: str
 
-LINESTYLES = {
-    "Reference": "markers",
-    "ETU": "lines",
-    "IDAICE": "lines",
-    "NANDRAD": "lines",
-    "NANDRAD2": "lines",
-    "Aixlib": "lines",
-    "TRNSYS": "lines",
-    "TAS": "lines",
-    "THERAKLES": "lines"
-}
-
+    caseEvaluationResults: []
+    caseResultData: Dict
 
 def readWeightFactors():
     # read weight factors
@@ -68,36 +54,8 @@ def readWeightFactors():
 
     return weightFactors
 
-
-def scoreCalculation(path, outputDiagrams) -> dict:
-    # Create results file
-    try:
-        fobj = open("Results.tsv", "w")
-    except IOError as e:
-        print(e)
-        print("Cannot create 'Results.tsv' file")
-        exit(1)
-
-    # Create log file
-    oldStdout = sys.stdout
-    try:
-        log = open("Log.txt", "w")
-    except IOError as e:
-        print(e)
-        print("Cannot create 'Log.txt' file")
-        exit(1)
-
-    # redirect outputs to log
-    sys.stdout = log
-
-    # initialize colored console output
-    init()
-
-    weightFactors = readWeightFactors()
-
-    # create dictionary for test case results
-    testresults = dict()
-
+def listTestCaseDirectories(path):
+    dirs = []
     # process all subdirectories of `AP4` (i.e. test cases)
     subdirs = os.listdir(path)
 
@@ -107,129 +65,75 @@ def scoreCalculation(path, outputDiagrams) -> dict:
             # extract next two digits and try to convert to a number
             try:
                 testCaseNumber = int(sd[2:3])
-            except:
+            except Exception:
                 printError("Malformed directory name: {}".format(sd))
                 continue
-            printNotification("\n################################################\n")
-            printNotification("Processing directory '{}'".format(sd))
-            testresults[sd] = processDirectory(os.path.join(path, sd), weightFactors)
+            dirs.append(sd)
+    return dirs
 
-    # dump test results into file
 
-    fobj.write(
-        "Testfall\tToolID\tVariable\tFehlercode\tMax\tMin\tAverage\tCVRMSE\tDaily Amplitude CVRMSE\tMBE\tRMSEIQR\tMSE\tNMBE\tNRMSE\tRMSE\tRMSLE\tR² coefficient determination\tstd dev\tSimQuality-Score\tSimQ-Einordnung\n")
+def readDescriptionFile(filePath):
+    with open(filePath, encoding="utf-8") as f:
+        lines = f.read().replace("\n", "")
 
-    testcases = sorted(testresults.keys())
+    return str(lines)
 
-    # Build graph
-    layout = go.Layout(
-        title="Performance of A vs. B",
-        plot_bgcolor="#FFFFFF",
-        legend=dict(
-            # Adjust click behavior
-            itemclick="toggleothers",
-            itemdoubleclick="toggle",
-        ),
-        xaxis=dict(
-            showgrid=True,
-            zeroline=True,
-            showline=True,
-            gridcolor='#bdbdbd',
-            gridwidth=1,
-            zerolinecolor='#969696',
-            zerolinewidth=2,
-            linecolor='#636363',
-            linewidth=1,
-        ),
-        yaxis=dict(
-            showgrid=True,
-            zeroline=True,
-            showline=True,
-            gridcolor='#bdbdbd',
-            gridwidth=1,
-            zerolinecolor='#969696',
-            zerolinewidth=2,
-            linecolor='#636363',
-            linewidth=1
 
-        )
-    )
+def analyseTestCase(path, testCase) -> dict:
+    # initialize colored console output
+    init()
 
-    testCaseDfs = dict()
+    weightFactors = readWeightFactors()
+    sqd = SimQualityData(testCase, "", dict(), dict())
 
-    for testcase in testcases:
-        testData = testresults[testcase]
+    # process all subdirectories of `AP4` (i.e. test cases)
+    subdirs = os.listdir(path)
 
-        # we also want to create some plotly charts
-        # there fore we create a new data frame
-        dfs = dict()
-        lineDashes = dict()
-        symbols = dict()
-        colors = dict()
+    if testCase not in subdirs:
+        raise Exception(f"No TestCase Results Folder {testCase} does exist.")
 
-        # skip test cases with missing/invalid 'Reference.tsv'
-        if testData == None:
-            continue
-        for td in testData:
-            if td.Variable not in dfs:
+    if 4 < len(testCase) and testCase.startswith("TF"):
+        # extract next two digits and try to convert to a number
+        try:
+            testCaseNumber = int(testCase[2:3])
+        except:
+            raise Exception("Malformed test case name: {}".format(testCase))
+
+    printNotification("\n################################################\n")
+    printNotification("Processing directory '{}'".format(testCase))
+
+    sqd.caseEvaluationResults = processDirectory(os.path.join(path, testCase), weightFactors)
+
+    try:
+        sqd.testCaseDescription = readDescriptionFile(os.path.join(path, testCase, "TestCaseDescription.txt"))
+    except IOError:
+        raise Exception(f"Could not read test case description of test case {testCase}.")
+
+    # we also want to create some plotly charts
+    # there fore we create a new data frame
+    cer = sqd.caseEvaluationResults
+    crd = sqd.caseResultData
+
+    # skip test cases with missing/invalid 'Reference.tsv'
+    if cer is None:
+        raise Exception("No Test Case Data.")
+    for variable in cer:
+        for tool in cer[variable]:
+            if variable not in crd.keys():
                 printNotification(f"Create new data frame.")
-                dfs[td.Variable] = pd.DataFrame()
-                lineDashes[td.Variable] = dict()
-                symbols[td.Variable] = dict()
-                dfs[td.Variable] = pd.concat([td.pdTime, dfs[td.Variable]])
-                dfs[td.Variable]['Reference'] = td.pdRef.loc[:, 'Data']
+                crd[variable] = cer[variable][tool].timeDf
+                # add reference results in first round
+                crd[variable]['Reference'] = cer[variable][tool].referenceDf.loc[:, 'Data']
 
-            resText = "{}\t{}\t{}\t{}\t".format(td.TestCase, td.ToolID, td.Variable, td.ErrorCode)
-            for key in td.norms:
-                resText = resText + "{}\t".format(td.norms[key])
-            resText = resText + "{}\t".format(td.score)
-            resText = resText + "{}\n".format(BADGES.get(td.simQbadge))
-            fobj.write(resText)
-
-            # dfs[td.Variable] = pd.concat([dfs[td.Variable], td.pdData], keys=[",".join(keys)], names=[",".join(names)])
-            dfs[td.Variable][td.ToolID] = td.pdData.loc[:, 'Data']
-
-        for variable in dfs:
-            printNotification(f"Creating charts of test case {testcase}-{variable}")
-            # printNotification(f"Columns: {','.join(dfs[variable].columns)}")
-
-            # print(dfs[variable].to_string())
-            # fig = px.line(dfs[variable], x='Date and Time', y=dfs[variable].columns[1:], line_dash_map=lineDashes[variable], symbol_map=symbols)
-
-            fig = go.Figure(layout=layout)
-
-            for colName in dfs[variable].columns[1:]:
-                fig.add_trace(go.Scatter(x=dfs[variable].loc[:, "Date and Time"],
-                                         y=dfs[variable].loc[:, colName],
-                                         mode=LINESTYLES[colName],
-                                         name=colName,
-                                         line=dict(color=TOOLCOLORS[colName])))
-
-            # fig.layout.template ="simple_white"
-            fig.update_layout(title=f"{testcase}-{variable}")
-
-            fig.update_xaxes(
-                rangebreaks=[
-                    dict(pattern="hour"),  # hide hours outside of 9am-5pm
-                ]
-            )
-            if outputDiagrams:
-                fig.write_html(f"../charts/{testcase}-{variable}.html")
-        testCaseDfs[testcase] = dfs
-
-    sys.stdout = oldStdout
-
-    fobj.close()
-    del fobj
-    log.close()
-    del log
+            crd[variable][cer[variable][tool].ToolID] = cer[variable][tool].toolDataDf.loc[:, 'Data']
 
     printNotification("\n################################################\n")
     printNotification("Done.")
 
-    return testCaseDfs
+    return sqd
 
 
 # ---*** main ***---
 if __name__ == "__main__":
-    testCaseDataDfs = scoreCalculation("./test_data", True)
+    # testCaseDataDfs = scoreCalculation("./test_data", True)
+    exit(0)
