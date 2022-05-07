@@ -17,7 +17,6 @@ sys.path.append('./scripts')
 
 from ScoreCalculation import *
 
-
 # Reads a csv file specified by a path and returns a dict with
 # all entries from column 1 as keys and all entries from column 2
 # as values
@@ -42,6 +41,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.renderer = 'var renderer = new DashRenderer();'
+server = app.server
 
 TESTDATA = dict()
 
@@ -78,7 +78,7 @@ app.layout = html.Div(
             html.Div([
                 "Choose a Test Case:",
                 dcc.Dropdown(
-                    options=[{'label': str(i).replace("-", " "), 'value': i} for i in SUBDIRS],
+                    options=[{'label': str(i).replace("-", " "), 'value': i} for i in SUBDIRS.sort()],
                     id="testcase-dropdown",
                     value=SUBDIRS[0]),
                 "Choose a Variable:",
