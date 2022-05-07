@@ -124,8 +124,11 @@ def analyseTestCase(path, testCase) -> dict:
                 crd[variable] = cer[variable][tool].timeDf
                 # add reference results in first round
                 crd[variable]['Reference'] = cer[variable][tool].referenceDf.loc[:, 'Data']
+                cer[variable][tool].referenceDf = pd.DataFrame(None) # clear data frame
+                cer[variable][tool].timeDf = pd.DataFrame(None)  # clear data frame
 
             crd[variable][cer[variable][tool].ToolID] = cer[variable][tool].toolDataDf.loc[:, 'Data']
+            cer[variable][tool].toolDataDf = pd.DataFrame(None)  # clear data frame
 
     printNotification("\n################################################\n")
     printNotification("Done.")
