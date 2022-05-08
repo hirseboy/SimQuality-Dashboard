@@ -243,8 +243,7 @@ def processDirectory(path, weightFactors):
         evaluationVariables.append(e)
         printNotification("  {}".format(e))
 
-    # now read in all the reference files, collect the variable headers and write out the collective file
-    tsvData = dict()
+    tsvData = []
     for dataFile in tsvFiles:
         # special handling of reference data files needed only for visualization
         if dataFile.startswith("Reference"):
@@ -324,9 +323,6 @@ def processDirectory(path, weightFactors):
             cr.Variable = variables[i]
             cr.ErrorCode = 0
 
-            if variables[i] not in tsvData.keys():
-                tsvData[variables[i]] = dict()
-
-            tsvData[variables[i]][toolID] = cr
+            tsvData.append(cr)
 
     return tsvData
