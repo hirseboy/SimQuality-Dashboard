@@ -32,7 +32,7 @@ class SimQualityData:
     testCaseDescription: str
 
     caseEvaluationResults: []
-    caseResultData: Dict
+    caseResultData: pd.DataFrame
 
 def readWeightFactors():
     # read weight factors
@@ -71,6 +71,30 @@ def listTestCaseDirectories(path):
             dirs.append(sd)
     return dirs
 
+def convertEvaluationResultsToDataframe(evalData):
+    """
+
+    :type evalData: List[CaseResults]
+    """
+    df = pd.DataFrame(['Variable', 'Tool', 'CVRMSE', 'Daily Amplitude CVRMSE', 'MBE', 'RMSEIQR', 'MSE',
+            'NMBE', 'NRMSE', 'RMSE', 'RMSLE', 'R squared coeff determination', 'std dev', 'SimQ-Score',
+            'SimQ-Einordnung'])
+    # now read in all the reference files, collect the variable headers and write out the collective file
+    for i, cr in enumerate(evalData):
+        vals = dict()
+
+        vals['Variable'] = cr.Variable
+        vals['Tool'] = cr.ToolID
+        for norm in cr.norms.keys():
+            vals[norm] = cr.norms[norm]
+        vals['SimQ-Score'] = cr.score
+        vals['SimQ-Einordnung'] = cr.simQbadge
+
+        dfAppend = pd.DataFrame([vals])
+
+        df = pd.concat([df, dfAppend], ignore_index=True)
+
+    return df
 
 def readDescriptionFile(filePath):
     with open(filePath, encoding="utf-8") as f:
@@ -102,7 +126,10 @@ def analyseTestCase(path, testCase) -> dict:
     printNotification("\n################################################\n")
     printNotification("Processing directory '{}'".format(testCase))
 
-    sqd.caseEvaluationResults = processDirectory(os.path.join(path, testCase), weightFactors)
+    evaluationResults = processDirectory(os.path.join(path, testCase), weightFactors)
+
+    # covert all data to pandas data frame
+    sqd.caseEvaluationResults = convertEvaluationResultsToDataframe(evaluationResults)
 
     try:
         sqd.testCaseDescription = readDescriptionFile(os.path.join(path, testCase, "TestCaseDescription.txt"))
@@ -111,24 +138,19 @@ def analyseTestCase(path, testCase) -> dict:
 
     # we also want to create some plotly charts
     # there fore we create a new data frame
-    cer = sqd.caseEvaluationResults
     crd = sqd.caseResultData
 
     # skip test cases with missing/invalid 'Reference.tsv'
-    if cer is None:
+    if evaluationResults is None:
         raise Exception("No Test Case Data.")
-    for variable in cer:
-        for tool in cer[variable]:
-            if variable not in crd.keys():
-                printNotification(f"Create new data frame.")
-                crd[variable] = cer[variable][tool].timeDf
-                # add reference results in first round
-                crd[variable]['Reference'] = cer[variable][tool].referenceDf.loc[:, 'Data']
-                cer[variable][tool].referenceDf = pd.DataFrame(None) # clear data frame
-                cer[variable][tool].timeDf = pd.DataFrame(None)  # clear data frame
+    for cr in evaluationResults:
+        if cr.Variable not in crd.keys():
+            printNotification(f"Create new data frame.")
+            crd[cr.Variable] = cr.timeDf
+            # add reference results in first round
+            crd[cr.Variable]['Reference'] = cr.referenceDf.loc[:, 'Data']
 
-            crd[variable][cer[variable][tool].ToolID] = cer[variable][tool].toolDataDf.loc[:, 'Data']
-            cer[variable][tool].toolDataDf = pd.DataFrame(None)  # clear data frame
+        crd[cr.Variable][cr.ToolID] = cr.toolDataDf.loc[:, 'Data']
 
     printNotification("\n################################################\n")
     printNotification("Done.")
