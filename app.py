@@ -10,12 +10,14 @@ from dash import Dash, dcc, html, Input, Output, dash_table
 import sys
 import csv
 import shutil
+import json
 
 from plotly.graph_objs import Figure
 
 sys.path.append('./scripts')
 
 from ScoreCalculation import *
+
 
 # Reads a csv file specified by a path and returns a dict with
 # all entries from column 1 as keys and all entries from column 2
@@ -54,7 +56,7 @@ except IOError as e:
     print(f"Could not read 'ToolColors.tsv' file.")
     exit(1)
 
-SUBDIRS = listTestCaseDirectories("test_data")
+SUBDIRS = sorted(listTestCaseDirectories("test_data"))
 
 app.layout = html.Div(
     style={"height": "100vh", 'display': 'flex', 'flex-direction': 'row'},
@@ -78,12 +80,15 @@ app.layout = html.Div(
             html.Div([
                 "Choose a Test Case:",
                 dcc.Dropdown(
-                    options=[{'label': str(i).replace("-", " "), 'value': i} for i in SUBDIRS.sort()],
+                    options=[{'label': str(i).replace("-", " "), 'value': i} for i in SUBDIRS],
                     id="testcase-dropdown",
-                    value=SUBDIRS[0]),
+                    value=SUBDIRS[0]
+                ),
                 "Choose a Variable:",
                 dcc.Dropdown(id="testcase-variant-dropdown"),
 
+                # dcc.Store stores the intermediate value
+                dcc.Store(id='testcase-result-value'),
             ]),
 
             html.Div([
@@ -128,7 +133,7 @@ app.layout = html.Div(
             ),
 
             dash_table.DataTable(
-                id='evaluation-datatable',
+                id='evaluation-table',
                 editable=False
             )
         ], style={'padding': 10, 'flex': "1 1 80%", "height": "100vh"}),
@@ -136,69 +141,64 @@ app.layout = html.Div(
 
 
 # Dropdown menu to choose variable is updated
-
 @app.callback(
+    Output('testcase-result-value', 'data'),
     Output('testcase-variant-dropdown', 'options'),
     Output('testcase-variant-dropdown', 'value'),
     Output('textarea-testcase-description', 'value'),
     Input('testcase-dropdown', 'value')
 )
-def update_var_dropdown(selected_testcase):
-    # Holds data for currently selected test case
-    global TESTDATA
-    TESTDATA = analyseTestCase("test_data", selected_testcase)
-    return [{'label': i, 'value': i} for i in TESTDATA.caseResultData.keys()], \
-           list(TESTDATA.caseResultData.keys())[0], \
-           TESTDATA.testCaseDescription
+def clean_data(selected_testcase):
+    # some expensive data processing step
+    sqd = analyseTestCase("test_data", selected_testcase)
+
+    datasets = {key: sqd.caseResultData[key].to_json(orient='split', date_format='iso') for key in sqd.caseResultData.keys()}
+
+    datasets['Evaluation'] = sqd.caseEvaluationResults.to_json(orient='split', date_format='iso')
+
+    return json.dumps(datasets), \
+           [{'label': i, 'value': i} for i in sqd.caseResultData.keys()], \
+           list(sqd.caseResultData.keys())[0], \
+           sqd.testCaseDescription
 
 
 # Figure is updated
-
 @app.callback(
     Output('testcase-graph', 'figure'),
-    Output('evaluation-datatable', 'data'),
+    Input('testcase-result-value', 'data'),
     Input('testcase-dropdown', 'value'),
-    Input('testcase-variant-dropdown', 'value')
+    Input('testcase-variant-dropdown', 'value'),
 )
-def update_data(selected_testcase, selected_variant):
-    resultDf = TESTDATA.caseResultData[selected_variant]
+def update_figure(jsonified_cleaned_data, selected_testcase, selected_variant):
+    if selected_variant is None:
+        return
+
+    datasets = json.loads(jsonified_cleaned_data)
+    resultDf = pd.read_json(datasets[selected_variant], orient='split')
+
     fig = px.line(resultDf, x="Date and Time", y=resultDf.columns[1:], template="simple_white")
     fig.data[0].update(mode='markers')
 
     for figline in fig.data:
         figline.line.color = COLORS[figline.name]
 
-    evaluationDf = pandas.DataFrame()
-    evaluationData = TESTDATA.caseEvaluationResults[selected_variant]
+    return fig
 
-    tempDict = dict()
 
-    cols = ['Tools', 'Fehlercode', 'Max', 'Min', 'Average', 'CVRMSE', 'Daily Amplitude CVRMSE', 'MBE', 'RMSEIQR', 'MSE',
-            'NMBE', 'NRMSE', 'RMSE', 'RMSLE', 'R squared coeff determination', 'std dev', 'SimQuality-Score',
-            'SimQ-Einordnung']
+@app.callback(
+    Output('evaluation-table', 'data'),
+    Input('testcase-result-value', 'data'),
+    Input('testcase-variant-dropdown', 'value'),
+)
+def update_table(jsonified_cleaned_data, selected_testcase):
+    if selected_testcase is None:
+        return None
 
-    for col in cols:
-        tempDict[col] = []
+    datasets = json.loads(jsonified_cleaned_data)
+    df = pd.read_json(datasets['Evaluation'], orient='split')
+    filtedDf = df[df['Variable'] == selected_testcase].drop(['0', 'Variable'], axis=1)
 
-    for data in evaluationData:
-        tempData = evaluationData[data]
-
-        # first we add all the norms
-        for norm in tempData.norms:
-            if norm not in tempDict.keys():
-                continue
-            tempDict[norm].append(tempData.norms[norm])
-
-        tempDict["Tools"].append(tempData.ToolID)
-        tempDict["SimQuality-Score"].append(tempData.score)
-        tempDict["SimQ-Einordnung"].append(MEDALS[tempData.simQbadge])
-
-    for col in tempDict.keys():
-        if not tempDict[col]:
-            continue
-        evaluationDf[col] = tempDict[col]
-
-    return fig, evaluationDf.to_dict('records')
+    return filtedDf.to_dict('records')
 
 
 @app.callback(
