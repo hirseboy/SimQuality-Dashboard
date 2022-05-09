@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33af8801-a54a-4893-ab87-006f7b34e921" name="Changes" comment="" />
+    <list default="true" id="33af8801-a54a-4893-ab87-006f7b34e921" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SimQuality-Dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SimQuality-Dashboard.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeightFactors.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/WeightFactors.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ProcessDirectory.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ProcessDirectory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ScoreCalculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ScoreCalculation.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,11 +26,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;B:/git/SimQuality-Dashboard/app.py&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SimQuality-Dashboard" />
@@ -31,13 +40,13 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Hirth\AppData\Local\Microsoft\WindowsApps\python3.8.exe" />
+      <option name="SDK_HOME" value="C:\git\SimQuality-Dashboard\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="-m cProfile -o p0.prof" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -46,7 +55,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="33af8801-a54a-4893-ab87-006f7b34e921" name="Changes" comment="" />
@@ -57,23 +69,82 @@
     </task>
     <servers />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="736" y="395" width="1089" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652104866103">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state x="736" y="395" width="1089" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.2560.1400@0.40.2560.1400" timestamp="1652104866103" />
+    <state x="1016" y="510" width="529" height="781" key="EnvironmentVariablesDialog" timestamp="1652097274586">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state x="1016" y="510" width="529" height="781" key="EnvironmentVariablesDialog/0.40.2560.1400@0.40.2560.1400" timestamp="1652097274586" />
+    <state x="1060" y="495" key="FileChooserDialogImpl" timestamp="1652099102043">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="495" key="FileChooserDialogImpl/0.40.2560.1400@0.40.2560.1400" timestamp="1652099102043" />
+    <state width="2539" height="355" key="GridCell.Tab.0.bottom" timestamp="1652108838412">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="355" key="GridCell.Tab.0.bottom/0.40.2560.1400@0.40.2560.1400" timestamp="1652108838412" />
+    <state width="2539" height="355" key="GridCell.Tab.0.center" timestamp="1652108838411">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="355" key="GridCell.Tab.0.center/0.40.2560.1400@0.40.2560.1400" timestamp="1652108838411" />
+    <state width="2539" height="355" key="GridCell.Tab.0.left" timestamp="1652108838411">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="355" key="GridCell.Tab.0.left/0.40.2560.1400@0.40.2560.1400" timestamp="1652108838411" />
+    <state width="2539" height="355" key="GridCell.Tab.0.right" timestamp="1652108838411">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="355" key="GridCell.Tab.0.right/0.40.2560.1400@0.40.2560.1400" timestamp="1652108838411" />
+    <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1652108494483">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.bottom/0.40.2560.1400@0.40.2560.1400" timestamp="1652108494483" />
+    <state width="2539" height="492" key="GridCell.Tab.1.center" timestamp="1652108494483">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.center/0.40.2560.1400@0.40.2560.1400" timestamp="1652108494483" />
+    <state width="2539" height="492" key="GridCell.Tab.1.left" timestamp="1652108494483">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.left/0.40.2560.1400@0.40.2560.1400" timestamp="1652108494483" />
+    <state width="2539" height="492" key="GridCell.Tab.1.right" timestamp="1652108494483">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.right/0.40.2560.1400@0.40.2560.1400" timestamp="1652108494483" />
+    <state x="782" y="383" key="SettingsEditor" timestamp="1652099262068">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state x="782" y="383" key="SettingsEditor/0.40.2560.1400@0.40.2560.1400" timestamp="1652099262068" />
+    <state x="977" y="564" key="com.intellij.ide.util.TipDialog" timestamp="1652097119238">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state x="977" y="564" key="com.intellij.ide.util.TipDialog/0.40.2560.1400@0.40.2560.1400" timestamp="1652097119238" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/ProcessDirectory.py</url>
-          <line>130</line>
+          <line>136</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>163</line>
-          <option name="timeStamp" value="23" />
+          <line>3</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app.py</url>
-          <line>198</line>
-          <option name="timeStamp" value="26" />
+          <url>file://$PROJECT_DIR$/scripts/ProcessDirectory.py</url>
+          <line>287</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/ProcessDirectory.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

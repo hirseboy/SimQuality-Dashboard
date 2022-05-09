@@ -18,6 +18,12 @@ from PrintFuncs import *
 RESULTS_SUBDIRNAME = "Auswertung/Ergebnisse"
 EVAL_PERIODS = "EvaluationPeriods.tsv"
 
+BADGES = {
+    0: "Failed",
+    1: "Gold",
+    2: "Silver",
+    3: "Bronze"
+}
 
 class CaseResults:
     def __init__(self):
@@ -168,13 +174,13 @@ def evaluateVariableResults(variable, timeColumnRef, timeColumnData, refData, te
     elif cr.score > 80:
         badge = 3
     # now set the final SimQuality Badge
-    cr.simQbadge = badge
+    cr.simQbadge = BADGES[badge]
 
     return cr
 
 
 # all the data is stored in a dictionary with tool-specific data
-def processDirectory(path, weightFactors):
+def processDirectory(path, variable, weightFactors):
     """
 	Processes a test case directory, i.e. path = "data/TF03-Waermeleitung".
 	It then reads data from the subdirectory 'Auswertung/Ergebnisse' and
@@ -258,6 +264,7 @@ def processDirectory(path, weightFactors):
         toolID = dataFile[0:-4]  # strip tsv
         tsv = TSVContainer()
         tsv.readAsStrings(os.path.join(tsvPath, dataFile))
+
         if True in tsv.emptyColumn:
             printError("    '{}' contains empty columns. Skipped.".format(dataFile))
             appendErrorResults(tsvData, testCaseName, toolID, -10, variables)
@@ -277,6 +284,9 @@ def processDirectory(path, weightFactors):
 
         # process all variables
         for i in range(len(variables)):
+            if variable not in variables:
+                continue # skipp all unnecessairy variables
+
             # call function to generate and evaluate all norms for the given variable
             # we provide time column, reference data column and value column, also parameter set for norm calculation
             # we get a variable-specific score stored in CaseResults object
@@ -323,6 +333,7 @@ def processDirectory(path, weightFactors):
             cr.ToolID = toolID
             cr.Variable = variables[i]
             cr.ErrorCode = 0
+
 
             tsvData.append(cr)
 

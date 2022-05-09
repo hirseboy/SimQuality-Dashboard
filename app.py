@@ -7,6 +7,7 @@ import sys
 import json
 
 import dash.exceptions
+import cProfile
 import plotly.express as px
 from dash import Dash, dcc, html, Input, Output, dash_table, exceptions
 from dash.dependencies import Input, Output, State
@@ -34,6 +35,15 @@ def readDict(file):
 def zipTestCaseData(dirName, outputFileName):
     return shutil.make_archive(outputFileName, 'zip', dirName)
 
+def stripVariable(v):
+    p = v.find("(mean)")
+    if p == -1:
+        p = v.find("[")
+    if p == -1:
+        printError("    Missing unit in header label '{}' of 'Reference.tsv'".format(v))
+        return None
+    return v[0:p].strip()
+
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -43,8 +53,6 @@ app.renderer = 'var renderer = new DashRenderer();'
 server = app.server
 
 TESTDATA = dict()
-
-MEDALS = {0: "Failed", 1: "Gold", 2: "Silver", 3: "Bronze"}
 
 try:
     COLORS = readDict("ToolColors.tsv")
@@ -142,7 +150,6 @@ app.layout = html.Div(
 
 # Dropdown menu to choose variable is updated
 @app.callback(
-    Output('testcase-data', 'data'),
     Output('testcase-variant-dropdown', 'options'),
     Output('testcase-variant-dropdown', 'value'),
     Output('textarea-testcase-description', 'value'),
@@ -150,16 +157,19 @@ app.layout = html.Div(
 )
 def clean_data(selected_testcase):
     # some expensive data processing step
-    sqd = analyseTestCase("test_data", selected_testcase)
+    try:
+        testCaseDescription = readTestCaseDescriptionFile('test_data',  selected_testcase)
+    except IOError:
+        raise Exception(f"Could not read test case description of test case {selected_testcase}.")
 
-    datasets = {key: sqd.caseResultData[key].to_json(orient='split', date_format='iso') for key in sqd.caseResultData.keys()}
+    try:
+        variables = readVariables('test_data',  selected_testcase)
+    except IOError:
+        raise Exception(f"Could not read test case description of test case {selected_testcase}.")
 
-    datasets['Evaluation'] = sqd.caseEvaluationResults.to_json(orient='split', date_format='iso')
-
-    return json.dumps(datasets), \
-           [{'label': i, 'value': i} for i in sqd.caseResultData.keys()], \
-           list(sqd.caseResultData.keys())[0], \
-           sqd.testCaseDescription
+    return [{'label': i, 'value': i} for i in variables], \
+           variables[0], \
+           testCaseDescription
 
 
 # Figure is updated
@@ -184,45 +194,54 @@ def clean_data(selected_testcase):
 #
 #     return fig
 
+#
+# app.clientside_callback(
+#     """
+#     function(testcase_data) {
+#         if(testcase_data === undefined) {
+#             return {'data': [], 'layout': {}};
+#         }
+#         const fig = Object.assign({}, testcase_data, {
+#         });
+#         return fig;
+#     }
+#     """,
+#     Output('testcase-graph', 'figure'),
+#     Input('testcase-variant-data', 'data'),
+# )
+#
+# @app.callback(
+#     Output('evaluation-table', 'data'),
+#     State('testcase-data', 'data'),
+#     Input('testcase-variant-dropdown', 'value'),
+# )
+# def update_table_data(jsonified_cleaned_data, selected_testcase):
+#     if selected_testcase is None:
+#         return None
+#
+#     datasets = json.loads(jsonified_cleaned_data)
+#     df = pd.read_json(datasets['Evaluation'], orient='split')
+#     filtedDf = df[df['Variable'] == selected_testcase].drop(['Variable'], axis=1)
+#
+#     return filtedDf.to_dict('records')
 
-app.clientside_callback(
-    """
-    function(testcase_data) {
-        if(testcase_data === undefined) {
-            return {'data': [], 'layout': {}};
-        }
-        const fig = Object.assign({}, testcase_data, {
-        });
-        return fig;
-    }
-    """,
+@app.callback(
     Output('testcase-graph', 'figure'),
-    Input('testcase-variant-data', 'data'),
-)
-
-@app.callback(
     Output('evaluation-table', 'data'),
-    State('testcase-data', 'data'),
     Input('testcase-variant-dropdown', 'value'),
+    State('testcase-dropdown', 'value')
 )
-def update_table_data(jsonified_cleaned_data, selected_testcase):
-    if selected_testcase is None:
-        return None
+def update_testcase_variant_data(testcase_variant, testcase):
+    prof = cProfile.Profile()
+    prof.enable()
+    sys.stdout = open(os.devnull, 'w')
+    sqd = analyseTestCase("test_data", testcase, testcase_variant)
+    sys.stdout = sys.__stdout__
+    prof.disable()
+    prof.dump_stats("analyseTestCase.prof")
 
-    datasets = json.loads(jsonified_cleaned_data)
-    df = pd.read_json(datasets['Evaluation'], orient='split')
-    filtedDf = df[df['Variable'] == selected_testcase].drop(['Variable'], axis=1)
-
-    return filtedDf.to_dict('records')
-
-@app.callback(
-    Output('testcase-variant-data', 'data'),
-    Input('testcase-variant-dropdown', 'value'),
-    State('testcase-data', 'data')
-)
-def update_testcase_variant_data(testcase_variant, jsonified_cleaned_data):
-    datasets = json.loads(jsonified_cleaned_data)
-    resultDf = pd.read_json(datasets[testcase_variant], orient='split')
+    resultDf = sqd.caseResultData[testcase_variant]
+    evaluationDf = sqd.caseEvaluationResults
 
     fig = px.line(resultDf, x="Date and Time", y=resultDf.columns[1:], template="simple_white",
                       title=testcase_variant, labels={"y": testcase_variant})
@@ -231,7 +250,9 @@ def update_testcase_variant_data(testcase_variant, jsonified_cleaned_data):
     for figline in fig.data:
         figline.line.color = COLORS[figline.name]
 
-    return fig
+    filtedDf = evaluationDf[evaluationDf['Variable'] == testcase_variant].drop(['Variable'], axis=1)
+
+    return fig, filtedDf.to_dict('records')
 
 @app.callback(
     Output("download-testcase-data", "data"),

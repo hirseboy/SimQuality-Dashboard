@@ -9,22 +9,15 @@
 import os
 import sys
 
-import pandas
 import pandas as pd
 import plotly.graph_objects as go
-from typing import Dict
+import csv
 
+from typing import Dict
 from PrintFuncs import *
 from ProcessDirectory import processDirectory, CaseResults
 from TSVContainer import TSVContainer
 from dataclasses import dataclass
-
-BADGES = {
-    0: "Failed",
-    1: "Gold",
-    2: "Silver",
-    3: "Bronze"
-}
 
 @dataclass
 class SimQualityData:
@@ -53,6 +46,21 @@ def readWeightFactors():
     weightFactors['Sum'] = sum(map(int, weightFactorsTSV.data[1]))  # convert to int and then sum it up
 
     return weightFactors
+
+def readVariables(testCaseDir, testCaseName):
+    myDict = dict()
+    path = os.path.join(testCaseDir, testCaseName, "Auswertung", "Ergebnisse", "EvaluationPeriods.tsv")
+    with open(path, mode='r', encoding="utf-8") as infile:
+        reader = csv.reader(infile, delimiter='\t')
+        headers = next(reader)
+        columns = dict()
+        for row in reader:
+            for (i, v) in enumerate(row):
+                if i not in columns.keys():
+                    columns[i] = []
+                columns[i].append(v)
+
+    return columns[0]
 
 def listTestCaseDirectories(path):
     dirs = []
@@ -96,14 +104,15 @@ def convertEvaluationResultsToDataframe(evalData):
 
     return df
 
-def readDescriptionFile(filePath):
-    with open(filePath, encoding="utf-8") as f:
+def readTestCaseDescriptionFile(testCaseDir, testCaseName):
+    path = os.path.join(testCaseDir, testCaseName, "TestCaseDescription.txt")
+    with open(path, encoding="utf-8") as f:
         lines = f.read().replace("\n", "")
 
     return str(lines)
 
 
-def analyseTestCase(path, testCase) -> dict:
+def analyseTestCase(path, testCase, variable) -> dict:
     # initialize colored console output
     init()
 
@@ -126,15 +135,10 @@ def analyseTestCase(path, testCase) -> dict:
     printNotification("\n################################################\n")
     printNotification("Processing directory '{}'".format(testCase))
 
-    evaluationResults = processDirectory(os.path.join(path, testCase), weightFactors)
+    evaluationResults = processDirectory(os.path.join(path, testCase), variable, weightFactors)
 
     # covert all data to pandas data frame
     sqd.caseEvaluationResults = convertEvaluationResultsToDataframe(evaluationResults)
-
-    try:
-        sqd.testCaseDescription = readDescriptionFile(os.path.join(path, testCase, "TestCaseDescription.txt"))
-    except IOError:
-        raise Exception(f"Could not read test case description of test case {testCase}.")
 
     # we also want to create some plotly charts
     # there fore we create a new data frame
