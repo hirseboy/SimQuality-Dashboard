@@ -173,58 +173,6 @@ def clean_data(selected_testcase):
 
 
 # Figure is updated
-# @app.callback(
-#     Output('testcase-graph', 'figure'),
-#     Input('testcase-result-value', 'data'),
-#     Input('testcase-dropdown', 'value'),
-#     Input('testcase-variant-dropdown', 'value'),
-# )
-# def update_figure(jsonified_cleaned_data, selected_testcase, selected_variant):
-#     if selected_variant is None:
-#         return
-#
-#     datasets = json.loads(jsonified_cleaned_data)
-#     resultDf = pd.read_json(datasets[selected_variant], orient='split')
-#     fig = px.line(resultDf, x="Date and Time", y=resultDf.columns[1:], template="simple_white",
-#                   title=selected_variant, labels={"y": selected_variant})
-#     fig.data[0].update(mode='markers')
-#
-#     for figline in fig.data:
-#         figline.line.color = COLORS[figline.name]
-#
-#     return fig
-
-#
-# app.clientside_callback(
-#     """
-#     function(testcase_data) {
-#         if(testcase_data === undefined) {
-#             return {'data': [], 'layout': {}};
-#         }
-#         const fig = Object.assign({}, testcase_data, {
-#         });
-#         return fig;
-#     }
-#     """,
-#     Output('testcase-graph', 'figure'),
-#     Input('testcase-variant-data', 'data'),
-# )
-#
-# @app.callback(
-#     Output('evaluation-table', 'data'),
-#     State('testcase-data', 'data'),
-#     Input('testcase-variant-dropdown', 'value'),
-# )
-# def update_table_data(jsonified_cleaned_data, selected_testcase):
-#     if selected_testcase is None:
-#         return None
-#
-#     datasets = json.loads(jsonified_cleaned_data)
-#     df = pd.read_json(datasets['Evaluation'], orient='split')
-#     filtedDf = df[df['Variable'] == selected_testcase].drop(['Variable'], axis=1)
-#
-#     return filtedDf.to_dict('records')
-
 @app.callback(
     Output('testcase-graph', 'figure'),
     Output('evaluation-table', 'data'),
