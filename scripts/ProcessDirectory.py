@@ -182,6 +182,7 @@ def processDirectory(path, weightFactors):
 	
 	Returns a CaseResults object with data for all test variables. 
 	'None' indicates entirely invalid/missing test data or reference data.
+    :param factors:
 	"""
 
     # test case name
