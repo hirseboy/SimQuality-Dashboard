@@ -51,6 +51,8 @@ app.renderer = 'var renderer = new DashRenderer();'
 server = app.server
 
 TESTDATA = dict()
+global EVALUATIONDATA
+EVALUATIONDATA = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t", engine="pyarrow").reset_index()
 
 try:
     COLORS = readDict("ToolColors.tsv")
@@ -182,18 +184,19 @@ def update_testcase_variant_data(testcase_variant, testcase):
     prof.enable()
 
     resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
-    evaluationDf = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8')
+    # evaluationDf = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t", engine="pyarrow").reset_index()
 
     fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant, labels={"y": testcase_variant})
     fig.data[0].update(mode='markers')
 
     for figline in fig.data:
         figline.line.color = COLORS[figline.name]
-
-    filtedDf = evaluationDf[evaluationDf['Variable'] == testcase_variant].drop(['Variable'], axis=1)
+    searchterm = testcase[2:]
+    filtedDf = EVALUATIONDATA.loc[EVALUATIONDATA['Testfall'] == searchterm].drop(['Testfall'], axis=1)
+    filtedDf = filtedDf.loc[filtedDf['Variable'] == testcase_variant].drop(['Variable'], axis=1)
     prof.disable()
     prof.dump_stats("analyseTestCase.prof")
-    return fig, filtedDf.to_dict('records')
+    return fig, filtedDf.drop(['index'], axis=1).to_dict('records')
 
 @app.callback(
     Output("download-testcase-data", "data"),
