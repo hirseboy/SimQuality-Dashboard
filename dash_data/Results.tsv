@@ -1,0 +1,581 @@
+Testfall	ToolID	Variable	Fehlercode	Max	Min	Average	CVRMSE	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coefficient determination	std dev	SimQuality-Score	SimQ-Einordnung
+03-Waermeleitung	Aixlib	Variante 1	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.5045	Silver
+03-Waermeleitung	Aixlib	Variante 2	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	52.65599999999999	Failed
+03-Waermeleitung	Aixlib	Variante 3	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.334	Gold
+03-Waermeleitung	Aixlib	Variante 4	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	92.434	Silver
+03-Waermeleitung	ETU	Variante 1	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	83.6965	Bronze
+03-Waermeleitung	ETU	Variante 2	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	22.885999999999992	Failed
+03-Waermeleitung	ETU	Variante 3	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	74.13250000000001	Failed
+03-Waermeleitung	ETU	Variante 4	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	86.92499999999998	Bronze
+03-Waermeleitung	IDAICE	Variante 1	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	92.293	Silver
+03-Waermeleitung	IDAICE	Variante 2	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	73.532	Failed
+03-Waermeleitung	IDAICE	Variante 3	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	92.614	Silver
+03-Waermeleitung	IDAICE	Variante 4	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.4545	Gold
+03-Waermeleitung	NANDRAD	Variante 1	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+03-Waermeleitung	NANDRAD	Variante 2	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+03-Waermeleitung	NANDRAD	Variante 3	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+03-Waermeleitung	NANDRAD	Variante 4	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+03-Waermeleitung	NANDRAD2	Variante 1	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.75750000000001	Gold
+03-Waermeleitung	NANDRAD2	Variante 2	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.417	Silver
+03-Waermeleitung	NANDRAD2	Variante 3	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.8445	Gold
+03-Waermeleitung	NANDRAD2	Variante 4	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.919	Gold
+03-Waermeleitung	TAS	Variante 1	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.5675	Gold
+03-Waermeleitung	TAS	Variante 2	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	19.98350000000001	Failed
+03-Waermeleitung	TAS	Variante 3	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.06199999999998	Gold
+03-Waermeleitung	TAS	Variante 4	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	78.4585	Failed
+03-Waermeleitung	THERAKLES	Variante 1	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.88799999999999	Gold
+03-Waermeleitung	THERAKLES	Variante 2	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.54050000000001	Gold
+03-Waermeleitung	THERAKLES	Variante 3	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.9635	Gold
+03-Waermeleitung	THERAKLES	Variante 4	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6885	Gold
+03-Waermeleitung	TRNSYS	Variante 1	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.977	Gold
+03-Waermeleitung	TRNSYS	Variante 2	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.037	Gold
+03-Waermeleitung	TRNSYS	Variante 3	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.9515	Gold
+03-Waermeleitung	TRNSYS	Variante 4	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.966	Gold
+03-Waermeleitung	WeightFactors	Variante 4	-7	0	Failed
+03-Waermeleitung	WeightFactors	Variante 4	-7	0	Failed
+03-Waermeleitung	WeightFactors	Variante 4	-7	0	Failed
+03-Waermeleitung	WeightFactors	Variante 4	-7	0	Failed
+03-Waermeleitung	WeightFactors	Variante 4	-7	0	Failed
+04-WaermeleitungSpeicherung	Aixlib	Variante 1 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.756	Gold
+04-WaermeleitungSpeicherung	Aixlib	Variante 2 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	77.28450000000001	Failed
+04-WaermeleitungSpeicherung	Aixlib	Variante 3 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	82.499	Bronze
+04-WaermeleitungSpeicherung	Aixlib	Variante 3 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	85.5845	Bronze
+04-WaermeleitungSpeicherung	Aixlib	Variante 4 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	92.03699999999999	Silver
+04-WaermeleitungSpeicherung	Aixlib	Variante 4 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	77.20949999999999	Failed
+04-WaermeleitungSpeicherung	ETU	Variante 1 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.709	Gold
+04-WaermeleitungSpeicherung	ETU	Variante 2 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	80.17999999999998	Bronze
+04-WaermeleitungSpeicherung	ETU	Variante 3 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	43.646	Failed
+04-WaermeleitungSpeicherung	ETU	Variante 3 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	95.0685	Gold
+04-WaermeleitungSpeicherung	ETU	Variante 4 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	77.52649999999998	Failed
+04-WaermeleitungSpeicherung	ETU	Variante 4 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.78200000000001	Silver
+04-WaermeleitungSpeicherung	IDAICE	Variante 1 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.04249999999999	Gold
+04-WaermeleitungSpeicherung	IDAICE	Variante 2 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.43499999999999	Silver
+04-WaermeleitungSpeicherung	IDAICE	Variante 3 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.0885	Silver
+04-WaermeleitungSpeicherung	IDAICE	Variante 3 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.079	Gold
+04-WaermeleitungSpeicherung	IDAICE	Variante 4 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.423	Gold
+04-WaermeleitungSpeicherung	IDAICE	Variante 4 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.844	Gold
+04-WaermeleitungSpeicherung	NANDRAD	Variante 1 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+04-WaermeleitungSpeicherung	NANDRAD	Variante 2 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+04-WaermeleitungSpeicherung	NANDRAD	Variante 3 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+04-WaermeleitungSpeicherung	NANDRAD	Variante 3 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+04-WaermeleitungSpeicherung	NANDRAD	Variante 4 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+04-WaermeleitungSpeicherung	NANDRAD	Variante 4 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+04-WaermeleitungSpeicherung	TAS	Variante 1 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.09700000000001	Gold
+04-WaermeleitungSpeicherung	TAS	Variante 2 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.77799999999999	Gold
+04-WaermeleitungSpeicherung	TAS	Variante 3 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.246	Gold
+04-WaermeleitungSpeicherung	TAS	Variante 3 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.3365	Gold
+04-WaermeleitungSpeicherung	TAS	Variante 4 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.404	Gold
+04-WaermeleitungSpeicherung	TAS	Variante 4 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.5875	Gold
+04-WaermeleitungSpeicherung	THERAKLES	Variante 1 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.492	Gold
+04-WaermeleitungSpeicherung	THERAKLES	Variante 2 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.77099999999999	Gold
+04-WaermeleitungSpeicherung	TRNSYS	Variante 1 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.46900000000001	Gold
+04-WaermeleitungSpeicherung	TRNSYS	Variante 2 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.77850000000001	Gold
+04-WaermeleitungSpeicherung	TRNSYS	Variante 3 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.69200000000001	Gold
+04-WaermeleitungSpeicherung	TRNSYS	Variante 3 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.894	Gold
+04-WaermeleitungSpeicherung	TRNSYS	Variante 4 Raum A	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.872	Gold
+04-WaermeleitungSpeicherung	TRNSYS	Variante 4 Raum B	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.897	Gold
+04-WaermeleitungSpeicherung	WeightFactors	Variante 4 Raum B	-7	0	Failed
+04-WaermeleitungSpeicherung	WeightFactors	Variante 4 Raum B	-7	0	Failed
+04-WaermeleitungSpeicherung	WeightFactors	Variante 4 Raum B	-7	0	Failed
+04-WaermeleitungSpeicherung	WeightFactors	Variante 4 Raum B	-7	0	Failed
+04-WaermeleitungSpeicherung	WeightFactors	Variante 4 Raum B	-7	0	Failed
+04-WaermeleitungSpeicherung	WeightFactors	Variante 4 Raum B	-7	0	Failed
+04-WaermeleitungSpeicherung	WeightFactors	Variante 4 Raum B	-7	0	Failed
+05-Lueftung	Aixlib	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.858	Gold
+05-Lueftung	Aixlib	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.5655	Gold
+05-Lueftung	Aixlib	Variante 2 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	63.446000000000005	Failed
+05-Lueftung	Aixlib	Variante 3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	10.922000000000002	Failed
+05-Lueftung	Aixlib	Variante 3 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	50.363000000000014	Failed
+05-Lueftung	ETU	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.4215	Gold
+05-Lueftung	ETU	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.42999999999999	Gold
+05-Lueftung	ETU	Variante 2 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	67.60400000000001	Failed
+05-Lueftung	ETU	Variante 3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	89.971	Bronze
+05-Lueftung	ETU	Variante 3 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	63.21200000000001	Failed
+05-Lueftung	ETU	Variante 4 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	72.9485	Failed
+05-Lueftung	ETU	Variante 4 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.036	Failed
+05-Lueftung	IDAICE	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6065	Gold
+05-Lueftung	IDAICE	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.757	Gold
+05-Lueftung	IDAICE	Variante 2 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.1585	Failed
+05-Lueftung	IDAICE	Variante 3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	37.964999999999996	Failed
+05-Lueftung	IDAICE	Variante 3 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	56.6555	Failed
+05-Lueftung	NANDRAD	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+05-Lueftung	NANDRAD	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+05-Lueftung	NANDRAD	Variante 2 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+05-Lueftung	NANDRAD	Variante 3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+05-Lueftung	NANDRAD	Variante 3 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+05-Lueftung	NANDRAD	Variante 4 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+05-Lueftung	NANDRAD	Variante 4 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+05-Lueftung	TAS	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.37749999999998	Gold
+05-Lueftung	TAS	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.84200000000001	Gold
+05-Lueftung	TAS	Variante 2 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	66.5505	Failed
+05-Lueftung	TAS	Variante 3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	89.2975	Bronze
+05-Lueftung	TAS	Variante 3 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	65.22	Failed
+05-Lueftung	THERAKLES	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.99	Gold
+05-Lueftung	THERAKLES	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.991	Gold
+05-Lueftung	THERAKLES	Variante 2 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	66.9005	Failed
+05-Lueftung	THERAKLES	Variante 3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.31950000000002	Gold
+05-Lueftung	THERAKLES	Variante 3 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	51.7105	Failed
+05-Lueftung	TRNSYS	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.8735	Gold
+05-Lueftung	TRNSYS	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.34700000000001	Gold
+05-Lueftung	TRNSYS	Variante 2 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.138	Failed
+05-Lueftung	TRNSYS	Variante 3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.89349999999999	Silver
+05-Lueftung	TRNSYS	Variante 3 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.10900000000001	Failed
+05-Lueftung	TRNSYS	Variante 4 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.10900000000001	Gold
+05-Lueftung	TRNSYS	Variante 4 Lueftungswaermestrom	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.708	Failed
+05-Lueftung	WeightFactors	Variante 4 Lueftungswaermestrom	-7	0	Failed
+05-Lueftung	WeightFactors	Variante 4 Lueftungswaermestrom	-7	0	Failed
+05-Lueftung	WeightFactors	Variante 4 Lueftungswaermestrom	-7	0	Failed
+05-Lueftung	WeightFactors	Variante 4 Lueftungswaermestrom	-7	0	Failed
+05-Lueftung	WeightFactors	Variante 4 Lueftungswaermestrom	-7	0	Failed
+05-Lueftung	WeightFactors	Variante 4 Lueftungswaermestrom	-7	0	Failed
+05-Lueftung	WeightFactors	Variante 4 Lueftungswaermestrom	-7	0	Failed
+05-Lueftung	WeightFactors	Variante 4 Lueftungswaermestrom	-7	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	80.30199999999999	Bronze
+06-WaermeleitungStrahlung	ETU	Variante 1 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.22349999999999	Gold
+06-WaermeleitungStrahlung	ETU	Variante 1 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.17150000000001	Gold
+06-WaermeleitungStrahlung	ETU	Variante 1 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	82.7355	Bronze
+06-WaermeleitungStrahlung	ETU	Variante 1 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.88	Silver
+06-WaermeleitungStrahlung	ETU	Variante 1 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.48999999999998	Gold
+06-WaermeleitungStrahlung	ETU	Variante 1 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.6035	Silver
+06-WaermeleitungStrahlung	ETU	Variante 1 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 1 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.957	Silver
+06-WaermeleitungStrahlung	ETU	Variante 2 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.22349999999999	Gold
+06-WaermeleitungStrahlung	ETU	Variante 2 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.17150000000001	Gold
+06-WaermeleitungStrahlung	ETU	Variante 2 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	82.729	Bronze
+06-WaermeleitungStrahlung	ETU	Variante 2 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.88	Silver
+06-WaermeleitungStrahlung	ETU	Variante 2 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.48999999999998	Gold
+06-WaermeleitungStrahlung	ETU	Variante 2 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.6035	Silver
+06-WaermeleitungStrahlung	ETU	Variante 2 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	ETU	Variante 2 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.454	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 1 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.7855	Silver
+06-WaermeleitungStrahlung	IDAICE	Variante 1 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.78999999999999	Silver
+06-WaermeleitungStrahlung	IDAICE	Variante 1 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.158	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 1 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	76.297	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 1 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	89.1805	Bronze
+06-WaermeleitungStrahlung	IDAICE	Variante 1 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	87.49199999999999	Bronze
+06-WaermeleitungStrahlung	IDAICE	Variante 1 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	95.8125	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 1 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.7945	Silver
+06-WaermeleitungStrahlung	IDAICE	Variante 1 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	87.6755	Bronze
+06-WaermeleitungStrahlung	IDAICE	Variante 1 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.082	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 1 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.34649999999999	Silver
+06-WaermeleitungStrahlung	IDAICE	Variante 1 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	95.47049999999999	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 1 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	61.56600000000001	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 1 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	89.33	Bronze
+06-WaermeleitungStrahlung	IDAICE	Variante 1 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	87.28200000000001	Bronze
+06-WaermeleitungStrahlung	IDAICE	Variante 1 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	45.69849999999999	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 1 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	59.1835	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 1 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	54.6985	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.4125	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 2 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.78800000000001	Silver
+06-WaermeleitungStrahlung	IDAICE	Variante 2 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.78999999999999	Silver
+06-WaermeleitungStrahlung	IDAICE	Variante 2 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.15549999999999	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 2 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	76.297	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 2 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	89.178	Bronze
+06-WaermeleitungStrahlung	IDAICE	Variante 2 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	87.49199999999999	Bronze
+06-WaermeleitungStrahlung	IDAICE	Variante 2 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.82399999999998	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 2 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.6375	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 2 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.885	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 2 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.97500000000001	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 2 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.09849999999999	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 2 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.08700000000002	Gold
+06-WaermeleitungStrahlung	IDAICE	Variante 2 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	65.2365	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 2 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.426	Silver
+06-WaermeleitungStrahlung	IDAICE	Variante 2 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	60.65749999999999	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 2 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	45.692499999999995	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 2 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	60.227999999999994	Failed
+06-WaermeleitungStrahlung	IDAICE	Variante 2 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	53.10350000000001	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 1 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	NANDRAD	Variante 2 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+06-WaermeleitungStrahlung	TAS	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.25549999999998	Silver
+06-WaermeleitungStrahlung	TAS	Variante 1 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.224	Gold
+06-WaermeleitungStrahlung	TAS	Variante 1 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.1115	Gold
+06-WaermeleitungStrahlung	TAS	Variante 1 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	88.5675	Bronze
+06-WaermeleitungStrahlung	TAS	Variante 1 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.0085	Silver
+06-WaermeleitungStrahlung	TAS	Variante 1 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.63250000000001	Gold
+06-WaermeleitungStrahlung	TAS	Variante 1 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.90700000000001	Gold
+06-WaermeleitungStrahlung	TAS	Variante 1 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.41650000000001	Gold
+06-WaermeleitungStrahlung	TAS	Variante 1 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.5465	Gold
+06-WaermeleitungStrahlung	TAS	Variante 1 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	76.811	Failed
+06-WaermeleitungStrahlung	TAS	Variante 1 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.5785	Silver
+06-WaermeleitungStrahlung	TAS	Variante 1 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.04249999999999	Gold
+06-WaermeleitungStrahlung	TAS	Variante 1 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	95.0795	Gold
+06-WaermeleitungStrahlung	TAS	Variante 1 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	67.6075	Failed
+06-WaermeleitungStrahlung	TAS	Variante 1 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.4885	Silver
+06-WaermeleitungStrahlung	TAS	Variante 1 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.83599999999998	Silver
+06-WaermeleitungStrahlung	TAS	Variante 1 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	57.79999999999999	Failed
+06-WaermeleitungStrahlung	TAS	Variante 1 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.06899999999999	Failed
+06-WaermeleitungStrahlung	TAS	Variante 1 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.718	Failed
+06-WaermeleitungStrahlung	TAS	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.1455	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.224	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.1115	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	88.56099999999999	Bronze
+06-WaermeleitungStrahlung	TAS	Variante 2 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.006	Silver
+06-WaermeleitungStrahlung	TAS	Variante 2 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.63250000000001	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.90700000000001	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.5355	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.4125	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	95.965	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	95.9085	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.329	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	95.8205	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.17750000000001	Failed
+06-WaermeleitungStrahlung	TAS	Variante 2 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.70899999999999	Gold
+06-WaermeleitungStrahlung	TAS	Variante 2 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	65.554	Failed
+06-WaermeleitungStrahlung	TAS	Variante 2 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	59.00999999999999	Failed
+06-WaermeleitungStrahlung	TAS	Variante 2 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	71.4145	Failed
+06-WaermeleitungStrahlung	TAS	Variante 2 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	71.0035	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.886	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.505	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.506	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.881	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.072	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.78450000000001	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.82149999999999	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.88499999999999	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.909	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.8045	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.8775	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.88	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.8535	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.4685	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.187	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.29899999999999	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.051	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.471	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 1 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.79499999999999	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.97200000000001	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.64949999999999	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6505	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.423	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.80600000000001	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.1285	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.181	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.96950000000001	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.962	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.95	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.9695	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.956	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.962	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.4185	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.50249999999998	Gold
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.63000000000001	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	61.5305	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	67.854	Failed
+06-WaermeleitungStrahlung	THERAKLES	Variante 2 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	67.567	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6155	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.0635	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.0635	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.498	Silver
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.5625	Silver
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.79550000000002	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.296	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6855	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.64150000000001	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.6865	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.7245	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.819	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.57399999999998	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.611	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.5815	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.564	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.9985	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.64649999999999	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 1 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.54249999999999	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.355	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 abs. Strahlung Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.0635	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 abs. Strahlung Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.0635	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 abs. Strahlung Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.4865	Silver
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 abs. Strahlung Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.55999999999999	Silver
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 abs. Strahlung Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.79550000000002	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 abs. Strahlung Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.29100000000001	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 Oberflächen-Temp. Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.50750000000001	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 Oberflächen-Temp. Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.46549999999999	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 Oberflächen-Temp. Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.21799999999999	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 Oberflächen-Temp. Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.357	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 Oberflächen-Temp. Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.227	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 Oberflächen-Temp. Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.072	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 konv. Wärmeleitung Innen Dach	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.576	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 konv. Wärmeleitung Innen Boden	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.2415	Gold
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 konv. Wärmeleitung Innen Nordwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	67.899	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 konv. Wärmeleitung Innen Ostwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	66.5065	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 konv. Wärmeleitung Innen Südwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.01	Failed
+06-WaermeleitungStrahlung	TRNSYS	Variante 2 konv. Wärmeleitung Innen Westwand	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	67.09650000000002	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+06-WaermeleitungStrahlung	WeightFactors	Variante 2 konv. Wärmeleitung Innen Westwand	-7	0	Failed
+07-Fenster	Aixlib	Variante 7.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	75.6625	Failed
+07-Fenster	Aixlib	Variante 7.1 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	Aixlib	Variante 7.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	Aixlib	Variante 7.2 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	Aixlib	Variante 7.2 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	Aixlib	Variante 7.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	Aixlib	Variante 7.3 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	Aixlib	Variante 7.3 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	ETU	Variante 7.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	58.867999999999995	Failed
+07-Fenster	ETU	Variante 7.1 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	ETU	Variante 7.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	78.2485	Failed
+07-Fenster	ETU	Variante 7.2 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.9735	Silver
+07-Fenster	ETU	Variante 7.2 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	ETU	Variante 7.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	71.59450000000001	Failed
+07-Fenster	ETU	Variante 7.3 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.983	Silver
+07-Fenster	ETU	Variante 7.3 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	IDAICE	Variante 7.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	IDAICE	Variante 7.1 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	IDAICE	Variante 7.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	IDAICE	Variante 7.2 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	IDAICE	Variante 7.2 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+07-Fenster	IDAICE	Variante 7.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.19999999999999	Failed
+07-Fenster	IDAICE	Variante 7.3 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	59.411500000000004	Failed
+07-Fenster	IDAICE	Variante 7.3 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	-1564.9569999999999	Failed
+07-Fenster	NANDRAD	Variante 7.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.7285	Gold
+07-Fenster	NANDRAD	Variante 7.1 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.8365	Failed
+07-Fenster	NANDRAD	Variante 7.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.72049999999999	Gold
+07-Fenster	NANDRAD	Variante 7.2 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.86099999999999	Gold
+07-Fenster	NANDRAD	Variante 7.2 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.589	Failed
+07-Fenster	NANDRAD	Variante 7.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.9805	Gold
+07-Fenster	NANDRAD	Variante 7.3 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6475	Gold
+07-Fenster	NANDRAD	Variante 7.3 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.07549999999999	Failed
+07-Fenster	NANDRAD_TEMP	Variante 7.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.7285	Gold
+07-Fenster	NANDRAD_TEMP	Variante 7.1 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.8365	Failed
+07-Fenster	NANDRAD_TEMP	Variante 7.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	2.476499999999999	Failed
+07-Fenster	NANDRAD_TEMP	Variante 7.2 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.86099999999999	Gold
+07-Fenster	NANDRAD_TEMP	Variante 7.2 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	69.589	Failed
+07-Fenster	NANDRAD_TEMP	Variante 7.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.9805	Gold
+07-Fenster	NANDRAD_TEMP	Variante 7.3 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6475	Gold
+07-Fenster	NANDRAD_TEMP	Variante 7.3 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	68.07549999999999	Failed
+07-Fenster	THERAKLES	Variante 7.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.398	Gold
+07-Fenster	THERAKLES	Variante 7.1 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	62.998000000000005	Failed
+07-Fenster	THERAKLES	Variante 7.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.72400000000002	Gold
+07-Fenster	THERAKLES	Variante 7.2 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.57549999999999	Silver
+07-Fenster	THERAKLES	Variante 7.2 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	67.5275	Failed
+07-Fenster	THERAKLES	Variante 7.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.9795	Gold
+07-Fenster	THERAKLES	Variante 7.3 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.37849999999999	Silver
+07-Fenster	THERAKLES	Variante 7.3 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	66.678	Failed
+07-Fenster	TRNSYS	Variante 7.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+07-Fenster	TRNSYS	Variante 7.1 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+07-Fenster	TRNSYS	Variante 7.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+07-Fenster	TRNSYS	Variante 7.2 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+07-Fenster	TRNSYS	Variante 7.2 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+07-Fenster	TRNSYS	Variante 7.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+07-Fenster	TRNSYS	Variante 7.3 Trans.Strahlung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+07-Fenster	TRNSYS	Variante 7.3 Wärmeleitung Fenster	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	70.15	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+07-Fenster	WeightFactors	Variante 7.3 Wärmeleitung Fenster	-7	0	Failed
+08-InterneLasten	Aixlib	Variante 8.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.96400000000001	Gold
+08-InterneLasten	Aixlib	Variante 8.1 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.0775	Gold
+08-InterneLasten	Aixlib	Variante 8.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.9625	Gold
+08-InterneLasten	Aixlib	Variante 8.2 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.961	Gold
+08-InterneLasten	Aixlib	Variante 8.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	92.29199999999999	Silver
+08-InterneLasten	Aixlib	Variante 8.3 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.67049999999999	Silver
+08-InterneLasten	Aixlib	Variante 8.4.Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.8725	Silver
+08-InterneLasten	Aixlib	Variante 8.4 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.10499999999999	Silver
+08-InterneLasten	ETU	Variante 8.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.4175	Gold
+08-InterneLasten	ETU	Variante 8.1 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+08-InterneLasten	ETU	Variante 8.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6485	Gold
+08-InterneLasten	ETU	Variante 8.2 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+08-InterneLasten	ETU	Variante 8.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	96.13250000000001	Gold
+08-InterneLasten	ETU	Variante 8.3 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+08-InterneLasten	ETU	Variante 8.4.Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.72149999999999	Gold
+08-InterneLasten	ETU	Variante 8.4 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+08-InterneLasten	IDAICE	Variante 8.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.03400000000002	Gold
+08-InterneLasten	IDAICE	Variante 8.1 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.9555	Gold
+08-InterneLasten	IDAICE	Variante 8.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.97149999999999	Gold
+08-InterneLasten	IDAICE	Variante 8.2 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.96300000000001	Gold
+08-InterneLasten	IDAICE	Variante 8.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.05249999999998	Silver
+08-InterneLasten	IDAICE	Variante 8.3 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	-1339.3980000000001	Failed
+08-InterneLasten	IDAICE	Variante 8.4.Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.8305	Gold
+08-InterneLasten	IDAICE	Variante 8.4 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.859	Gold
+08-InterneLasten	NANDRAD	Variante 8.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+08-InterneLasten	NANDRAD	Variante 8.1 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+08-InterneLasten	NANDRAD	Variante 8.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+08-InterneLasten	NANDRAD	Variante 8.2 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+08-InterneLasten	NANDRAD	Variante 8.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+08-InterneLasten	NANDRAD	Variante 8.3 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+08-InterneLasten	NANDRAD	Variante 8.4.Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+08-InterneLasten	NANDRAD	Variante 8.4 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+08-InterneLasten	TAS	Variante 8.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.67949999999999	Gold
+08-InterneLasten	TAS	Variante 8.1 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.64750000000001	Gold
+08-InterneLasten	TAS	Variante 8.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6535	Gold
+08-InterneLasten	TAS	Variante 8.2 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6185	Gold
+08-InterneLasten	TAS	Variante 8.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.329	Gold
+08-InterneLasten	TAS	Variante 8.3 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.9885	Gold
+08-InterneLasten	TAS	Variante 8.4.Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.0245	Gold
+08-InterneLasten	TAS	Variante 8.4 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.12250000000002	Gold
+08-InterneLasten	THERAKLES	Variante 8.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.98949999999999	Gold
+08-InterneLasten	THERAKLES	Variante 8.1 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.9885	Gold
+08-InterneLasten	THERAKLES	Variante 8.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.9885	Gold
+08-InterneLasten	THERAKLES	Variante 8.2 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.9885	Gold
+08-InterneLasten	THERAKLES	Variante 8.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.88149999999999	Gold
+08-InterneLasten	THERAKLES	Variante 8.3 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.95500000000001	Gold
+08-InterneLasten	THERAKLES	Variante 8.4.Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	8.084500000000002	Failed
+08-InterneLasten	THERAKLES	Variante 8.4 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.7685	Gold
+08-InterneLasten	TRNSYS	Variante 8.1 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.7885	Gold
+08-InterneLasten	TRNSYS	Variante 8.1 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.75800000000001	Gold
+08-InterneLasten	TRNSYS	Variante 8.2 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.98949999999999	Gold
+08-InterneLasten	TRNSYS	Variante 8.2 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.958	Gold
+08-InterneLasten	TRNSYS	Variante 8.3 Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.9125	Gold
+08-InterneLasten	TRNSYS	Variante 8.3 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.9265	Gold
+08-InterneLasten	TRNSYS	Variante 8.4.Raumlufttemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.8725	Gold
+08-InterneLasten	TRNSYS	Variante 8.4 Oberflächentemperatur	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.02149999999999	Gold
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+08-InterneLasten	WeightFactors	Variante 8.4 Oberflächentemperatur	-7	0	Failed
+09-Verschattung	Aixlib	Azimuth	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.90150000000001	Gold
+09-Verschattung	Aixlib	Altitude	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.7	Gold
+09-Verschattung	Aixlib	Variante 9.1 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	-46.935500000000005	Failed
+09-Verschattung	Aixlib	Variante 9.2 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	23.754	Failed
+09-Verschattung	Aixlib	Variante 9.3 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.151	Gold
+09-Verschattung	Aixlib	Variante 9.4 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+09-Verschattung	Aixlib	Variante 9.5 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.6215	Gold
+09-Verschattung	Aixlib	Variante 9.6 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	0	Failed
+09-Verschattung	ETU	Azimuth	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	ETU	Altitude	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	IDAICE	Azimuth	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.946	Gold
+09-Verschattung	IDAICE	Altitude	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.8155	Gold
+09-Verschattung	IDAICE	Variante 9.1 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	88.196	Bronze
+09-Verschattung	IDAICE	Variante 9.2 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	79.189	Failed
+09-Verschattung	IDAICE	Variante 9.3 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	93.205	Silver
+09-Verschattung	IDAICE	Variante 9.4 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	31.576999999999998	Failed
+09-Verschattung	IDAICE	Variante 9.5 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.995	Gold
+09-Verschattung	IDAICE	Variante 9.6 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	94.61299999999999	Silver
+09-Verschattung	NANDRAD	Azimuth	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	NANDRAD	Altitude	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	NANDRAD	Variante 9.1 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	NANDRAD	Variante 9.2 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	NANDRAD	Variante 9.3 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	NANDRAD	Variante 9.4 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	NANDRAD	Variante 9.5 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	NANDRAD	Variante 9.6 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	100.0	Gold
+09-Verschattung	TAS	Azimuth	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	73.363	Failed
+09-Verschattung	TAS	Altitude	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	71.989	Failed
+09-Verschattung	TAS	Variante 9.1 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	95.574	Gold
+09-Verschattung	TAS	Variante 9.2 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.821	Gold
+09-Verschattung	TAS	Variante 9.3 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.81450000000001	Gold
+09-Verschattung	TAS	Variante 9.4 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	91.0125	Silver
+09-Verschattung	TAS	Variante 9.5 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	85.2775	Bronze
+09-Verschattung	TAS	Variante 9.6 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	97.9085	Gold
+09-Verschattung	TRNSYS	Azimuth	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.929	Gold
+09-Verschattung	TRNSYS	Altitude	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.89750000000001	Gold
+09-Verschattung	TRNSYS	Variante 9.1 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	98.718	Gold
+09-Verschattung	TRNSYS	Variante 9.2 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.845	Gold
+09-Verschattung	TRNSYS	Variante 9.3 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.295	Gold
+09-Verschattung	TRNSYS	Variante 9.4 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	92.51700000000001	Silver
+09-Verschattung	TRNSYS	Variante 9.5 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.62349999999999	Gold
+09-Verschattung	TRNSYS	Variante 9.6 Sonnenlichtfaktor	0	CVRMSE	Sum	Daily Amplitude CVRMSE	MBE	RMSEIQR	MSE	NMBE	NRMSE	RMSE	RMSLE	R squared coeff determination	std dev	Maximum	Minimum	Average	99.7685	Gold
+09-Verschattung	WeightFactors	Variante 9.6 Sonnenlichtfaktor	-7	0	Failed
+09-Verschattung	WeightFactors	Variante 9.6 Sonnenlichtfaktor	-7	0	Failed
+09-Verschattung	WeightFactors	Variante 9.6 Sonnenlichtfaktor	-7	0	Failed
+09-Verschattung	WeightFactors	Variante 9.6 Sonnenlichtfaktor	-7	0	Failed
+09-Verschattung	WeightFactors	Variante 9.6 Sonnenlichtfaktor	-7	0	Failed
+09-Verschattung	WeightFactors	Variante 9.6 Sonnenlichtfaktor	-7	0	Failed
+09-Verschattung	WeightFactors	Variante 9.6 Sonnenlichtfaktor	-7	0	Failed
+09-Verschattung	WeightFactors	Variante 9.6 Sonnenlichtfaktor	-7	0	Failed
