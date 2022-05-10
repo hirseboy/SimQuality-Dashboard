@@ -1,21 +1,18 @@
 # Run this app with `python app.py` and
 # visit http://127.0.0.1:8050/ in your web browser.
 
-import csv
 import shutil
 import sys
-import json
 
 import dash.exceptions
-import cProfile
 import plotly.express as px
-from dash import Dash, dcc, html, Input, Output, dash_table, exceptions
+import cProfile
+from dash import Dash, dcc, html, dash_table
 from dash.dependencies import Input, Output, State
 
-sys.path.append('./scripts')
+from ReadDashData import *
 
-from ScoreCalculation import *
-
+RESULTDIR = "dash_data"
 
 # Reads a csv file specified by a path and returns a dict with
 # all entries from column 1 as keys and all entries from column 2
@@ -34,6 +31,7 @@ def readDict(file):
 # Download test case data clicked
 def zipTestCaseData(dirName, outputFileName):
     return shutil.make_archive(outputFileName, 'zip', dirName)
+
 
 def stripVariable(v):
     p = v.find("(mean)")
@@ -61,7 +59,7 @@ except IOError as e:
     print(f"Could not read 'ToolColors.tsv' file.")
     exit(1)
 
-SUBDIRS = sorted(listTestCaseDirectories("test_data"))
+SUBDIRS = sorted(readTestCaseDirectories(RESULTDIR))
 
 app.layout = html.Div(
     style={"height": "100vh", 'display': 'flex', 'flex-direction': 'row'},
@@ -158,12 +156,12 @@ app.layout = html.Div(
 def clean_data(selected_testcase):
     # some expensive data processing step
     try:
-        testCaseDescription = readTestCaseDescriptionFile('test_data',  selected_testcase)
+        testCaseDescription = readTestCaseDescriptionFile(RESULTDIR, selected_testcase)
     except IOError:
         raise Exception(f"Could not read test case description of test case {selected_testcase}.")
 
     try:
-        variables = readVariables('test_data',  selected_testcase)
+        variables = readVariables(RESULTDIR, selected_testcase)
     except IOError:
         raise Exception(f"Could not read test case description of test case {selected_testcase}.")
 
@@ -182,24 +180,19 @@ def clean_data(selected_testcase):
 def update_testcase_variant_data(testcase_variant, testcase):
     prof = cProfile.Profile()
     prof.enable()
-    sys.stdout = open(os.devnull, 'w')
-    sqd = analyseTestCase("test_data", testcase, testcase_variant)
-    sys.stdout = sys.__stdout__
-    prof.disable()
-    prof.dump_stats("analyseTestCase.prof")
 
-    resultDf = sqd.caseResultData[testcase_variant]
-    evaluationDf = sqd.caseEvaluationResults
+    resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
+    evaluationDf = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8')
 
-    fig = px.line(resultDf, x="Date and Time", y=resultDf.columns[1:], template="simple_white",
-                      title=testcase_variant, labels={"y": testcase_variant})
+    fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant, labels={"y": testcase_variant})
     fig.data[0].update(mode='markers')
 
     for figline in fig.data:
         figline.line.color = COLORS[figline.name]
 
     filtedDf = evaluationDf[evaluationDf['Variable'] == testcase_variant].drop(['Variable'], axis=1)
-
+    prof.disable()
+    prof.dump_stats("analyseTestCase.prof")
     return fig, filtedDf.to_dict('records')
 
 @app.callback(
