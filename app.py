@@ -1,47 +1,20 @@
 # Run this app with `python app.py` and
 # visit http://127.0.0.1:8050/ in your web browser.
 
-import shutil
 import sys
+import os
 
 import dash.exceptions
+import pandas as pd
 import plotly.express as px
 import cProfile
 from dash import Dash, dcc, html, dash_table
 from dash.dependencies import Input, Output, State
 
+sys.path.append(os.path.join(os.getcwd(), 'scripts'))
 from ReadDashData import *
 
 RESULTDIR = "dash_data"
-
-# Reads a csv file specified by a path and returns a dict with
-# all entries from column 1 as keys and all entries from column 2
-# as values
-# first line is skipped
-def readDict(file):
-    myDict = dict()
-    with open(file, mode='r', encoding="utf-8") as infile:
-        reader = csv.reader(infile, delimiter='\t')
-        next(reader, None)  # skip the headers
-        myDict = {rows[0]: rows[1] for rows in reader}
-
-    return myDict
-
-
-# Download test case data clicked
-def zipTestCaseData(dirName, outputFileName):
-    return shutil.make_archive(outputFileName, 'zip', dirName)
-
-
-def stripVariable(v):
-    p = v.find("(mean)")
-    if p == -1:
-        p = v.find("[")
-    if p == -1:
-        printError("    Missing unit in header label '{}' of 'Reference.tsv'".format(v))
-        return None
-    return v[0:p].strip()
-
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -52,10 +25,15 @@ server = app.server
 
 TESTDATA = dict()
 global EVALUATIONDATA
-EVALUATIONDATA = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t", engine="pyarrow").reset_index()
+EVALUATIONDATA = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t",
+                             engine="pyarrow").reset_index()
+global EVALUATIONDF
+EVALUATIONDF = EVALUATIONDATA.copy()
 
 try:
     COLORS = readDict("ToolColors.tsv")
+    COLORSTABLE = COLORS.copy()
+    COLORSTABLE.pop('Reference', None)
 except IOError as e:
     print(e)
     print(f"Could not read 'ToolColors.tsv' file.")
@@ -91,12 +69,6 @@ app.layout = html.Div(
                 ),
                 "Choose a Variable:",
                 dcc.Dropdown(id="testcase-variant-dropdown"),
-
-                # dcc.Store stores all test case data client side
-                dcc.Store(id='testcase-data'),
-
-                # dcc.Store stores all test case data client side
-                dcc.Store(id='testcase-variant-data'),
             ]),
 
             html.Div([
@@ -131,18 +103,59 @@ app.layout = html.Div(
                     ], style={'verticalAlign': 'middle', 'display': 'inline'}),
                 ]),
             ]),
+
+            html.H3(
+                children='Options',
+                style={
+                    'textAlign': 'left',
+                }
+            ),
+
+            html.Div([
+                dcc.Checklist(['Show statistical evaluation data'], ['Show statistical evaluation data'],
+                              id="statistical-checkstate", inline=True)
+            ]),
         ], style={'padding': 10, 'flex': "1 1 20%"}),
 
         # right dif div
         html.Div([
             dcc.Graph(
                 id='testcase-graph',
-                style={'height': 600},
+                style={'height': '600vp'},
             ),
 
             dash_table.DataTable(
                 id='evaluation-table',
-                editable=False
+                editable=False,
+                style_as_list_view=True,
+                sort_action='native',
+                hidden_columns=["ToolID"],
+                style_data_conditional=[
+                                             {
+                                                 'if': {
+                                                     'filter_query': '{{ToolID}} = {}'.format(
+                                                         tool),
+                                                 },
+                                                 'border-bottom': "1px solid" + COLORSTABLE[tool]
+                                             } for tool in COLORSTABLE.keys()
+                                         ] +
+                                         [
+                                             {
+                                                 'if': {
+                                                     'column_id': 'ToolID'
+                                                 },
+                                                 'textAlign': 'left'
+                                             },
+                                         ],
+                style_header_conditional=[
+                                               {
+                                                   'if': {
+                                                       'column_id': 'ToolID'
+                                                   },
+                                                   'textAlign': 'left'
+                                               },
+                                           ],
+
             )
         ], style={'padding': 10, 'flex': "1 1 80%", "height": "100vh"}),
     ])
@@ -177,26 +190,47 @@ def clean_data(selected_testcase):
     Output('testcase-graph', 'figure'),
     Output('evaluation-table', 'data'),
     Input('testcase-variant-dropdown', 'value'),
-    State('testcase-dropdown', 'value')
+    State('testcase-dropdown', 'value'),
+    Input('statistical-checkstate', 'value')
 )
-def update_testcase_variant_data(testcase_variant, testcase):
+def update_testcase_variant_data(testcase_variant, testcase, checksate):
     prof = cProfile.Profile()
     prof.enable()
 
-    resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
-    # evaluationDf = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t", engine="pyarrow").reset_index()
+    norms = ['CVRMSE', 'Daily Amplitude CVRMSE', 'MBE', 'RMSEIQR', 'MSE', 'NMBE', 'NRMSE', 'RMSE', 'RMSLE',
+             'R squared', 'std dev', 'Maximum', 'Minimum', 'Average']
+    try:
+        resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
+    except Exception as e:
+        printError(str(e))
+        printError(f"Could not read test case {testcase} and variable {testcase_variant}.")
 
-    fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant, labels={"y": testcase_variant})
+    # evaluationDf = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t", engine="pyarrow").reset_index()
+    EVALUATIONDF = EVALUATIONDATA.copy()
+    if not checksate:
+        for norm in norms:
+            EVALUATIONDF = EVALUATIONDF.drop([norm], axis=1)
+
+    fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant,
+                  labels={"y": testcase_variant})
     fig.data[0].update(mode='markers')
 
     for figline in fig.data:
         figline.line.color = COLORS[figline.name]
     searchterm = testcase[2:]
-    filtedDf = EVALUATIONDATA.loc[EVALUATIONDATA['Testfall'] == searchterm].drop(['Testfall'], axis=1)
-    filtedDf = filtedDf.loc[filtedDf['Variable'] == testcase_variant].drop(['Variable'], axis=1)
+    EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Test Case'] == searchterm].drop(['Test Case'], axis=1)
+    EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Variable'] == testcase_variant].drop(['Variable'], axis=1)
+
+    def function(x):
+        return '⭐⭐⭐' if x == 'Gold' else (
+            '⭐⭐' if x == 'Silver' else (
+                '⭐' if x == 'Bronze' else '-'
+            ))
+
+    EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
     prof.disable()
     prof.dump_stats("analyseTestCase.prof")
-    return fig, filtedDf.drop(['index'], axis=1).to_dict('records')
+    return fig, EVALUATIONDF.drop(['index'], axis=1).to_dict('records')
 
 @app.callback(
     Output("download-testcase-data", "data"),
