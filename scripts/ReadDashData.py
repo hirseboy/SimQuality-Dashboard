@@ -8,6 +8,7 @@ import csv
 import pandas as pd
 import datetime as dt
 import pyarrow
+import shutil
 
 from PrintFuncs import *
 
@@ -18,7 +19,7 @@ def readVariables(testCaseDir, testCaseName):
     for file in dirs:
         if file.endswith(".txt"):
             dirs.remove(file)
-    return dirs
+    return sorted(dirs)
 
 def readTestCaseDirectories(path):
     dirs = []
@@ -43,6 +44,34 @@ def readTestCaseDescriptionFile(testCaseDir, testCaseName):
         lines = f.read().replace("\n", "")
 
     return str(lines)
+
+# Reads a csv file specified by a path and returns a dict with
+# all entries from column 1 as keys and all entries from column 2
+# as values
+# first line is skipped
+def readDict(file):
+    myDict = dict()
+    with open(file, mode='r', encoding="utf-8") as infile:
+        reader = csv.reader(infile, delimiter='\t')
+        next(reader, None)  # skip the headers
+        myDict = {rows[0]: rows[1] for rows in reader}
+
+    return myDict
+
+
+# Download test case data clicked
+def zipTestCaseData(dirName, outputFileName):
+    return shutil.make_archive(outputFileName, 'zip', dirName)
+
+
+def stripVariable(v):
+    p = v.find("(mean)")
+    if p == -1:
+        p = v.find("[")
+    if p == -1:
+        printError("    Missing unit in header label '{}' of 'Reference.tsv'".format(v))
+        return None
+    return v[0:p].strip()
 
 def readDashData(resultdir, testcase, testcase_variant):
     path = os.path.join(resultdir, testcase, testcase_variant)
