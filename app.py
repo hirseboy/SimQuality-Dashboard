@@ -8,7 +8,7 @@ import dash.exceptions
 import pandas as pd
 import plotly.express as px
 import cProfile
-from dash import Dash, dcc, html, dash_table
+from dash import Dash, dcc, dash_table, html
 from dash.dependencies import Input, Output, State
 
 sys.path.append(os.path.join(os.getcwd(), 'scripts'))
@@ -42,13 +42,14 @@ except IOError as e:
 SUBDIRS = sorted(readTestCaseDirectories(RESULTDIR))
 
 app.layout = html.Div(
-    style={"height": "100vh", 'display': 'flex', 'flex-direction': 'row'},
+    style={'display': 'flex', 'flex-direction': 'row'},
     children=[
         # left div
         html.Div([
-
+            html.Img(src=app.get_asset_url('simquality_logo.jpg'),
+                     style={'width': '400px'}),
             html.H1(
-                children='SimQuality Dashboard',
+                children='Dashboard',
                 style={
                     'textAlign': 'left',
                 }
@@ -80,6 +81,7 @@ app.layout = html.Div(
                 ),
                 dcc.Textarea(
                     id='textarea-testcase-description',
+                    disabled=True,
                     value='Textarea content initialized\nwith multiple lines of text',
                     style={'width': '100%', 'height': 300},
                 ),
@@ -112,7 +114,7 @@ app.layout = html.Div(
             ),
 
             html.Div([
-                dcc.Checklist(['Show statistical evaluation data'], ['Show statistical evaluation data'],
+                dcc.Checklist(['Show statistical evaluation data'], [],
                               id="statistical-checkstate", inline=True)
             ]),
         ], style={'padding': 10, 'flex': "1 1 20%"}),
@@ -121,7 +123,8 @@ app.layout = html.Div(
         html.Div([
             dcc.Graph(
                 id='testcase-graph',
-                style={'height': '600vp'},
+                responsive=True,
+                style={'height': '60vh'}
             ),
 
             dash_table.DataTable(
@@ -130,6 +133,7 @@ app.layout = html.Div(
                 style_as_list_view=True,
                 sort_action='native',
                 hidden_columns=["ToolID"],
+                css=[{"selector": ".show-hide", "rule": "display: none"}],
                 style_data_conditional=[
                                              {
                                                  'if': {
@@ -142,22 +146,46 @@ app.layout = html.Div(
                                          [
                                              {
                                                  'if': {
-                                                     'column_id': 'ToolID'
+                                                     'column_id': 'Tool Name'
+                                                 },
+                                                 'textAlign': 'left'
+                                             },
+                                             {
+                                                 'if': {
+                                                     'column_id': 'Editor'
+                                                 },
+                                                 'textAlign': 'left'
+                                             },
+                                             {
+                                                 'if': {
+                                                     'column_id': 'Version'
                                                  },
                                                  'textAlign': 'left'
                                              },
                                          ],
                 style_header_conditional=[
-                                               {
-                                                   'if': {
-                                                       'column_id': 'ToolID'
-                                                   },
-                                                   'textAlign': 'left'
-                                               },
+                    {
+                        'if': {
+                            'column_id': 'Tool Name'
+                        },
+                        'textAlign': 'left'
+                    },
+                    {
+                        'if': {
+                            'column_id': 'Editor'
+                        },
+                        'textAlign': 'left'
+                    },
+                    {
+                        'if': {
+                            'column_id': 'Version'
+                        },
+                        'textAlign': 'left'
+                    },
                                            ],
 
             )
-        ], style={'padding': 10, 'flex': "1 1 80%", "height": "100vh"}),
+        ], style={'padding': 10, 'flex': "1 1 80%"}),
     ])
 
 
@@ -194,11 +222,8 @@ def clean_data(selected_testcase):
     Input('statistical-checkstate', 'value')
 )
 def update_testcase_variant_data(testcase_variant, testcase, checksate):
-    prof = cProfile.Profile()
-    prof.enable()
-
-    norms = ['CVRMSE', 'Daily Amplitude CVRMSE', 'MBE', 'RMSEIQR', 'MSE', 'NMBE', 'NRMSE', 'RMSE', 'RMSLE',
-             'R squared', 'std dev', 'Maximum', 'Minimum', 'Average']
+    norms = ['CVRMSE [%]','Daily Amplitude CVRMSE [%]','MBE','RMSEIQR [%]','MSE [%]','NMBE [%]','Average [-]',
+             'NRMSE [%]','RMSE [%]','RMSLE [%]','R squared [-]','std dev [-]','Maximum [-]','Minimum [-]','Fehlercode']
     try:
         resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
     except Exception as e:
@@ -228,8 +253,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
             ))
 
     EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
-    prof.disable()
-    prof.dump_stats("analyseTestCase.prof")
+
     return fig, EVALUATIONDF.drop(['index'], axis=1).to_dict('records')
 
 @app.callback(
