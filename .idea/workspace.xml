@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33af8801-a54a-4893-ab87-006f7b34e921" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SimQuality-Dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SimQuality-Dashboard.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeightFactors.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/WeightFactors.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ProcessDirectory.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ProcessDirectory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ScoreCalculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ScoreCalculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolColors.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/ToolColors.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_data/Results.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/dash_data/Results.tsv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +36,13 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\git\SimQuality-Dashboard\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="-m cProfile -o p0.prof" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -70,10 +66,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="736" y="395" width="1089" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652104866103">
+    <state x="736" y="395" width="1089" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652355628936">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state x="736" y="395" width="1089" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.2560.1400@0.40.2560.1400" timestamp="1652104866103" />
+    <state x="736" y="395" width="1089" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.2560.1400@0.40.2560.1400" timestamp="1652355628936" />
     <state x="1016" y="510" width="529" height="781" key="EnvironmentVariablesDialog" timestamp="1652097274586">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -82,22 +78,22 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="1060" y="495" key="FileChooserDialogImpl/0.40.2560.1400@0.40.2560.1400" timestamp="1652099102043" />
-    <state width="2539" height="355" key="GridCell.Tab.0.bottom" timestamp="1652108838412">
+    <state width="2539" height="355" key="GridCell.Tab.0.bottom" timestamp="1652359738970">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="2539" height="355" key="GridCell.Tab.0.bottom/0.40.2560.1400@0.40.2560.1400" timestamp="1652108838412" />
-    <state width="2539" height="355" key="GridCell.Tab.0.center" timestamp="1652108838411">
+    <state width="2539" height="355" key="GridCell.Tab.0.bottom/0.40.2560.1400@0.40.2560.1400" timestamp="1652359738970" />
+    <state width="2539" height="355" key="GridCell.Tab.0.center" timestamp="1652359738969">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="2539" height="355" key="GridCell.Tab.0.center/0.40.2560.1400@0.40.2560.1400" timestamp="1652108838411" />
-    <state width="2539" height="355" key="GridCell.Tab.0.left" timestamp="1652108838411">
+    <state width="2539" height="355" key="GridCell.Tab.0.center/0.40.2560.1400@0.40.2560.1400" timestamp="1652359738969" />
+    <state width="2539" height="355" key="GridCell.Tab.0.left" timestamp="1652359738969">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="2539" height="355" key="GridCell.Tab.0.left/0.40.2560.1400@0.40.2560.1400" timestamp="1652108838411" />
-    <state width="2539" height="355" key="GridCell.Tab.0.right" timestamp="1652108838411">
+    <state width="2539" height="355" key="GridCell.Tab.0.left/0.40.2560.1400@0.40.2560.1400" timestamp="1652359738969" />
+    <state width="2539" height="355" key="GridCell.Tab.0.right" timestamp="1652359738969">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="2539" height="355" key="GridCell.Tab.0.right/0.40.2560.1400@0.40.2560.1400" timestamp="1652108838411" />
+    <state width="2539" height="355" key="GridCell.Tab.0.right/0.40.2560.1400@0.40.2560.1400" timestamp="1652359738969" />
     <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1652108494483">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -130,11 +126,6 @@
           <url>file://$PROJECT_DIR$/scripts/ProcessDirectory.py</url>
           <line>136</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/ProcessDirectory.py</url>
