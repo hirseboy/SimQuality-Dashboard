@@ -476,14 +476,6 @@ Test Case	Variable	ToolID	Tool Name	Version	Editor	Fehlercode	CVRMSE [%]	Daily A
 09-Verschattung	Variante 9.4 Sonnenlichtfaktor	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	0.06	1.0	0.84	0.96	100.0	Gold
 09-Verschattung	Variante 9.5 Sonnenlichtfaktor	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	0.37	0.95	0.0	0.44	100.0	Gold
 09-Verschattung	Variante 9.6 Sonnenlichtfaktor	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	0.45	1.0	0.0	0.51	100.0	Gold
-09-Verschattung	Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	16.23	21.78	22.27	39.11	527.33	15.74	19.88	22.96	0.14781	61.49	41.37	230.49	105.36	163.72	69.21	Failed
-09-Verschattung	Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	12.98	45.49	3.52	41.22	43.68	6.92	21.39	6.61	0.14495	59.47	6.41	61.0	40.41	54.44	67.59	Failed
-09-Verschattung	Variante 9.1 Sonnenlichtfaktor	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	4.52	2.14	-0.0	12.85	0.0	-0.06	3.32	0.02	0.01212	98.77	0.14	0.66	0.18	0.34	92.77	Silver
-09-Verschattung	Variante 9.2 Sonnenlichtfaktor	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	1.36	0.46	-0.0	3.17	0.0	-0.43	1.66	0.01	0.00592	99.78	0.23	1.0	0.34	0.8	98.16	Gold
-09-Verschattung	Variante 9.3 Sonnenlichtfaktor	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	8.88	4.24	-0.0	4.45	0.0	-1.83	3.91	0.01	0.01171	99.14	0.13	0.32	0.0	0.14	97.06	Gold
-09-Verschattung	Variante 9.4 Sonnenlichtfaktor	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	1.43	17.5	0.01	16.63	0.0	0.75	8.57	0.01	0.00723	95.0	0.05	1.0	0.87	0.96	88.46	Bronze
-09-Verschattung	Variante 9.5 Sonnenlichtfaktor	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	36.24	0.32	0.05	20.79	0.03	10.3	16.83	0.16	0.1296	81.93	0.34	0.95	0.0	0.49	83.26	Bronze
-09-Verschattung	Variante 9.6 Sonnenlichtfaktor	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	6.83	0.0	0.0	3.56	0.0	0.94	3.5	0.03	0.02919	99.39	0.44	1.0	0.0	0.52	97.42	Gold
 09-Verschattung	Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	0.09	0.11	-0.12	0.22	0.02	-0.09	0.11	0.13	0.00086	100.0	35.09	207.81	92.39	140.77	99.88	Gold
 09-Verschattung	Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	0.09	0.2	-0.04	0.27	0.0	-0.08	0.14	0.04	0.00099	100.0	9.95	61.5	30.57	51.28	99.84	Gold
 09-Verschattung	Variante 9.1 Sonnenlichtfaktor	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	1.22	0.82	0.0	3.82	0.0	0.06	0.86	0.0	0.00321	99.9	0.13	0.66	0.19	0.33	97.87	Gold
@@ -492,3 +484,25 @@ Test Case	Variable	ToolID	Tool Name	Version	Editor	Fehlercode	CVRMSE [%]	Daily A
 09-Verschattung	Variante 9.4 Sonnenlichtfaktor	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	1.35	10.83	-0.01	15.24	0.0	-0.56	8.1	0.01	0.00662	95.3	0.06	1.0	0.84	0.95	89.93	Bronze
 09-Verschattung	Variante 9.5 Sonnenlichtfaktor	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	1.04	0.16	0.0	0.58	0.0	0.37	0.48	0.0	0.00393	99.98	0.37	0.95	0.0	0.44	99.56	Gold
 09-Verschattung	Variante 9.6 Sonnenlichtfaktor	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	0.9	0.0	-0.0	0.46	0.0	-0.0	0.46	0.0	0.00399	99.99	0.45	1.0	0.0	0.51	99.69	Gold
+10-PassiveKuehlung	Variante 10.1 Raumlufttemperatur	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	3.9	20.0	9.96	13.41	100.0	Gold
+10-PassiveKuehlung	Variante 10.1 Heizleistung	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	105.02	500.55	-0.0	408.88	100.0	Gold
+10-PassiveKuehlung	Variante 10.1 Kühlleistung	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	-99	-99	-99	-99	-99	-99	-99	-99	-99	-99	0.0	0.0	0.0	0	Failed
+10-PassiveKuehlung	Variante 10.2 Raumlufttemperatur	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	3.55	25.54	8.57	24.54	100.0	Gold
+10-PassiveKuehlung	Variante 10.2 Heizleistung	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	-99	-99	-99	1167.8	-5658.46	669.05	80.1	Bronze
+10-PassiveKuehlung	Variante 10.2 Kühlleistung	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	345.61	-581.51	-522.96	80.1	Bronze
+10-PassiveKuehlung	Variante 10.2 Rücklauftemperatur	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	6.08	34.12	9.83	32.38	100.0	Gold
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Dach	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	2.37	21.13	7.91	20.52	100.0	Gold
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Boden	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	5.2	31.26	9.42	29.78	100.0	Gold
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Wand.Nord	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	2.37	21.13	7.91	20.52	100.0	Gold
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Wand.Ost	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	2.37	21.13	7.91	20.52	100.0	Gold
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Wand.Süd	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	2.37	21.13	7.91	20.52	100.0	Gold
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Wand.West	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	2.37	21.13	7.91	20.52	100.0	Gold
+10-PassiveKuehlung	Variante 10.1 Raumlufttemperatur	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	6.17	547.87	0.17	11.79	0.68	1.24	8.24	0.83	0.05867	95.49	3.87	20.0	10.0	13.58	55.55	Failed
+10-PassiveKuehlung	Variante 10.1 Heizleistung	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	93.05	296.56	-367.65	326.43	144756.61	-89.92	76.01	380.47	2.40815	-1212.39	10.53	50.0	0.0	41.23	-211.91	Failed
+10-PassiveKuehlung	Variante 10.2 Raumlufttemperatur	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	101.04	436.81	-24.54	563642.07	615.05	-100.0	146.14	24.8	3.23105	-4768.94	0.0	0.0	0.0	0.0	0	Failed
+10-PassiveKuehlung	Variante 10.2 Heizleistung	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	108.36	698.6	-658.13	1421569.62	525625.73	-98.37	10.62	725.0	-99	-99	-99	20.0	7.52	10.92	-710736.66	Failed
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Dach	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	50.5	415.65	-9.61	161931.77	107.4	-46.8	78.36	10.36	0.69684	-1806.25	3.62	20.0	7.52	10.92	-81089.48	Failed
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Boden	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	66.19	596.28	-18.86	1159395.42	388.47	-63.33	90.24	19.71	1.02934	-1334.63	3.62	20.0	7.52	10.92	-579785.41	Failed
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Wand.Nord	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	1708.86	35790.62	338.58	5480023.73	123005.58	1649.72	2651.96	350.72	-99	-99	-99	435.6	-2.72	359.11	-2743034.75	Failed
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Wand.Ost	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	18.01	498.37	3.49	57745.18	13.66	17.0	27.94	3.7	0.15492	-142.41	3.42	25.0	8.47	24.01	-28837.55	Failed
+10-PassiveKuehlung	Variante 10.2 Innentemperatur.Wand.West	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	100.67	374.85	-20.52	322820.48	426.86	-100.0	156.22	20.66	3.06367	-7475.94	0.0	0.0	0.0	0.0	0	Failed
