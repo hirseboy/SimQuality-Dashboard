@@ -91,8 +91,11 @@ def readDashData(resultdir, testcase, testcase_variant):
         resultDf[tool] = df[tool]
 
     index = resultDf.index
-    startDate = dt.datetime(2020, 1, 1) + dt.timedelta(hours=index[0])
-    resultDf['Time'] = pd.date_range(start=startDate, periods=len(data), freq="H")
+    time = []
+    for i in df.index:
+        time.append(dt.datetime(2020, 1, 1) + dt.timedelta(hours=i))
+
+    resultDf['Time'] = time
 
     # resort 'reference' to front
     cols = list(resultDf)
