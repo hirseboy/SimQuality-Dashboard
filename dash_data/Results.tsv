@@ -1,116 +1,116 @@
 Test Case	Variable	ToolID	Tool Name	Version	Editor	Fehlercode	CVRMSE [%]	Daily Amplitude CVRMSE [%]	MBE	RMSEIQR [%]	MSE [%]	NMBE [%]	NRMSE [%]	RMSE [%]	RMSLE [%]	R squared [-]	std dev [-]	Maximum [-]	Minimum [-]	Average [-]	SimQ-Score [%]	SimQ-Rating
-01-Sonnenstand	Potsdam Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	2.18	0.83	0.52	2.88	0.46	1.66	1.17	0.68	-99	-99	-99	56.98	-0.69	31.76	76.98	Failed
-01-Sonnenstand	Potsdam Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.11	1.81	0.39	22.24	0.15	0.11	11.12	0.39	0.00109	87.64	1.08	356.8	353.38	355.09	85.65	Bronze
-01-Sonnenstand	Shanghai Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-1.87	23.23	1.23	7296.63	1.52	-1.87	2491.17	1.23	-99	-99	-99	-64.71	-64.74	-64.73	-3984.65	Failed
-01-Sonnenstand	Shanghai Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	47.53	0.01	-32.19	30.42	11748.6	-14.12	30.16	108.39	1.76041	60.09	177.66	359.49	0.07	195.85	78.13	Failed
-01-Sonnenstand	Kaxgar Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-2.04	1.02	0.77	88.73	0.59	-2.04	44.37	0.77	-99	-99	-99	-36.15	-37.87	-37.02	28.61	Failed
-01-Sonnenstand	Kaxgar Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.45	0.45	1.32	118.03	1.75	0.45	59.01	1.32	0.00445	-248.25	0.71	298.12	295.87	296.99	-3.78	Failed
-01-Sonnenstand	Singapur Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-0.76	1.89	-0.54	45.63	0.29	0.76	22.82	0.54	-99	-99	-99	-70.58	-73.0	-71.79	53.23	Failed
-01-Sonnenstand	Singapur Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	1.45	16.6	3.64	319.82	13.27	1.45	159.56	3.64	0.01433	-2446.65	0.6	255.98	254.08	255.07	-342.52	Failed
-01-Sonnenstand	Lima Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-1.78	0.59	-1.26	496.7	1.58	1.78	248.69	1.26	-99	-99	-99	-71.4	-71.91	-71.68	-210.03	Failed
-01-Sonnenstand	Lima Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.11	6.82	0.14	5.8	0.04	0.07	2.9	0.21	0.00108	99.16	2.45	195.84	188.1	192.0	96.07	Gold
-01-Sonnenstand	Denver Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-2.14	13.04	1.23	2372.96	1.51	-2.14	1186.48	1.23	-99	-99	-99	-56.06	-56.15	-56.12	-1304.64	Failed
-01-Sonnenstand	Denver Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.13	2.98	0.47	20.63	0.22	0.13	10.32	0.47	0.00132	89.35	1.41	359.54	355.08	357.31	86.68	Bronze
-01-Sonnenstand	Barrow Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-5.04	0.86	1.22	702.27	1.49	-5.04	351.23	1.22	-99	-99	-99	-22.79	-23.14	-22.97	-328.79	Failed
-01-Sonnenstand	Barrow Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.13	0.63	0.42	31.39	0.18	0.13	15.7	0.42	0.00126	75.36	0.85	335.9	333.22	334.56	79.16	Failed
-01-Sonnenstand	Melbourne Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-2.82	1.38	-1.26	739.29	1.59	2.82	369.86	1.26	-99	-99	-99	-45.77	-46.11	-45.95	-351.75	Failed
-01-Sonnenstand	Melbourne Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.03	2.52	-0.06	3.68	0.0	-0.03	1.84	0.06	0.00034	99.66	1.12	191.55	188.0	189.78	97.66	Gold
-01-Sonnenstand	Potsdam Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	2.32	1.36	0.31	3.07	0.53	0.99	1.25	0.73	-99	-99	-99	56.52	-0.95	31.55	76.95	Failed
-01-Sonnenstand	Potsdam Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.26	1.72	0.93	53.4	0.86	0.26	26.69	0.93	0.00261	28.73	1.08	357.34	353.92	355.63	61.57	Failed
-01-Sonnenstand	Shanghai Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-1.83	29.29	1.2	7128.3	1.45	-1.83	2433.7	1.2	-99	-99	-99	-64.74	-64.77	-64.76	-3891.31	Failed
-01-Sonnenstand	Shanghai Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	67.05	0.01	-63.99	42.91	23375.39	-28.06	42.54	152.89	2.31511	20.59	177.66	359.83	0.42	164.05	68.19	Failed
-01-Sonnenstand	Kaxgar Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-1.26	1.36	0.48	54.91	0.23	-1.26	27.46	0.48	-99	-99	-99	-36.45	-38.16	-37.31	48.19	Failed
-01-Sonnenstand	Kaxgar Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.56	1.07	1.66	147.93	2.75	0.56	73.97	1.66	0.00557	-447.08	0.72	298.46	296.2	297.32	-41.17	Failed
-01-Sonnenstand	Singapur Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-1.29	1.68	-0.92	77.46	0.84	1.29	38.74	0.92	-99	-99	-99	-70.96	-73.37	-72.17	34.59	Failed
-01-Sonnenstand	Singapur Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	1.29	12.35	3.24	284.65	10.51	1.29	142.01	3.24	0.01276	-1917.26	0.63	255.63	253.63	254.67	-268.76	Failed
-01-Sonnenstand	Lima Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-1.85	9.9	-1.3	516.08	1.7	1.85	258.4	1.3	-99	-99	-99	-71.48	-71.93	-71.73	-221.98	Failed
-01-Sonnenstand	Lima Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.59	7.53	-1.11	31.08	1.27	-0.58	15.55	1.13	0.00588	75.83	2.47	194.61	186.82	190.74	79.05	Failed
-01-Sonnenstand	Denver Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-2.07	35.27	1.19	2294.18	1.41	-2.07	1147.09	1.19	-99	-99	-99	-56.12	-56.18	-56.16	-1260.18	Failed
-01-Sonnenstand	Denver Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	30.33	7726.6	-31.55	4710.08	11710.3	-8.84	2355.55	108.21	1.70829	-554718.93	102.79	359.8	0.25	325.29	-58643.16	Failed
-01-Sonnenstand	Barrow Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-4.7	2.31	1.14	654.7	1.29	-4.7	327.45	1.14	-99	-99	-99	-22.88	-23.22	-23.05	-301.2	Failed
-01-Sonnenstand	Barrow Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.25	0.56	0.84	62.74	0.71	0.25	31.38	0.84	0.00252	1.59	0.85	336.32	333.64	334.98	53.48	Failed
-01-Sonnenstand	Melbourne Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-2.87	7.25	-1.28	753.34	1.65	2.87	376.89	1.28	-99	-99	-99	-45.8	-46.12	-45.97	-360.35	Failed
-01-Sonnenstand	Melbourne Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.33	2.63	-0.63	36.35	0.39	-0.33	18.17	0.63	0.0033	66.97	1.12	190.98	187.43	189.21	75.37	Failed
-01-Sonnenstand	Potsdam Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	1.4	0.38	0.12	1.85	0.19	0.39	0.75	0.44	-99	-99	-99	56.53	-0.92	31.36	78.33	Failed
-01-Sonnenstand	Potsdam Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	0.05	0.78	0.19	11.17	0.04	0.05	5.58	0.19	0.00055	96.88	1.1	356.63	353.12	354.9	93.11	Silver
-01-Sonnenstand	Shanghai Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-1.23	15.15	0.81	4785.6	0.65	-1.23	1633.87	0.81	-99	-99	-99	-65.13	-65.17	-65.16	-2585.82	Failed
-01-Sonnenstand	Shanghai Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	32.23	0.16	-21.82	20.63	5402.74	-9.57	20.45	73.5	0.35515	81.65	168.94	359.33	0.51	206.22	86.03	Bronze
-01-Sonnenstand	Kaxgar Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-0.99	1.17	0.37	43.02	0.14	-0.99	21.51	0.37	-99	-99	-99	-36.52	-38.28	-37.41	55.09	Failed
-01-Sonnenstand	Kaxgar Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	0.22	1.79	0.65	58.39	0.43	0.22	29.19	0.65	0.0022	14.78	0.72	297.45	295.17	296.32	57.26	Failed
-01-Sonnenstand	Singapur Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-0.38	1.76	-0.27	22.99	0.07	0.38	11.5	0.27	-99	-99	-99	-70.31	-72.72	-71.53	66.51	Failed
-01-Sonnenstand	Singapur Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	0.68	6.96	1.71	150.01	2.92	0.68	74.84	1.71	0.00675	-460.22	0.67	254.16	252.04	253.14	-44.08	Failed
-01-Sonnenstand	Lima Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-0.84	1.58	-0.59	234.31	0.35	0.84	117.32	0.59	-99	-99	-99	-70.74	-71.25	-71.02	-56.85	Failed
-01-Sonnenstand	Lima Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	0.05	4.05	0.05	2.61	0.01	0.02	1.31	0.09	0.00048	99.83	2.37	195.67	188.13	191.9	98.19	Gold
-01-Sonnenstand	Denver Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-1.12	17.87	0.64	1236.95	0.41	-1.12	618.47	0.64	-99	-99	-99	-56.65	-56.74	-56.71	-642.46	Failed
-01-Sonnenstand	Denver Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	0.17	0.52	0.6	26.24	0.36	0.17	13.12	0.6	0.00168	82.78	1.44	359.7	355.13	357.44	82.91	Bronze
-01-Sonnenstand	Barrow Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-2.37	0.58	0.57	329.83	0.33	-2.37	164.96	0.57	-99	-99	-99	-23.44	-23.78	-23.61	-111.95	Failed
-01-Sonnenstand	Barrow Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	0.07	0.07	0.23	17.17	0.05	0.07	8.59	0.23	0.00069	92.63	0.85	335.71	333.02	334.37	89.23	Bronze
-01-Sonnenstand	Melbourne Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-0.46	0.97	-0.21	120.83	0.04	0.46	60.45	0.21	-99	-99	-99	-44.71	-45.06	-44.89	9.47	Failed
-01-Sonnenstand	Melbourne Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	0.02	1.69	-0.03	1.94	0.0	-0.02	0.97	0.03	0.00018	99.91	1.1	191.58	188.06	189.81	98.75	Gold
-01-Sonnenstand	Potsdam Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	-99	-99	-99	56.88	-1.34	31.24	80.1	Bronze
-01-Sonnenstand	Potsdam Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	1.1	356.45	352.96	354.7	100.0	Gold
-01-Sonnenstand	Shanghai Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	-65.93	-65.98	-65.97	80.1	Bronze
-01-Sonnenstand	Shanghai Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	171.57	359.56	0.17	228.04	100.0	Gold
-01-Sonnenstand	Kaxgar Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	-36.92	-38.65	-37.79	80.1	Bronze
-01-Sonnenstand	Kaxgar Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	0.71	296.79	294.55	295.67	100.0	Gold
-01-Sonnenstand	Singapur Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	-70.07	-72.44	-71.25	80.1	Bronze
-01-Sonnenstand	Singapur Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	0.72	252.52	250.24	251.43	100.0	Gold
-01-Sonnenstand	Lima Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	-70.15	-70.66	-70.43	80.1	Bronze
-01-Sonnenstand	Lima Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	2.29	195.45	188.21	191.86	100.0	Gold
-01-Sonnenstand	Denver Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	-57.28	-57.39	-57.35	80.1	Bronze
-01-Sonnenstand	Denver Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	1.45	359.13	354.54	356.83	100.0	Gold
-01-Sonnenstand	Barrow Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	-24.01	-24.36	-24.19	80.1	Bronze
-01-Sonnenstand	Barrow Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	0.85	335.48	332.79	334.14	100.0	Gold
-01-Sonnenstand	Melbourne Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	-44.51	-44.85	-44.69	80.1	Bronze
-01-Sonnenstand	Melbourne Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	1.09	191.56	188.1	189.84	100.0	Gold
-01-Sonnenstand	Potsdam Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	1.39	1.25	0.4	1.84	0.19	1.27	0.75	0.43	-99	-99	-99	57.4	-1.2	31.64	78.27	Failed
-01-Sonnenstand	Potsdam Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	0.05	0.49	0.17	9.84	0.03	0.05	4.92	0.17	0.00048	97.58	1.11	356.6	353.1	354.87	93.98	Silver
-01-Sonnenstand	Shanghai Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-0.42	102.02	0.28	1632.95	0.08	-0.42	557.51	0.28	-99	-99	-99	-65.6	-65.7	-65.69	-836.02	Failed
-01-Sonnenstand	Shanghai Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	47.52	0.0	32.18	30.41	11744.96	14.11	30.16	108.37	1.73588	60.1	158.87	359.6	0.2	260.22	73.43	Failed
-01-Sonnenstand	Kaxgar Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-1.85	3.59	0.7	80.25	0.49	-1.84	40.13	0.7	-99	-99	-99	-36.2	-38.0	-37.09	33.35	Failed
-01-Sonnenstand	Kaxgar Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	0.2	1.79	-0.59	52.32	0.34	-0.2	26.16	0.59	0.00198	31.57	0.7	296.2	294.0	295.08	62.55	Failed
-01-Sonnenstand	Singapur Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-1.03	1.26	0.73	62.02	0.54	-1.03	31.02	0.74	-99	-99	-99	-69.3	-71.7	-70.52	44.01	Failed
-01-Sonnenstand	Singapur Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	0.41	8.02	1.04	91.01	1.07	0.41	45.41	1.04	0.0041	-106.23	0.67	253.5	251.4	252.46	25.7	Failed
-01-Sonnenstand	Lima Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-0.7	20.79	-0.49	195.33	0.24	0.7	97.8	0.49	-99	-99	-99	-70.7	-71.1	-70.92	-35.37	Failed
-01-Sonnenstand	Lima Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	0.34	2.11	-0.64	17.75	0.41	-0.33	8.88	0.64	0.00335	92.12	2.36	194.9	187.5	191.22	88.77	Bronze
-01-Sonnenstand	Denver Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-0.62	100.0	-0.35	683.25	0.13	0.61	341.63	0.35	-99	-99	-99	-57.7	-57.7	-57.7	-325.23	Failed
-01-Sonnenstand	Denver Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	52.41	7727.6	-96.28	8139.46	34970.55	-26.98	4070.62	187.0	2.84922	-1656760.03	159.19	359.7	0.1	260.55	-170844.85	Failed
-01-Sonnenstand	Barrow Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-0.23	13.54	0.05	32.3	0.0	-0.2	16.15	0.06	-99	-99	-99	-24.0	-24.3	-24.14	60.39	Failed
-01-Sonnenstand	Barrow Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	0.32	0.3	1.05	78.23	1.11	0.32	39.13	1.05	0.00314	-53.01	0.85	336.5	333.8	335.19	38.99	Failed
-01-Sonnenstand	Melbourne Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-2.25	17.41	-1.0	588.63	1.01	2.24	294.49	1.0	-99	-99	-99	-45.5	-45.9	-45.69	-264.83	Failed
-01-Sonnenstand	Melbourne Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	0.59	1.24	1.12	64.73	1.25	0.59	32.36	1.12	0.00584	-4.73	1.12	192.7	189.2	190.95	51.59	Failed
-01-Sonnenstand	Potsdam Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	1.56	1.29	0.35	2.07	0.24	1.11	0.84	0.49	-99	-99	-99	56.93	0.0	31.59	77.82	Failed
-01-Sonnenstand	Potsdam Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	100.0	100.0	-354.7	20373.64	125815.69	-100.0	10183.9	354.71	5.87409	-10373232.89	0.0	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Shanghai Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-100.0	100.0	65.97	390332.07	4351.53	-100.0	133264.89	65.97	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Shanghai Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	125.14	100.0	-228.04	80.08	81438.19	-100.0	79.4	285.37	4.71504	-176.67	0.0	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Kaxgar Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-100.01	100.0	37.79	4349.12	1428.21	-100.0	2174.81	37.79	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Kaxgar Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	100.0	100.0	-295.67	26398.92	87419.53	-100.0	13199.46	295.67	5.69261	-17421876.0	0.0	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Singapur Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-100.01	100.0	71.25	6011.96	5077.52	-100.0	3006.36	71.26	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Singapur Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	100.0	100.0	-251.43	22074.58	63216.79	-100.0	11013.12	251.43	5.53112	-12131805.89	0.0	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Lima Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-100.0	100.0	70.43	27852.67	4959.75	-100.0	13945.64	70.43	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Lima Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	100.01	100.0	-191.86	5290.82	36814.71	-100.0	2647.6	191.87	5.2619	-700386.93	0.0	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Denver Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-100.0	100.0	57.35	110817.41	3288.79	-100.0	55408.71	57.35	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Denver Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	100.0	100.0	-356.83	15531.52	127332.48	-100.0	7767.45	356.84	5.88006	-6032750.3	0.0	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Barrow Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-100.0	100.0	24.19	13935.74	584.94	-100.0	6969.88	24.19	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Barrow Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	100.0	100.0	-334.14	24815.38	111648.93	-100.0	12412.3	334.14	5.81454	-15397045.35	0.0	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Melbourne Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-100.0	100.0	44.69	26217.77	1997.03	-100.0	13116.58	44.69	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Melbourne Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	100.0	100.0	-189.84	10986.1	36039.18	-100.0	5491.46	189.84	5.2514	-3016300.74	0.0	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Potsdam Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	2.11	0.8	0.52	2.79	0.44	1.66	1.13	0.66	-99	-99	-99	57.02	0.0	31.76	77.1	Failed
-01-Sonnenstand	Potsdam Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	74.63	100.0	-264.7	15204.23	70069.08	-74.63	7599.93	264.71	1.36324	-5777000.89	0.0	90.0	90.0	90.0	-586473.09	Failed
-01-Sonnenstand	Shanghai Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-100.0	100.0	65.97	390332.07	4351.53	-100.0	133264.89	65.97	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Shanghai Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	96.56	100.0	-138.04	61.8	48490.85	-60.53	61.27	220.21	2.56807	-64.74	0.0	90.0	90.0	90.0	45.84	Failed
-01-Sonnenstand	Kaxgar Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-100.01	100.0	37.79	4349.12	1428.21	-100.0	2174.81	37.79	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Kaxgar Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	69.56	100.0	-205.67	18363.24	42299.45	-69.56	9181.62	205.67	1.18175	-8429824.87	0.0	90.0	90.0	90.0	-853599.45	Failed
-01-Sonnenstand	Singapur Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-100.01	100.0	71.25	6011.96	5077.52	-100.0	3006.36	71.26	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Singapur Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	64.21	100.0	-161.43	14172.96	26059.67	-64.2	7070.96	161.43	1.02027	-5000999.13	0.0	90.0	90.0	90.0	-508270.85	Failed
-01-Sonnenstand	Lima Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-100.0	100.0	70.43	27852.67	4959.75	-100.0	13945.64	70.43	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Lima Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	53.1	100.0	-101.86	2809.42	10380.29	-53.09	1405.87	101.88	0.75112	-197409.54	0.0	90.0	90.0	90.0	-21287.79	Failed
-01-Sonnenstand	Denver Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-100.0	100.0	57.35	110817.41	3288.79	-100.0	55408.71	57.35	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Denver Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	74.78	100.0	-266.83	11614.27	71202.4	-74.78	5808.4	266.84	1.36921	-3373378.53	0.0	90.0	90.0	90.0	-344017.26	Failed
-01-Sonnenstand	Barrow Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-100.0	100.0	24.19	13935.74	584.94	-100.0	6969.88	24.19	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Barrow Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	73.07	100.0	-244.14	18131.41	59604.09	-73.07	9069.07	244.14	1.30368	-8219708.5	0.0	90.0	90.0	90.0	-832452.56	Failed
-01-Sonnenstand	Melbourne Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-100.0	100.0	44.69	26217.77	1997.03	-100.0	13116.58	44.69	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-01-Sonnenstand	Melbourne Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	52.59	100.0	-99.84	5777.93	9968.57	-52.59	2888.13	99.84	0.74056	-834247.35	0.0	90.0	90.0	90.0	-86702.96	Failed
+01-Sonnenstand	Potsdam Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-17.21	0.71	0.59	1.58	0.54	-13.67	0.63	0.74	-99	-99	-99	56.98	-60.96	-3.7	90.72	Silver
+01-Sonnenstand	Potsdam Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	4.72	0.04	0.02	4.88	72.07	0.01	2.36	8.49	0.13654	99.28	100.44	359.99	0.07	180.04	96.32	Gold
+01-Sonnenstand	Shanghai Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-18.17	0.47	0.46	0.88	0.36	-13.8	0.38	0.6	-99	-99	-99	78.19	-82.14	-2.87	87.75	Bronze
+01-Sonnenstand	Shanghai Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	4.09	0.11	-0.02	4.31	54.3	-0.01	2.05	7.37	0.1135	99.4	95.81	359.93	0.07	180.06	97.45	Gold
+01-Sonnenstand	Kaxgar Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-17.37	0.36	0.5	1.11	0.42	-13.5	0.45	0.65	-99	-99	-99	69.89	-73.84	-3.23	90.46	Silver
+01-Sonnenstand	Kaxgar Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	2.38	0.02	-0.03	2.49	18.3	-0.02	1.19	4.28	0.06851	99.81	97.94	359.92	0.02	180.02	97.95	Gold
+01-Sonnenstand	Singapur Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-141.52	0.99	0.03	0.34	0.08	-15.06	0.16	0.29	-99	-99	-99	89.22	-88.04	-0.17	79.23	Failed
+01-Sonnenstand	Singapur Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	1.29	1.61	0.01	1.47	5.43	0.0	0.65	2.33	0.03286	99.93	87.04	359.74	0.29	180.0	99.05	Gold
+01-Sonnenstand	Lima Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	22.06	0.68	-0.23	0.44	0.14	-13.72	0.21	0.37	-99	-99	-99	89.51	-82.64	1.44	83.37	Bronze
+01-Sonnenstand	Lima Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	3.37	28.1	-0.0	3.68	36.86	-0.0	1.69	6.07	0.07963	99.53	90.06	359.9	0.18	180.0	97.78	Gold
+01-Sonnenstand	Denver Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-18.03	0.54	0.52	1.15	0.45	-14.06	0.47	0.67	-99	-99	-99	69.6	-73.57	-3.18	89.23	Bronze
+01-Sonnenstand	Denver Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	3.34	40.61	0.03	3.5	36.27	0.01	1.67	6.02	0.09429	99.62	97.91	359.98	0.07	180.26	98.29	Gold
+01-Sonnenstand	Barrow Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-17.17	1.35	0.64	2.97	0.63	-13.77	0.99	0.8	-99	-99	-99	38.06	-42.02	-3.99	92.24	Silver
+01-Sonnenstand	Barrow Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	2.36	0.02	-0.04	2.4	18.05	-0.02	1.18	4.25	0.06887	99.83	102.62	359.94	0.0	179.82	97.98	Gold
+01-Sonnenstand	Melbourne Altitude	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	17.1	0.64	-0.5	1.04	0.4	-13.63	0.43	0.63	-99	-99	-99	75.64	-71.69	3.18	94.77	Silver
+01-Sonnenstand	Melbourne Azimuth	ETU1	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	4.1	0.02	0.07	4.29	54.38	0.04	2.05	7.37	0.11829	99.42	97.57	360.0	0.13	180.04	97.45	Gold
+01-Sonnenstand	Potsdam Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-13.49	0.95	-0.08	1.24	0.33	1.86	0.49	0.58	-99	-99	-99	56.52	-61.05	-4.36	77.93	Failed
+01-Sonnenstand	Potsdam Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	7.8	0.09	-0.05	8.08	197.41	-0.03	3.9	14.05	0.21925	98.03	100.12	359.97	0.03	179.97	95.21	Gold
+01-Sonnenstand	Shanghai Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-16.47	0.63	-0.06	0.8	0.3	1.71	0.34	0.55	-99	-99	-99	77.74	-82.25	-3.38	78.84	Failed
+01-Sonnenstand	Shanghai Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	8.12	0.13	-0.09	8.56	213.87	-0.05	4.06	14.62	0.21813	97.64	95.19	359.83	0.03	179.98	95.26	Gold
+01-Sonnenstand	Kaxgar Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-15.84	0.43	-0.08	1.01	0.35	2.19	0.41	0.59	-99	-99	-99	69.44	-73.95	-3.82	77.98	Failed
+01-Sonnenstand	Kaxgar Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	7.44	0.01	-0.0	7.78	179.32	-0.0	3.72	13.39	0.20456	98.11	97.45	359.96	0.15	180.05	95.6	Gold
+01-Sonnenstand	Singapur Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-236.34	0.88	-0.01	0.56	0.23	2.84	0.27	0.48	-99	-99	-99	87.63	-89.63	-0.21	79.77	Failed
+01-Sonnenstand	Singapur Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	5.31	4.96	0.05	6.01	91.29	0.03	2.66	9.55	0.13648	98.76	85.57	359.68	0.36	180.04	96.34	Gold
+01-Sonnenstand	Lima Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	30.34	0.56	0.02	0.61	0.26	1.0	0.29	0.51	-99	-99	-99	88.89	-83.09	1.69	79.49	Failed
+01-Sonnenstand	Lima Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	6.26	0.5	0.03	6.83	126.79	0.02	3.13	11.26	0.16371	98.4	88.74	359.94	0.25	180.03	95.41	Gold
+01-Sonnenstand	Denver Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-15.15	0.73	-0.07	0.97	0.31	1.84	0.39	0.56	-99	-99	-99	69.15	-73.66	-3.77	78.48	Failed
+01-Sonnenstand	Denver Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	7.43	40.62	0.0	7.79	179.38	0.0	3.72	13.39	0.20473	98.11	97.43	359.88	0.05	180.23	95.06	Gold
+01-Sonnenstand	Barrow Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-13.2	1.77	-0.1	2.29	0.37	2.08	0.76	0.61	-99	-99	-99	37.61	-42.12	-4.73	76.5	Failed
+01-Sonnenstand	Barrow Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	7.46	0.02	-0.01	7.59	179.89	-0.01	3.73	13.41	0.21104	98.29	102.48	359.96	0.06	179.85	95.62	Gold
+01-Sonnenstand	Melbourne Altitude	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	15.56	0.24	0.07	0.95	0.33	1.91	0.39	0.57	-99	-99	-99	75.75	-71.24	3.76	77.57	Failed
+01-Sonnenstand	Melbourne Azimuth	ETU2	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	7.44	0.02	0.04	7.79	179.37	0.02	3.72	13.39	0.2054	98.1	97.06	359.93	0.02	180.02	95.37	Gold
+01-Sonnenstand	Potsdam Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-9.77	0.57	-0.16	0.9	0.18	3.72	0.35	0.42	-99	-99	-99	56.53	-61.04	-4.44	76.64	Failed
+01-Sonnenstand	Potsdam Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	4.2	0.12	-0.1	4.35	57.25	-0.06	2.1	7.57	0.1151	99.43	100.03	359.83	0.03	179.92	97.28	Gold
+01-Sonnenstand	Shanghai Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-11.07	0.66	-0.13	0.53	0.14	4.05	0.23	0.37	-99	-99	-99	77.51	-82.03	-3.46	77.83	Failed
+01-Sonnenstand	Shanghai Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	3.96	0.12	-0.13	4.17	50.78	-0.07	1.98	7.13	0.0976	99.44	95.11	359.6	0.12	179.94	97.16	Gold
+01-Sonnenstand	Kaxgar Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-28.06	4.32	-0.14	1.79	1.1	3.73	0.73	1.05	-99	-99	-99	69.41	-73.95	-3.87	76.05	Failed
+01-Sonnenstand	Kaxgar Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	4.82	0.09	-0.14	5.04	75.19	-0.08	2.41	8.67	0.11799	99.21	97.33	359.65	0.11	179.91	97.27	Gold
+01-Sonnenstand	Singapur Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-100.71	0.54	-0.01	0.24	0.04	3.51	0.12	0.21	-99	-99	-99	87.6	-89.45	-0.21	79.75	Failed
+01-Sonnenstand	Singapur Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	2.51	7.59	0.0	2.84	20.4	0.0	1.26	4.52	0.06967	99.72	85.44	359.83	0.51	180.0	98.34	Gold
+01-Sonnenstand	Lima Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	14.73	0.54	0.05	0.29	0.06	3.13	0.14	0.25	-99	-99	-99	88.87	-82.97	1.72	79.14	Failed
+01-Sonnenstand	Lima Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	2.68	0.69	-0.03	2.93	23.29	-0.02	1.34	4.83	0.07285	99.71	88.55	359.38	0.3	179.97	98.48	Gold
+01-Sonnenstand	Denver Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-10.81	0.51	-0.14	0.69	0.16	3.85	0.28	0.4	-99	-99	-99	69.08	-73.6	-3.85	77.32	Failed
+01-Sonnenstand	Denver Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	5.39	23.57	-0.07	5.65	94.34	-0.04	2.7	9.71	0.13996	99.01	97.36	359.78	0.05	180.17	96.34	Gold
+01-Sonnenstand	Barrow Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-10.19	1.09	-0.18	1.76	0.22	3.97	0.59	0.47	-99	-99	-99	37.61	-42.12	-4.82	75.11	Failed
+01-Sonnenstand	Barrow Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	4.87	0.08	-0.12	4.96	76.65	-0.06	2.43	8.76	0.12138	99.27	102.41	359.78	0.07	179.75	97.27	Gold
+01-Sonnenstand	Melbourne Altitude	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	3.65	0.08	0.05	0.22	0.02	1.3	0.09	0.13	-99	-99	-99	75.73	-71.59	3.73	78.51	Failed
+01-Sonnenstand	Melbourne Azimuth	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	1.61	0.18	-0.02	1.69	8.44	-0.01	0.81	2.9	0.07104	99.91	97.01	359.79	0.17	179.95	98.89	Gold
+01-Sonnenstand	Potsdam Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	56.88	-61.01	-4.28	80.1	Bronze
+01-Sonnenstand	Potsdam Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	100.16	359.99	0.02	180.02	100.0	Gold
+01-Sonnenstand	Shanghai Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	78.09	-82.23	-3.32	80.1	Bronze
+01-Sonnenstand	Shanghai Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	95.28	359.96	0.16	180.07	100.0	Gold
+01-Sonnenstand	Kaxgar Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	69.79	-73.9	-3.73	80.1	Bronze
+01-Sonnenstand	Kaxgar Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	97.53	359.99	0.2	180.05	100.0	Gold
+01-Sonnenstand	Singapur Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	88.23	-88.83	-0.2	80.1	Bronze
+01-Sonnenstand	Singapur Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	85.91	359.82	0.2	180.0	100.0	Gold
+01-Sonnenstand	Lima Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	-99	-99	-99	89.38	-82.62	1.67	80.1	Bronze
+01-Sonnenstand	Lima Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	88.89	359.85	0.3	180.0	100.0	Gold
+01-Sonnenstand	Denver Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	69.5	-73.64	-3.7	80.1	Bronze
+01-Sonnenstand	Denver Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	97.5	359.86	0.05	180.23	100.0	Gold
+01-Sonnenstand	Barrow Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	37.96	-42.07	-4.63	80.1	Bronze
+01-Sonnenstand	Barrow Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	102.5	359.98	0.12	179.86	100.0	Gold
+01-Sonnenstand	Melbourne Altitude	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	-99	-99	-99	75.72	-71.71	3.69	80.1	Bronze
+01-Sonnenstand	Melbourne Azimuth	NANDRAD	NANDRAD	1.8	Dirk Weiß, IBK TU Dresden	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	97.13	359.96	0.01	179.97	100.0	Gold
+01-Sonnenstand	Potsdam Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-19.21	37.29	0.24	1.77	0.68	-5.72	0.7	0.82	-99	-99	-99	57.4	-61.3	-4.04	83.36	Bronze
+01-Sonnenstand	Potsdam Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	5.27	0.44	0.02	5.45	89.86	0.01	2.63	9.48	0.15212	99.1	100.2	359.9	0.0	180.05	96.16	Gold
+01-Sonnenstand	Shanghai Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-12.59	0.22	0.19	0.61	0.18	-5.61	0.26	0.42	-99	-99	-99	78.4	-82.3	-3.14	82.9	Bronze
+01-Sonnenstand	Shanghai Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	6.22	0.21	-0.03	6.56	125.55	-0.02	3.11	11.2	0.17239	98.62	95.44	359.9	0.1	180.05	96.17	Gold
+01-Sonnenstand	Kaxgar Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-19.39	0.96	0.21	1.24	0.52	-5.53	0.5	0.72	-99	-99	-99	70.4	-74.3	-3.53	83.41	Bronze
+01-Sonnenstand	Kaxgar Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	9.97	0.03	-0.04	10.43	321.96	-0.02	4.99	17.94	0.26783	96.62	97.57	359.9	0.0	180.01	93.94	Silver
+01-Sonnenstand	Singapur Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-438.88	0.57	0.07	1.04	0.81	-31.83	0.51	0.9	-99	-99	-99	89.0	-89.0	-0.14	84.42	Bronze
+01-Sonnenstand	Singapur Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	7.89	0.46	0.01	8.94	201.56	0.0	3.95	14.2	0.18913	97.27	86.28	359.7	0.3	180.0	95.07	Gold
+01-Sonnenstand	Lima Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	104.2	36.2	-0.09	2.09	3.02	-5.26	1.01	1.74	-99	-99	-99	89.8	-178.62	1.58	80.46	Bronze
+01-Sonnenstand	Lima Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	3.46	46.45	-0.01	3.77	38.7	-0.01	1.73	6.22	-99	-99	-99	359.9	-153.07	179.98	93.21	Silver
+01-Sonnenstand	Denver Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-33.85	11.38	0.24	2.16	1.57	-6.57	0.88	1.25	-99	-99	-99	70.4	-74.3	-3.46	81.7	Bronze
+01-Sonnenstand	Denver Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	9.95	40.66	0.03	10.43	321.82	0.02	4.99	17.94	0.26727	96.61	97.5	359.9	0.0	180.26	93.35	Silver
+01-Sonnenstand	Barrow Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	-8.79	1.75	0.25	1.52	0.17	-5.3	0.51	0.41	-99	-99	-99	38.4	-42.3	-4.39	84.28	Bronze
+01-Sonnenstand	Barrow Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	9.72	0.04	-0.04	9.89	305.47	-0.02	4.86	17.48	0.27113	97.09	102.52	360.0	0.0	179.82	93.97	Silver
+01-Sonnenstand	Melbourne Altitude	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	18.75	1.37	-0.22	1.14	0.48	-6.0	0.47	0.69	-99	-99	-99	76.3	-72.4	3.47	84.99	Bronze
+01-Sonnenstand	Melbourne Azimuth	Radiance	Radiance	5.2.0	Stephan Hirth, IBK TU Dresden	0	9.41	0.04	0.03	9.85	286.89	0.02	4.71	16.94	0.25596	96.96	97.14	359.9	0.1	180.0	94.42	Silver
+01-Sonnenstand	Potsdam Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-538.4	65.06	14.63	49.48	531.5	-341.65	19.56	23.05	-99	-99	-99	56.93	0.0	10.35	254.99	Gold
+01-Sonnenstand	Potsdam Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	90.6	31.32	-99.8	93.8	26605.03	-55.44	45.31	163.11	3.65113	-165.18	96.98	299.54	0.0	80.23	29.68	Failed
+01-Sonnenstand	Shanghai Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-920.38	61.3	19.22	44.48	936.16	-578.04	19.08	30.6	-99	-99	-99	78.21	0.0	15.89	309.58	Gold
+01-Sonnenstand	Shanghai Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	86.89	29.47	-95.26	91.54	24479.56	-52.9	43.49	156.46	3.60235	-169.64	99.25	291.37	0.0	84.82	30.66	Failed
+01-Sonnenstand	Kaxgar Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-744.19	61.26	17.53	47.56	772.05	-469.62	19.34	27.79	-99	-99	-99	69.88	0.0	13.8	334.31	Gold
+01-Sonnenstand	Kaxgar Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	88.38	30.06	-96.51	92.49	25320.99	-53.6	44.23	159.13	3.60783	-166.17	98.2	293.51	0.0	83.54	30.32	Failed
+01-Sonnenstand	Singapur Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-16771.66	55.41	21.18	39.91	1175.68	-10361.69	19.37	34.29	-99	-99	-99	89.22	0.0	20.98	-476.85	Failed
+01-Sonnenstand	Singapur Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	79.55	39.41	-92.1	90.12	20500.49	-51.17	39.81	143.18	3.63562	-177.76	107.88	359.68	0.0	87.89	28.62	Failed
+01-Sonnenstand	Lima Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	1917.16	54.31	19.54	38.4	1023.39	1171.3	18.6	31.99	-99	-99	-99	89.67	0.0	21.21	-189.19	Failed
+01-Sonnenstand	Lima Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	77.32	36.74	-91.17	84.42	19367.67	-50.65	38.71	139.17	3.6406	-145.12	114.85	359.99	0.0	88.83	39.42	Failed
+01-Sonnenstand	Denver Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-746.06	62.51	17.42	47.55	763.26	-470.29	19.3	27.63	-99	-99	-99	69.48	0.0	13.71	294.26	Gold
+01-Sonnenstand	Denver Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	88.44	47.83	-96.77	92.67	25407.79	-53.69	44.3	159.4	3.61142	-167.29	98.12	293.36	0.0	83.46	30.09	Failed
+01-Sonnenstand	Barrow Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	-345.47	71.78	10.45	59.83	256.1	-225.59	19.99	16.0	-99	-99	-99	37.9	0.0	5.82	187.6	Gold
+01-Sonnenstand	Barrow Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	93.68	56.3	-110.02	95.39	28391.95	-61.17	46.82	168.5	3.85222	-170.24	97.89	338.2	0.0	69.84	31.24	Failed
+01-Sonnenstand	Melbourne Altitude	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	642.78	56.14	13.82	39.23	561.47	374.89	16.07	23.7	-99	-99	-99	75.65	0.0	17.51	-324.03	Failed
+01-Sonnenstand	Melbourne Azimuth	TAS	TAS	9.5.0	Rainer Strobel, PGMM	0	74.44	0.16	-89.14	77.93	17947.72	-49.53	37.22	133.97	3.62565	-90.23	125.51	359.9	0.0	90.83	45.01	Failed
+01-Sonnenstand	Potsdam Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-538.44	64.9	14.71	49.48	531.57	-343.44	19.56	23.06	-99	-99	-99	57.02	0.0	10.42	256.4	Gold
+01-Sonnenstand	Potsdam Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	62.79	55.85	-47.89	65.0	12776.39	-26.6	31.4	113.03	0.84134	-27.35	59.9	302.96	57.08	132.13	51.61	Failed
+01-Sonnenstand	Shanghai Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-920.4	61.22	19.26	44.48	936.19	-579.45	19.08	30.6	-99	-99	-99	78.23	0.0	15.94	310.38	Gold
+01-Sonnenstand	Shanghai Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	59.24	55.05	-46.33	62.41	11378.74	-25.73	29.65	106.67	0.74752	-25.34	62.58	292.83	67.18	133.75	53.15	Failed
+01-Sonnenstand	Kaxgar Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-744.21	61.15	17.59	47.56	772.1	-471.16	19.34	27.79	-99	-99	-99	69.93	0.0	13.86	335.5	Gold
+01-Sonnenstand	Kaxgar Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	60.91	55.4	-46.79	63.74	12027.26	-25.99	30.48	109.67	0.78856	-26.43	61.11	295.47	64.58	133.26	52.37	Failed
+01-Sonnenstand	Singapur Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-16771.64	55.35	21.21	39.91	1175.67	-10372.3	19.37	34.29	-99	-99	-99	89.26	0.0	21.0	-477.57	Failed
+01-Sonnenstand	Singapur Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	49.36	34.97	-44.99	55.92	7892.24	-25.0	24.7	88.84	0.58081	-6.93	75.27	359.37	0.13	135.0	60.21	Failed
+01-Sonnenstand	Lima Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	1917.16	54.42	19.53	38.4	1023.39	1170.66	18.6	31.99	-99	-99	-99	89.48	0.0	21.2	-189.05	Failed
+01-Sonnenstand	Lima Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	46.11	28.87	-44.45	50.34	6887.18	-24.7	23.08	82.99	0.54985	12.84	85.11	359.81	0.26	135.54	67.54	Failed
+01-Sonnenstand	Denver Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-746.1	62.35	17.5	47.55	763.34	-472.51	19.3	27.63	-99	-99	-99	69.64	0.0	13.79	295.69	Gold
+01-Sonnenstand	Denver Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	60.91	61.52	-46.93	63.82	12050.9	-26.04	30.51	109.78	0.78782	-26.78	61.09	295.58	64.41	133.3	52.26	Failed
+01-Sonnenstand	Barrow Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-346.37	83.32	10.6	59.98	257.43	-228.73	20.05	16.04	-99	-99	-99	90.0	0.0	5.96	190.33	Gold
+01-Sonnenstand	Barrow Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	63.45	56.43	-53.11	64.6	13022.99	-29.53	31.71	114.12	0.84184	-23.95	65.02	359.95	0.19	126.75	53.97	Failed
+01-Sonnenstand	Melbourne Altitude	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	642.78	56.21	13.8	39.23	561.47	374.48	16.07	23.7	-99	-99	-99	75.65	0.0	17.49	-323.52	Failed
+01-Sonnenstand	Melbourne Azimuth	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	41.71	0.14	-43.16	43.67	5635.01	-23.98	20.85	75.07	0.5136	40.27	99.03	359.96	0.05	136.81	72.83	Failed
 03-Waermeleitung	Variante 1	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	1.08	3.95	0.05	7.88	0.09	0.18	3.0	0.29	0.01253	98.99	2.66	29.7	20.01	27.19	95.17	Gold
 03-Waermeleitung	Variante 2	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	0.41	0.0	0.0	243477.59	0.01	0.0	1.22	0.12	0.00514	99.38	1.48	30.0	20.0	29.65	-121639.06	Failed
 03-Waermeleitung	Variante 3	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	0.89	8.1	0.07	4.66	0.06	0.26	2.44	0.24	0.01003	99.47	3.03	29.55	20.0	26.43	96.63	Gold
@@ -450,62 +450,6 @@ Test Case	Variable	ToolID	Tool Name	Version	Editor	Fehlercode	CVRMSE [%]	Daily A
 06-WaermeleitungStrahlung	Variante 2 konv. Wärmeleitung Innen Ostwand	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	161.86	7.06	0.01	6.5	0.08	3.6	1.65	0.29	-99	-99	-99	6.11	-12.43	0.18	75.5	Failed
 06-WaermeleitungStrahlung	Variante 2 konv. Wärmeleitung Innen Südwand	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	19.05	2.45	0.0	5.95	0.02	0.53	1.1	0.12	-99	-99	-99	6.09	-5.39	0.65	76.69	Failed
 06-WaermeleitungStrahlung	Variante 2 konv. Wärmeleitung Innen Westwand	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-26.35	5.96	-0.01	7.25	0.06	1.16	1.42	0.25	-99	-99	-99	5.5	-13.05	-0.96	75.65	Failed
-07-Fenster	Variante 7.1 Raumlufttemperatur	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	0.49	18.38	-0.0	38.39	0.01	-0.0	22.88	0.12	0.00472	52.34	0.21	24.51	23.88	24.17	71.0	Failed
-07-Fenster	Variante 7.1 Wärmeleitung Fenster	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	-15819.38	101.69	0.03	47.12	25.07	-100.0	46.66	5.01	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.2 Raumlufttemperatur	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	101.09	103.42	-30.62	594.1	958.05	-100.0	164.29	30.95	3.44594	-4565.39	0.0	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.2 Trans.Strahlung Fenster	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	169.05	103.52	-73.76	89.08	15548.13	-100.0	44.31	124.69	3.3773	-53.83	0.0	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.2 Wärmeleitung Fenster	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	-108.69	103.42	11.64	218.06	159.96	-100.0	61.55	12.65	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.3 Raumlufttemperatur	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	100.8	103.45	-28.34	707.04	815.93	-100.0	188.05	28.56	3.37338	-6257.26	0.0	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.3 Trans.Strahlung Fenster	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	174.85	103.52	-57.74	119.71	10192.79	-100.0	40.85	100.96	3.19587	-48.61	0.0	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.3 Wärmeleitung Fenster	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	-108.7	103.46	9.02	221.33	96.14	-100.0	59.32	9.81	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.1 Raumlufttemperatur	ETU	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	0.69	56.21	0.0	53.69	0.03	0.0	32.01	0.17	0.00661	6.76	0.07	24.28	24.05	24.17	54.75	Failed
-07-Fenster	Variante 7.1 Wärmeleitung Fenster	ETU	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-15819.38	101.69	0.03	47.12	25.07	-100.0	46.66	5.01	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.2 Raumlufttemperatur	ETU	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	6.5	74.12	-1.09	38.22	3.96	-3.55	10.57	1.99	0.06089	80.69	3.92	34.33	20.0	29.53	72.85	Failed
-07-Fenster	Variante 7.2 Trans.Strahlung Fenster	ETU	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	23.29	0.31	-0.1	12.27	295.15	-0.14	6.1	17.18	0.51408	97.08	99.41	281.15	0.0	73.66	92.56	Silver
-07-Fenster	Variante 7.2 Wärmeleitung Fenster	ETU	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-108.69	103.42	11.64	218.06	159.96	-100.0	61.55	12.65	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.3 Raumlufttemperatur	ETU	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	7.51	76.93	-1.56	52.65	4.53	-5.5	14.0	2.13	0.06993	64.74	2.78	30.28	20.0	26.78	63.6	Failed
-07-Fenster	Variante 7.3 Trans.Strahlung Fenster	ETU	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	30.45	6.88	-5.4	20.85	309.14	-9.35	7.11	17.58	0.5031	95.49	75.54	233.73	0.0	52.34	89.04	Bronze
-07-Fenster	Variante 7.3 Wärmeleitung Fenster	ETU	ETU Simulation	4.1	Dr. Rainer Rolffs, ETU Hottgenroth	0	-108.7	103.46	9.02	221.33	96.14	-100.0	59.32	9.81	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.1 Raumlufttemperatur	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	100.0	101.33	-24.17	7795.44	583.99	-100.0	4647.28	24.17	3.22545	-1965687.63	0.0	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.1 Wärmeleitung Fenster	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-15819.38	101.69	0.03	47.12	25.07	-100.0	46.66	5.01	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.2 Raumlufttemperatur	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	101.09	103.42	-30.62	594.1	958.05	-100.0	164.29	30.95	3.44594	-4565.39	0.0	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.2 Trans.Strahlung Fenster	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	169.05	103.52	-73.76	89.08	15548.13	-100.0	44.31	124.69	3.3773	-53.83	0.0	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.2 Wärmeleitung Fenster	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-108.69	103.42	11.64	218.06	159.96	-100.0	61.55	12.65	-99	-99	-99	0.0	0.0	0.0	0.0	Failed
-07-Fenster	Variante 7.3 Raumlufttemperatur	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	8.02	56.3	1.51	56.24	5.16	5.32	14.96	2.27	0.07284	59.78	4.39	35.81	19.44	29.85	60.72	Failed
-07-Fenster	Variante 7.3 Trans.Strahlung Fenster	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	92.6	40.44	20.87	63.4	2858.99	36.14	21.63	53.47	0.74775	58.32	115.32	345.0	-0.19	78.61	51.81	Failed
-07-Fenster	Variante 7.3 Wärmeleitung Fenster	IDAICE	IDA ICE	4.8.0.1	Caroline Seifert, INNIUS DÖ	0	-1394.47	5757.89	-57.61	2839.48	15822.86	638.67	760.97	125.79	-99	-99	-99	14.04	-336.48	-66.63	-1956.77	Failed
-07-Fenster	Variante 7.1 Raumlufttemperatur	NANDRAD	NANDRAD v1.8	1.8	Dirk Weiß, IBK TU Dresden	0	0.01	0.0	0.0	0.68	0.0	0.0	0.4	0.0	8e-05	99.99	0.17	24.45	23.93	24.17	99.59	Gold
-07-Fenster	Variante 7.1 Wärmeleitung Fenster	NANDRAD	NANDRAD v1.8	1.8	Dirk Weiß, IBK TU Dresden	0	-8.48	0.01	-0.0	0.03	0.0	1.19	0.03	0.0	-99	-99	-99	6.25	-4.48	-0.03	79.88	Failed
-07-Fenster	Variante 7.2 Raumlufttemperatur	NANDRAD	NANDRAD v1.8	1.8	Dirk Weiß, IBK TU Dresden	0	0.11	0.77	-0.02	0.67	0.0	-0.06	0.19	0.04	0.00112	99.99	4.52	38.81	20.0	30.6	99.59	Gold
-07-Fenster	Variante 7.2 Trans.Strahlung Fenster	NANDRAD	NANDRAD v1.8	1.8	Dirk Weiß, IBK TU Dresden	0	0.87	0.09	-0.13	0.46	0.41	-0.17	0.23	0.64	0.19744	100.0	100.47	281.09	0.0	73.63	99.75	Gold
-07-Fenster	Variante 7.2 Wärmeleitung Fenster	NANDRAD	NANDRAD v1.8	1.8	Dirk Weiß, IBK TU Dresden	0	-0.51	2.01	-0.02	1.02	0.0	0.13	0.29	0.06	-99	-99	-99	0.0	-20.67	-11.65	79.39	Failed
-07-Fenster	Variante 7.3 Raumlufttemperatur	NANDRAD	NANDRAD v1.8	1.8	Dirk Weiß, IBK TU Dresden	0	0.42	1.6	-0.1	2.95	0.01	-0.37	0.78	0.12	0.0038	99.89	3.53	35.02	20.0	28.23	98.34	Gold
-07-Fenster	Variante 7.3 Trans.Strahlung Fenster	NANDRAD	NANDRAD v1.8	1.8	Dirk Weiß, IBK TU Dresden	0	2.32	0.78	-0.6	1.59	1.79	-1.05	0.54	1.34	0.19754	99.97	81.94	247.11	0.0	57.14	99.24	Gold
-07-Fenster	Variante 7.3 Wärmeleitung Fenster	NANDRAD	NANDRAD v1.8	1.8	Dirk Weiß, IBK TU Dresden	0	-2.71	2.37	-0.03	5.53	0.06	0.34	1.48	0.24	-99	-99	-99	0.0	-16.55	-9.05	76.87	Failed
-07-Fenster	Variante 7.1 Raumlufttemperatur	NANDRAD_TEMP	NANDRAD v1.8.2	2.0	Dirk Weiß, IBK TU Dresden	0	0.01	0.0	0.0	0.68	0.0	0.0	0.4	0.0	8e-05	99.99	0.17	24.45	23.93	24.17	99.59	Gold
-07-Fenster	Variante 7.1 Wärmeleitung Fenster	NANDRAD_TEMP	NANDRAD v1.8.2	2.0	Dirk Weiß, IBK TU Dresden	0	-8.48	0.01	-0.0	0.03	0.0	1.19	0.03	0.0	-99	-99	-99	6.25	-4.48	-0.03	79.88	Failed
-07-Fenster	Variante 7.2 Raumlufttemperatur	NANDRAD_TEMP	NANDRAD v1.8.2	2.0	Dirk Weiß, IBK TU Dresden	0	25.64	94.93	-6.45	150.71	61.65	-21.08	41.68	7.85	0.26475	-200.22	0.17	24.45	23.93	24.17	-15.14	Failed
-07-Fenster	Variante 7.2 Trans.Strahlung Fenster	NANDRAD_TEMP	NANDRAD v1.8.2	2.0	Dirk Weiß, IBK TU Dresden	0	0.87	0.09	-0.13	0.46	0.41	-0.17	0.23	0.64	0.19744	100.0	100.47	281.09	0.0	73.63	99.75	Gold
-07-Fenster	Variante 7.2 Wärmeleitung Fenster	NANDRAD_TEMP	NANDRAD v1.8.2	2.0	Dirk Weiß, IBK TU Dresden	0	-0.51	2.01	-0.02	1.02	0.0	0.13	0.29	0.06	-99	-99	-99	0.0	-20.67	-11.65	79.39	Failed
-07-Fenster	Variante 7.3 Raumlufttemperatur	NANDRAD_TEMP	NANDRAD v1.8.2	2.0	Dirk Weiß, IBK TU Dresden	0	0.42	1.6	-0.1	2.95	0.01	-0.37	0.78	0.12	0.0038	99.89	3.53	35.02	20.0	28.23	98.34	Gold
-07-Fenster	Variante 7.3 Trans.Strahlung Fenster	NANDRAD_TEMP	NANDRAD v1.8.2	2.0	Dirk Weiß, IBK TU Dresden	0	2.32	0.78	-0.6	1.59	1.79	-1.05	0.54	1.34	0.19754	99.97	81.94	247.11	0.0	57.14	99.24	Gold
-07-Fenster	Variante 7.3 Wärmeleitung Fenster	NANDRAD_TEMP	NANDRAD v1.8.2	2.0	Dirk Weiß, IBK TU Dresden	0	-2.71	2.37	-0.03	5.53	0.06	0.34	1.48	0.24	-99	-99	-99	0.0	-16.55	-9.05	76.87	Failed
-07-Fenster	Variante 7.1 Raumlufttemperatur	THERAKLES	NANDRAD v2	2.0	Dirk Weiß, IBK TU Dresden	0	0.01	1.86	0.0	1.02	0.0	0.0	0.61	0.0	0.00013	99.97	0.17	24.45	23.93	24.17	99.26	Gold
-07-Fenster	Variante 7.1 Wärmeleitung Fenster	THERAKLES	NANDRAD v2	2.0	Dirk Weiß, IBK TU Dresden	0	-4810.24	0.57	0.0	14.33	2.32	-0.14	14.19	1.52	-99	-99	-99	6.28	-4.51	-0.03	70.56	Failed
-07-Fenster	Variante 7.2 Raumlufttemperatur	THERAKLES	NANDRAD v2	2.0	Dirk Weiß, IBK TU Dresden	0	0.11	0.87	-0.01	0.63	0.0	-0.05	0.17	0.03	0.00106	99.99	4.52	38.81	20.0	30.6	99.61	Gold
-07-Fenster	Variante 7.2 Trans.Strahlung Fenster	THERAKLES	NANDRAD v2	2.0	Dirk Weiß, IBK TU Dresden	0	24.7	0.91	-0.1	13.02	332.06	-0.14	6.48	18.22	0.54283	96.71	101.07	284.29	0.0	73.66	92.04	Silver
-07-Fenster	Variante 7.2 Wärmeleitung Fenster	THERAKLES	NANDRAD v2	2.0	Dirk Weiß, IBK TU Dresden	0	-3.65	2.1	-0.03	7.33	0.18	0.25	2.07	0.42	-99	-99	-99	0.0	-20.69	-11.67	75.91	Failed
-07-Fenster	Variante 7.3 Raumlufttemperatur	THERAKLES	NANDRAD v2	2.0	Dirk Weiß, IBK TU Dresden	0	0.42	1.69	-0.1	2.92	0.01	-0.36	0.78	0.12	0.00377	99.89	3.53	35.02	20.0	28.24	98.35	Gold
-07-Fenster	Variante 7.3 Trans.Strahlung Fenster	THERAKLES	NANDRAD v2	2.0	Dirk Weiß, IBK TU Dresden	0	27.3	0.91	-0.65	18.69	248.5	-1.12	6.38	15.76	0.51736	96.38	82.38	251.06	0.0	57.09	89.36	Bronze
-07-Fenster	Variante 7.3 Wärmeleitung Fenster	THERAKLES	NANDRAD v2	2.0	Dirk Weiß, IBK TU Dresden	0	-4.96	1.67	-0.04	10.09	0.2	0.43	2.7	0.45	-99	-99	-99	0.0	-16.52	-9.06	74.42	Failed
-07-Fenster	Variante 7.1 Raumlufttemperatur	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	0.17	24.45	23.93	24.17	100.0	Gold
-07-Fenster	Variante 7.1 Wärmeleitung Fenster	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	6.25	-4.48	-0.03	80.1	Bronze
-07-Fenster	Variante 7.2 Raumlufttemperatur	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	4.53	38.84	20.0	30.62	100.0	Gold
-07-Fenster	Variante 7.2 Trans.Strahlung Fenster	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	100.54	281.42	0.0	73.76	100.0	Gold
-07-Fenster	Variante 7.2 Wärmeleitung Fenster	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	0.0	-20.55	-11.64	80.1	Bronze
-07-Fenster	Variante 7.3 Raumlufttemperatur	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	3.58	35.19	20.0	28.34	100.0	Gold
-07-Fenster	Variante 7.3 Trans.Strahlung Fenster	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	100.0	82.82	247.15	0.0	57.74	100.0	Gold
-07-Fenster	Variante 7.3 Wärmeleitung Fenster	TRNSYS	TRNSYS	18	Julian Agudelo, Hochschule München	0	-0.0	0.0	0.0	0.0	0.0	-0.0	0.0	0.0	-99	-99	-99	0.0	-16.53	-9.02	80.1	Bronze
 08-InterneLasten	Variante 8.1 Raumlufttemperatur	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	0.19	127.52	0.0	2.49	0.01	0.0	0.36	0.07	0.0031	99.97	4.07	40.81	20.0	38.27	90.19	Silver
 08-InterneLasten	Variante 8.1 Oberflächentemperatur	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	0.12	19.22	-0.0	1.43	0.0	-0.0	0.23	0.04	0.00166	99.99	4.05	38.23	20.0	35.69	97.96	Gold
 08-InterneLasten	Variante 8.2 Raumlufttemperatur	Aixlib	AixLib	0.7.3	Amin Nouri, RWTH Aachen	0	0.12	16.23	0.01	1.43	0.0	0.02	0.23	0.04	0.00171	99.99	4.05	38.23	20.0	35.7	98.16	Gold
