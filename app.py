@@ -25,8 +25,7 @@ server = app.server
 
 TESTDATA = dict()
 global EVALUATIONDATA
-EVALUATIONDATA = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t",
-                             engine="pyarrow").reset_index()
+EVALUATIONDATA = pd.DataFrame()
 global EVALUATIONDF
 EVALUATIONDF = EVALUATIONDATA.copy()
 
@@ -97,10 +96,7 @@ app.layout = html.Div(
                 ),
                 html.Div([
                     html.Div([
-                        "Download Test Case",
-                    ], style={'verticalAlign': 'middle', 'width': '300px', 'display': 'inline-block'}),
-                    html.Div([
-                        html.Button('Download', id='btn-testcase-data', n_clicks=0),
+                        html.Button('Download test case data', id='btn-testcase-data', n_clicks=0),
                         dcc.Download(id="download-testcase-data")
                     ], style={'verticalAlign': 'middle', 'display': 'inline'}),
                 ]),
@@ -236,15 +232,19 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
         for norm in norms:
             EVALUATIONDF = EVALUATIONDF.drop([norm], axis=1)
 
-    fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant,
-                  labels={"y": testcase_variant})
-    fig.data[0].update(mode='markers')
+
 
     for figline in fig.data:
         figline.line.color = COLORS[figline.name]
     searchterm = testcase[2:]
     EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Test Case'] == searchterm].drop(['Test Case'], axis=1)
     EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Variable'] == testcase_variant].drop(['Variable'], axis=1)
+
+    EVALUATIONDF
+
+    fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant,
+                  labels={"y": testcase_variant})
+    fig.data[0].update(mode='markers')
 
     def function(x):
         return '⭐⭐⭐' if x == 'Gold' else (
