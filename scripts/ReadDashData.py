@@ -49,11 +49,12 @@ def readTestCaseDescriptionFile(testCaseDir, testCaseName):
 # all entries from column 1 as keys and all entries from column 2
 # as values
 # first line is skipped
-def readDict(file):
+def readDict(file, skipHeader = True):
     myDict = dict()
     with open(file, mode='r', encoding="utf-8") as infile:
         reader = csv.reader(infile, delimiter='\t')
-        next(reader, None)  # skip the headers
+        if skipHeader:
+          next(reader, None)  # skip the headers
         myDict = {rows[0]: rows[1] for rows in reader}
 
     return myDict
