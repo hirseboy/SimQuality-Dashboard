@@ -64,6 +64,36 @@ def readDict(file, skipHeader = True):
 def zipTestCaseData(dirName, outputFileName):
     return shutil.make_archive(outputFileName, 'zip', dirName)
 
+def convertToRatingPanda(evaluationDf, testcase):
+    ratingDf = pd.DataFrame()
+
+    # first we take only variables containing to the test case
+    searchterm = testcase[2:]
+    tempDf = evaluationDf.loc[evaluationDf['Test Case'] == searchterm].drop(['Test Case'], axis=1)
+
+    convertDict = dict()
+    for index, row in tempDf.iterrows():
+        if row["Variable"] not in convertDict.keys():
+            convertDict[row["Variable"]] = dict()
+
+        convertDict[row["Variable"]][f"{row['Tool Name']} ({row['Version']})"] = row["SimQ-Rating"]
+
+    ratingDf = pd.DataFrame.from_dict(convertDict, orient='index').reset_index()
+
+    def function(x):
+        return '⭐⭐⭐' if x == 'Gold' else (
+            '⭐⭐' if x == 'Silver' else (
+                '⭐' if x == 'Bronze' else '-'
+            ))
+
+    for col in ratingDf.columns:
+        if col == "index":
+            continue
+        ratingDf[col] = ratingDf[col].apply(function)
+
+    ratingDf.rename(columns={"index": "Variable"}, inplace=True)
+
+    return ratingDf
 
 def stripVariable(v):
     p = v.find("(mean)")

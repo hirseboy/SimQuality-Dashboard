@@ -7,16 +7,6 @@
     visibility: visible;
 }
 
-[class="dash-spreadsheet-container"][data-dash-is-loading="true"]{
-    visibility: hidden;
-}
-[class="dash-spreadsheet-container"][data-dash-is-loading="true"]::before{
-    content: "Loading...";
-    display: inline-block;
-    color: magenta;
-    visibility: visible;
-}
-
 .dash-spinner-container {
   background-color: #ffffff1c !important;
 }
