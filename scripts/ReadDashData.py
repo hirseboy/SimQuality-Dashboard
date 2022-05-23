@@ -133,4 +133,9 @@ def readDashData(resultdir, testcase, testcase_variant):
     cols.insert(0, cols.pop(cols.index('Reference')))
     resultDf = resultDf.loc[:, cols]
 
+    for col in resultDf.columns:
+        if col == "Reference" or col == "Time":
+            continue
+        resultDf[col].interpolate(inplace=True)
+
     return resultDf
