@@ -10,3 +10,11 @@
 .dash-spinner-container {
   background-color: #ffffff1c !important;
 }
+
+body {
+	margin: 0px
+}
+
+#_dash-app-content {
+	box-sizing: border-box;
+}
