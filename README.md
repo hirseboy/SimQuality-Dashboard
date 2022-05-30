@@ -34,6 +34,11 @@ Inside the sub-directories all data for a specific tool e.g. TRNSYS is saved in 
 
 All evaluation data is stored inside the _results.tsv_ file for all test cases and tools. The script is only reading the TSV file at the initialization of the website and afterwards just filters the specific data.
 
+```
+Test Case	Variable	ToolID	Tool Name	Version	Unit	Editor	Fehlercode	Average [-]	CVRMSE [%]	Daily Amplitude CVRMSE [%]	MBE	MSE [%]	Max Difference [-]	Maximum [-]	Minimum [-]	NMBE [%]	NRMSE [%]	R squared [-]	RMSE [%]	RMSEIQR [%]	RMSLE [%]	std dev [-]	Reference	SimQ-Score [%]	SimQ-Rating
+01-Sonnenstand	Potsdam Altitude	ETU1	ETU Simulation	4.1	Deg	Dr. Rainer Rolffs, ETU Hottgenroth	0	22.49	2.86	0.47	0.49	0.39	1.01	56.98	-0.03	2.24	1.1	99.81	0.63	3.13	0.07668	14.49	False	97.73	Gold
+```
+
 ## FAQ ##
 
 **How to run the Dashboard on my local machine?**
