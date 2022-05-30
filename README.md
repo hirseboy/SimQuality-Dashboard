@@ -15,9 +15,18 @@ All data in directory _dash_data_ is directly shown in Dashboard.
 
 All the data needed to be shown in the plotly diagrams are within the sub-folder of the test case e.g. "TF01-Sonnenstand". Inside for each variable a sub-folder with the variable name exists. 
 
+```
 TF01-Sonnenstand
 |- Potsdam Altitude
+    |- TRNSYS.ftr
+    |- NANDRAD.ftr
+    |- ...
 |- Potsdam Azimuth
+|- ...
+TF02-SolareLasten Isotrop
+...
+Results.tsv
+```
 
 Inside the sub-directories all data for a specific tool e.g. TRNSYS is saved in the feather-format (https://pypi.org/project/feather-format/) with the tool Id as its name e.g. "TRNSYS.ftr".
 
