@@ -44,18 +44,12 @@ except IOError as e:
     exit(1)
 
 app.layout = html.Div(
-    style={'display': 'flex', 'flex-direction': 'row'},
+    style={'display': 'flex', 'flex-direction': 'row', 'box-sizing': 'border-box', 'height': '100vh'},
     children=[
         # left div
         html.Div([
-            html.Img(src=app.get_asset_url('simquality_logo.jpg'),
+            html.Img(src=app.get_asset_url('SimQuality_Dashboard_Logo.png'),
                      style={'width': '400px'}),
-            html.H1(
-                children='Dashboard',
-                style={
-                    'textAlign': 'left',
-                }
-            ),
 
             html.Div([
 
@@ -79,13 +73,10 @@ app.layout = html.Div(
                         'textAlign': 'left',
                     }
                 ),
-                dcc.Textarea(
-                    id='textarea-testcase-description',
-                    disabled=True,
-                    value='Textarea content initialized\nwith multiple lines of text',
-                    style={'width': '100%', 'height': 300},
-                ),
+                html.Div(id='text-div',
+                         style={'margin': '10px 0px'}),
 
+                html.Img(id="testcase-img", width="100%"),
             ]),
 
             html.Div([
@@ -98,6 +89,9 @@ app.layout = html.Div(
                 ]),
             ]),
 
+
+
+
             html.H3(
                 children='Optionen',
                 style={
@@ -109,15 +103,65 @@ app.layout = html.Div(
                 dcc.Checklist(['Zeige statistische Kenngrößen'], [],
                               id="statistical-checkstate", inline=True)
             ]),
-        ], style={'padding': 10, 'flex': "1 1 20%"}),
+
+            html.Div(
+                id='disclaimer',
+                children=['Version: 0.6',html.Br(),'BETA-VERSION, WIRD DERZEIT AKTUALISIERT. KEINE FINALEN DATEN, BITTE BEACHTEN!'],
+                style={
+                    'textAlign': 'left',
+                    'color': 'red',
+                    'margin-top': '30px',
+                    'position': 'absolute',
+                    'bottom': '30px',
+                    'margin-right': '30px'
+                }
+            ),
+        ], style={'padding': 30, 'flex': "1 1 20%", 'background': '#9898982e',
+                    'position': 'relative'}),
 
         # right dif div
         html.Div([
 
-            dcc.Tabs(id="tabs-example-graph", value='tab-1-example-graph', children=[
-                dcc.Tab(label='Variablenanalyse', value='tab-1-example-graph', children=[
+            dcc.Tabs(id="tabs-example-graph", value='overall-rating', children=[
 
-                    "Variable:",
+                dcc.Tab(label='Gesamtbewertung', value='overall-rating', children=[
+
+                    dash_table.DataTable(
+                        id='rating-table',
+                        editable=False,
+                        style_as_list_view=True,
+                        sort_action='native',
+                        style_data_conditional= [
+                                                   {
+                                                       'if': {
+                                                           'column_id': '{{ToolID}} = {}'.format(
+                                                               tool),
+                                                       },
+                                                       'border-bottom': "1px solid" + TOOLCOLORS[tool]
+                                                   } for tool in TOOLCOLORS.keys()
+                                                ] +
+                                                [
+                                                   {
+                                                       'if': {
+                                                           'column_id': 'Variable'
+                                                       },
+                                                       'textAlign': 'left'
+                                                   },
+                                               ],
+                        style_header_conditional=[
+                            {
+                                'if': {
+                                    'column_id': 'Variable'
+                                },
+                                'textAlign': 'left'
+                            },
+                        ],
+                    )
+
+                ]),
+
+                dcc.Tab(label='Variablenanalyse', value='variable-analysis', children=[
+
                     dcc.Dropdown(id="testcase-variant-dropdown"),
 
                     dcc.Graph(
@@ -186,45 +230,11 @@ app.layout = html.Div(
                     )
 
                 ]),
-                dcc.Tab(label='Gesamtbewertung', value='tab-2-example-graph', children=[
 
-                    dash_table.DataTable(
-                        id='rating-table',
-                        editable=False,
-                        style_as_list_view=True,
-                        sort_action='native',
-                        style_data_conditional= [
-                                                   {
-                                                       'if': {
-                                                           'column_id': '{{ToolID}} = {}'.format(
-                                                               tool),
-                                                       },
-                                                       'border-bottom': "1px solid" + TOOLCOLORS[tool]
-                                                   } for tool in TOOLCOLORS.keys()
-                                                ] +
-                                                [
-                                                   {
-                                                       'if': {
-                                                           'column_id': 'Variable'
-                                                       },
-                                                       'textAlign': 'left'
-                                                   },
-                                               ],
-                        style_header_conditional=[
-                            {
-                                'if': {
-                                    'column_id': 'Variable'
-                                },
-                                'textAlign': 'left'
-                            },
-                        ],
-                    )
-
-                ]),
             ]),
 
 
-        ], style={'padding': 10, 'flex': "1 1 80%"}),
+        ], style={'padding': 30, 'flex': "1 1 80%"}),
 
         dcc.Loading(
             id="loading-data",
@@ -239,7 +249,8 @@ app.layout = html.Div(
 @app.callback(
     Output('testcase-variant-dropdown', 'options'),
     Output('testcase-variant-dropdown', 'value'),
-    Output('textarea-testcase-description', 'value'),
+    Output('text-div', 'children'),
+    Output('testcase-img', 'src'),
     Output('rating-table', 'data'),
     Input('testcase-dropdown', 'value')
 )
@@ -247,6 +258,7 @@ def clean_data(selected_testcase):
     # some expensive data processing step
     try:
         testCaseDescription = readTestCaseDescriptionFile(RESULTDIR, selected_testcase)
+        image = f"{selected_testcase[0:4]}.png"
     except IOError:
         raise Exception(f"Could not read test case description of test case {selected_testcase}.")
 
@@ -262,7 +274,7 @@ def clean_data(selected_testcase):
     ratingDf = convertToRatingPanda(EVALUATIONDATA, selected_testcase)
 
     return [{'label': i, 'value': i} for i in variables], \
-           variables[0], testCaseDescription, ratingDf.to_dict('records')
+           variables[0], testCaseDescription, app.get_asset_url(image), ratingDf.to_dict('records')
 
 
 # Figure is updated
@@ -276,7 +288,8 @@ def clean_data(selected_testcase):
 )
 def update_testcase_variant_data(testcase_variant, testcase, checksate):
     norms = ['CVRMSE [%]','Daily Amplitude CVRMSE [%]','MBE','RMSEIQR [%]','MSE [%]','NMBE [%]','Average [-]',
-             'NRMSE [%]','RMSE [%]','RMSLE [%]','R squared [-]','std dev [-]','Maximum [-]','Minimum [-]','Fehlercode']
+             'NRMSE [%]','RMSE [%]','RMSLE [%]','R squared [-]','std dev [-]','Maximum [-]','Minimum [-]','Fehlercode',
+             'Max Difference [-]']
     try:
         resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
     except Exception as e:
@@ -310,17 +323,24 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
     for figline in fig.data:
         if figline.name == "Reference":
             continue
+        if figline.name not in namesDict.keys():
+            continue
         figline.name = namesDict[figline.name]
 
 
 
     def function(x):
-        return '⭐⭐⭐' if x == 'Gold' else (
-            '⭐⭐' if x == 'Silver' else (
-                '⭐' if x == 'Bronze' else '-'
+        return '🟩' if x == 'Gold' else (
+            '🟩' if x == 'Silver' else (
+                '🟨' if x == 'Bronze' else '🟥'
             ))
 
     EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
+
+    def functionReference(x):
+        return '✔️' if x == True else ''
+
+    EVALUATIONDF['Reference'] = EVALUATIONDF['Reference'].apply(functionReference)
 
     return fig, EVALUATIONDF.drop(['index'], axis=1).to_dict('records'), ""
 
@@ -335,7 +355,7 @@ def func(n_clicks, value):
         raise dash.exceptions.PreventUpdate
     # zip all data in data folder
     return dcc.send_file(
-        zipTestCaseData(f"./test_data/{value}/data", f"{value}-data")
+        zipTestCaseData(f"./dash_data/{value}/download_data", f"{value}-data")
     )
 
 
