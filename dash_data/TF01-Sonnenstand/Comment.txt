@@ -1,0 +1,46 @@
+# Anmerkungen zum Testfall
+
+## Probleme bei der Durchführung
+
+Schwierigkeiten, die sich bei der Durchführung der
+Sonnenstandsberechnung ergeben können:
+
+-   **Beachtung der äquatorbezogenen Azimut-Definition im amerikanischen
+    Kontext**
+
+    -   In Europa ist die Definiton wie folgt: N 0°, O 90°, S
+        180°, W 270°
+
+    -   In Amerika ist die Definition meist: N 0°, O -90°,
+        S 0°, W 90°
+
+-   Beachtung der Defintion des Längengrades:
+
+    -   In Europa ist der Längengrad Richtung Osten postiv definiert
+        ausgehend vom Null-Meridian
+
+    -   In Amerika ist der Längengrad Richtung Westen postiv definiert
+        ausgehend vom Null-Meridian
+
+-   Die Sonnenstände hängen maßgebend von der richtigen Zeitzone des
+    Ortes ab. Sonst wird der eigentlich korrekte Sonnenstand zu einem
+    falschen Zeitpunkt geschrieben.
+	
+	
+## Bewertung
+
+Die Ausgabefehler bei IDA ICE sind als kosmetische Probleme einzustufen,
+da es sich offenbar nur um Ausgabefehler handelt (Nachfrage hierzu wurde
+an IDA ICE Entwickler gestellt). In der Simulation werden mit hoher
+Wahrscheinlichkeit die korrekten Azimutwinkel verwendet. Ansonsten wäre
+der Fehler insgesamt sehr klein, da nur eine Minute des Tages betroffen
+ist. Daher ist IDA ICE als korrekt rechnend anzusehen.
+
+Bei TRNSYS ist tatsächlich ein Problem bei niedrigen Sonnenhöhenwinkeln
+und bestimmten Standorten festzustellen (eine Anfrage an die
+TRNSYS-Entwickler wurde gestellt). Allerdings wirken sich die Fehler in
+der Gebäudesimulation nicht nennenswert aus, da die korrespondierenden
+Strahlungsintensitäten im Zeitinterval mit Berechnungsfehlern selbst
+sehr klein sind, und daher nur minimale Auswirkungen auf die
+Strahlungslasten auf Wand-, Dach- und Fensterflächen haben. Daher ist
+TRNSYS auch als ausreichend korrekt rechnend anzusehen.
