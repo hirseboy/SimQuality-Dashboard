@@ -8,7 +8,7 @@
 }
 
 .dash-spinner-container {
-  background-color: #ffffff1c !important;
+	background-color: #ffffff1c !important;
 }
 
 body {
@@ -17,4 +17,18 @@ body {
 
 #_dash-app-content {
 	box-sizing: border-box;
+}
+
+#testcase-img {
+	max-height: 200px;
+	max-width: 100%;
+}
+
+a {
+  display: block;
+}
+
+ul {
+  list-style-position: outside;
+  margin-left: 15px;
 }
