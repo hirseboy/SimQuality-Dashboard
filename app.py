@@ -10,6 +10,7 @@ import plotly.express as px
 import cProfile
 from dash import Dash, dcc, dash_table, html
 from dash.dependencies import Input, Output, State
+from dash.exceptions import PreventUpdate
 
 sys.path.append(os.path.join(os.getcwd(), 'scripts'))
 from ReadDashData import *
@@ -76,7 +77,7 @@ app.layout = html.Div(
                 html.Div(id='text-div',
                          style={'margin': '10px 0px'}),
 
-                html.Img(id="testcase-img", width="100%"),
+                html.Img(id="testcase-img"),
             ]),
 
             html.Div([
@@ -100,9 +101,37 @@ app.layout = html.Div(
             ),
 
             html.Div([
-                dcc.Checklist(['Zeige statistische Kenngrößen'], [],
+                dcc.Checklist(['Zeige Evaluierungsdaten'], [],
                               id="statistical-checkstate", inline=True)
             ]),
+
+            dash_table.DataTable(
+                id='weightfactor-table',
+                editable=False,
+                style_as_list_view=True,
+                sort_action='native',
+                css=[{"selector": ".show-hide", "rule": "display: none"}],
+                hidden_columns=["index"],
+                style_header_conditional=[
+                            {
+                                'if': {
+                                    'column_id': 'statistical method'
+                                },
+                                'textAlign': 'left'
+                            }
+                ],
+                style_data_conditional=[
+                            {
+                                'if': {
+                                    'column_id': 'statistical method'
+                                },
+                                'textAlign': 'left'
+                            }
+                ]
+            ),
+
+            html.Div(id='error-div',
+                     style={'margin': '10px 0px'}),
 
             html.Div(
                 id='disclaimer',
@@ -157,6 +186,12 @@ app.layout = html.Div(
                             },
                         ],
                     )
+
+                ]),
+
+                dcc.Tab(label='Erläuterung', value='comment', children=[
+
+                    dcc.Markdown(id='comment-div', style={'margin': '10px 0px'})
 
                 ]),
 
@@ -250,14 +285,18 @@ app.layout = html.Div(
     Output('testcase-variant-dropdown', 'options'),
     Output('testcase-variant-dropdown', 'value'),
     Output('text-div', 'children'),
+    Output('comment-div', 'children'),
     Output('testcase-img', 'src'),
     Output('rating-table', 'data'),
-    Input('testcase-dropdown', 'value')
+    Output('weightfactor-table', 'data'),
+    Input('testcase-dropdown', 'value'),
+    Input('statistical-checkstate', 'value')
 )
-def clean_data(selected_testcase):
+def clean_data(selected_testcase, checkstate):
     # some expensive data processing step
     try:
         testCaseDescription = readTestCaseDescriptionFile(RESULTDIR, selected_testcase)
+        testCaseComment = readCommentFile(RESULTDIR, selected_testcase)
         image = f"{selected_testcase[0:4]}.png"
     except IOError:
         raise Exception(f"Could not read test case description of test case {selected_testcase}.")
@@ -273,15 +312,26 @@ def clean_data(selected_testcase):
 
     ratingDf = convertToRatingPanda(EVALUATIONDATA, selected_testcase)
 
+    weightFactorDf = pd.DataFrame()
+
+    if checkstate:
+        weightFactorDf = pd.read_csv(os.path.join(RESULTDIR, selected_testcase, "WeightFactors.tsv"), encoding='utf-8', sep="\t",
+                                     engine="pyarrow").reset_index()
+
+        weightFactorDf = weightFactorDf.drop(weightFactorDf[weightFactorDf['weight factor [-]'] == 0].index)
+
     return [{'label': i, 'value': i} for i in variables], \
-           variables[0], testCaseDescription, app.get_asset_url(image), ratingDf.to_dict('records')
+           variables[0], testCaseDescription, testCaseComment, \
+           app.get_asset_url(image), ratingDf.to_dict('records'), \
+           weightFactorDf.to_dict('records')
 
 
 # Figure is updated
 @app.callback(
-    Output('testcase-graph', 'figure'),
+    [Output('testcase-graph', 'figure'),
     Output('evaluation-table', 'data'),
-    Output('loading-data', 'children'),
+    Output('loading-data', 'children')],
+    Output('error-div', 'children'),
     Input('testcase-variant-dropdown', 'value'),
     State('testcase-dropdown', 'value'),
     Input('statistical-checkstate', 'value')
@@ -290,59 +340,67 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
     norms = ['CVRMSE [%]','Daily Amplitude CVRMSE [%]','MBE','RMSEIQR [%]','MSE [%]','NMBE [%]','Average [-]',
              'NRMSE [%]','RMSE [%]','RMSLE [%]','R squared [-]','std dev [-]','Maximum [-]','Minimum [-]','Fehlercode',
              'Max Difference [-]']
+
+    errorText = ""
+
     try:
         resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
+
+
+        EVALUATIONDF = EVALUATIONDATA.copy()
+        if not checksate:
+            for norm in norms:
+                EVALUATIONDF = EVALUATIONDF.drop([norm], axis=1)
+
+        searchterm = testcase[2:]
+        EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Test Case'] == searchterm].drop(['Test Case'], axis=1)
+        EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Variable'] == testcase_variant].drop(['Variable'], axis=1)
+
+        fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant,
+                      labels={"y": testcase_variant})
+        fig.data[0].update(mode='markers')
+        for figline in fig.data:
+            figline.line.color = TOOLCOLORS[figline.name]
+
+        namesDict = dict()
+        for index, row in EVALUATIONDF.iterrows():
+            namesDict[row['ToolID']] = f"{row['Tool Name']} ({row['Version']})"
+
+        fig.update_layout(
+            legend_title="Tools",
+            yaxis_title=EVALUATIONDF["Unit"].iloc[0],
+        )
+
+        for figline in fig.data:
+            if figline.name == "Reference":
+                continue
+            if figline.name not in namesDict.keys():
+                continue
+            figline.name = namesDict[figline.name]
+
+
+
+        def function(x):
+            return '🟩' if x == 'Gold' else (
+                '🟩' if x == 'Silver' else (
+                    '🟨' if x == 'Bronze' else '🟥'
+                ))
+
+        EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
+
+        def functionReference(x):
+            return '✔️' if x == True else ''
+
+        EVALUATIONDF['Reference'] = EVALUATIONDF['Reference'].apply(functionReference)
+        EVALUATIONDF = EVALUATIONDF.drop(['index'], axis=1).to_dict('records')
+
     except Exception as e:
-        printError(str(e))
-        printError(f"Could not read test case {testcase} and variable {testcase_variant}.")
+        EVALUATIONDF = pd.DataFrame()
+        fig = px.line(EVALUATIONDF, x=EVALUATIONDF.index, y=EVALUATIONDF.columns)
+        errorText = f"{str(e)}.\nCould not read test case {testcase} and variable {testcase_variant}."
+        # raise PreventUpdate
 
-    EVALUATIONDF = EVALUATIONDATA.copy()
-    if not checksate:
-        for norm in norms:
-            EVALUATIONDF = EVALUATIONDF.drop([norm], axis=1)
-
-    searchterm = testcase[2:]
-    EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Test Case'] == searchterm].drop(['Test Case'], axis=1)
-    EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Variable'] == testcase_variant].drop(['Variable'], axis=1)
-
-    fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant,
-                  labels={"y": testcase_variant})
-    fig.data[0].update(mode='markers')
-    for figline in fig.data:
-        figline.line.color = TOOLCOLORS[figline.name]
-
-    namesDict = dict()
-    for index, row in EVALUATIONDF.iterrows():
-        namesDict[row['ToolID']] = f"{row['Tool Name']} ({row['Version']})"
-
-    fig.update_layout(
-        legend_title="Tools",
-        yaxis_title=EVALUATIONDF["Unit"].iloc[0],
-    )
-
-    for figline in fig.data:
-        if figline.name == "Reference":
-            continue
-        if figline.name not in namesDict.keys():
-            continue
-        figline.name = namesDict[figline.name]
-
-
-
-    def function(x):
-        return '🟩' if x == 'Gold' else (
-            '🟩' if x == 'Silver' else (
-                '🟨' if x == 'Bronze' else '🟥'
-            ))
-
-    EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
-
-    def functionReference(x):
-        return '✔️' if x == True else ''
-
-    EVALUATIONDF['Reference'] = EVALUATIONDF['Reference'].apply(functionReference)
-
-    return fig, EVALUATIONDF.drop(['index'], axis=1).to_dict('records'), ""
+    return fig, EVALUATIONDF, "", errorText
 
 @app.callback(
     Output("download-testcase-data", "data"),
