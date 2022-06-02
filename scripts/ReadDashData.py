@@ -45,6 +45,13 @@ def readTestCaseDescriptionFile(testCaseDir, testCaseName):
 
     return str(lines)
 
+def readCommentFile(testCaseDir, testCaseName):
+    path = os.path.join(testCaseDir, testCaseName, "Comment.txt")
+    with open(path, encoding="utf-8") as f:
+        lines = f.read()
+
+    return str(lines)
+
 # Reads a csv file specified by a path and returns a dict with
 # all entries from column 1 as keys and all entries from column 2
 # as values
@@ -110,20 +117,25 @@ def readDashData(resultdir, testcase, testcase_variant):
 
     resultDf = pd.DataFrame()
 
+    timeDf = pd.DataFrame()
+
     # eg. 'NANDRAD.tsv --> strip the name till "." --> "NANDRAD"
     for file in testfiles:
         toolfile = os.path.join(path, file)
         df = pd.read_feather(toolfile)
         df = df.set_index('index')
-
         tool = file.split(".")[0] # tool name
+
+        if tool != 'Reference':
+            timeDf = df
+
         data = df['Data'].tolist()
         df.columns = [tool]
         resultDf[tool] = df[tool]
 
     index = resultDf.index
     time = []
-    for i in df.index:
+    for i in timeDf.index:
         time.append(dt.datetime(2020, 1, 1) + dt.timedelta(hours=i))
 
     resultDf['Time'] = time
