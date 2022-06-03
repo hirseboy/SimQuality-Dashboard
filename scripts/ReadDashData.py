@@ -16,10 +16,19 @@ from PrintFuncs import *
 def readVariables(testCaseDir, testCaseName):
     path = os.path.join(testCaseDir, testCaseName)
     dirs = os.listdir(path)
-    for file in dirs:
-        if file.endswith(".txt"):
-            dirs.remove(file)
-    return sorted(dirs)
+
+    cleanedDirs = []
+    for dir in dirs:
+        if dir.endswith('.txt'):
+            continue
+        if dir.endswith('.tsv'):
+            continue
+        if dir.endswith('.png'):
+            continue
+        if dir == "download_data":
+            continue
+        cleanedDirs.append(dir)
+    return sorted(cleanedDirs)
 
 def readTestCaseDirectories(path):
     dirs = []
@@ -29,6 +38,11 @@ def readTestCaseDirectories(path):
     # process all subdirectory starting with TF
     for sd in subdirs:
         if len(sd) > 4 and sd.startswith("TF"):
+            if sd.endswith(".txt") or sd.endswith(".txt"):
+                continue
+            if sd == "download_data":
+                continue
+
             # extract next two digits and try to convert to a number
             try:
                 testCaseNumber = int(sd[2:3])
