@@ -68,12 +68,6 @@ app.layout = html.Div(
             ]),
 
             html.Div([
-                html.H3(
-                    children='Beschreibung',
-                    style={
-                        'textAlign': 'left',
-                    }
-                ),
                 html.Div(id='text-div',
                          style={'margin': '10px 0px'}),
 
