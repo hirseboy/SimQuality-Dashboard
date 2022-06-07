@@ -373,7 +373,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
 
         def function(x):
             return '🟩' if x == 'Gold' else (
-                '🟩' if x == 'Silver' else (
+                '🟨' if x == 'Silver' else (
                     '🟨' if x == 'Bronze' else '🟥'
                 ))
 
