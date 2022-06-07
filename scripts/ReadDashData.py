@@ -141,6 +141,7 @@ def readDashData(resultdir, testcase, testcase_variant):
         tool = file.split(".")[0] # tool name
 
         if tool != 'Reference':
+            printNotification(tool)
             timeDf = df
 
         data = df['Data'].tolist()
