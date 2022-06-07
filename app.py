@@ -350,7 +350,8 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
         EVALUATIONDF = EVALUATIONDATA.copy()
         if not checksate:
             for norm in norms:
-                EVALUATIONDF = EVALUATIONDF.drop([norm], axis=1)
+                if norm in EVALUATIONDF.columns:
+                    EVALUATIONDF = EVALUATIONDF.drop([norm], axis=1)
 
         searchterm = testcase[2:]
         EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Test Case'] == searchterm].drop(['Test Case'], axis=1)
@@ -396,7 +397,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
 
     except Exception as e:
         EVALUATIONDF = pd.DataFrame()
-        fig = px.line(EVALUATIONDF, x=EVALUATIONDF.index, y=EVALUATIONDF.columns)
+        # fig = px.line(EVALUATIONDF, x=EVALUATIONDF.index, y=EVALUATIONDF.columns)
         errorText = f"{str(e)}.\nCould not read test case {testcase} and variable {testcase_variant}."
         # raise PreventUpdate
 
