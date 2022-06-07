@@ -54,7 +54,7 @@ app.layout = html.Div(
 
             html.Div([
 
-                html.H3(
+                html.H4(
                     children='Testfall',
                     style={
                         'textAlign': 'left',
@@ -139,10 +139,6 @@ app.layout = html.Div(
                 style={
                     'textAlign': 'left',
                     'color': 'red',
-                    'margin-top': '30px',
-                    'position': 'absolute',
-                    'bottom': '30px',
-                    'margin-right': '30px'
                 }
             ),
         ], style={'padding': 30, 'flex': "1 1 20%", 'background': '#9898982e',
