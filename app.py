@@ -396,10 +396,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
         EVALUATIONDF = EVALUATIONDF.drop(['index'], axis=1).to_dict('records')
 
     except Exception as e:
-        EVALUATIONDF = pd.DataFrame()
-        # fig = px.line(EVALUATIONDF, x=EVALUATIONDF.index, y=EVALUATIONDF.columns)
-        errorText = f"{str(e)}.\nCould not read test case {testcase} and variable {testcase_variant}."
-        # raise PreventUpdate
+        raise PreventUpdate
 
     return fig, EVALUATIONDF, "", errorText
 
