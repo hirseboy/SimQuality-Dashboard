@@ -386,6 +386,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
         EVALUATIONDF = EVALUATIONDF.drop(['index'], axis=1).to_dict('records')
 
     except Exception as e:
+        print(str(e))
         raise PreventUpdate
 
     return fig, EVALUATIONDF, "", errorText
