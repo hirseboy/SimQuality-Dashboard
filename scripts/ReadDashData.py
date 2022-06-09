@@ -140,7 +140,7 @@ def readDashData(resultdir, testcase, testcase_variant):
         df = df.set_index('index')
         tool = file.split(".")[0] # tool name
 
-        if tool != 'Reference':
+        if tool == 'NANDRAD':
             printNotification(tool)
             timeDf = df
 
