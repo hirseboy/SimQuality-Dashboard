@@ -126,11 +126,17 @@ def stripVariable(v):
     return v[0:p].strip()
 
 def readDashData(resultdir, testcase, testcase_variant):
+
     path = os.path.join(resultdir, testcase, testcase_variant)
+    print(f"Reading test case data in path '{path}")
+
     testfiles = os.listdir(path)
+    print(f"For this test case we found following files:")
+    for file in testfiles:
+        print(f"{file}")
 
+    # Construct two pandas dataframes
     resultDf = pd.DataFrame()
-
     timeDf = pd.DataFrame()
 
     # eg. 'NANDRAD.tsv --> strip the name till "." --> "NANDRAD"
@@ -139,20 +145,23 @@ def readDashData(resultdir, testcase, testcase_variant):
         df = pd.read_feather(toolfile)
         df = df.set_index('index')
         tool = file.split(".")[0] # tool name
+        print(f"Reading the tool data file '{toolfile}' and take its name '{tool}'.")
 
         if tool == 'NANDRAD':
-            printNotification(tool)
+            print(f"Setting the tool with name '{tool}' as time column.")
             timeDf = df
 
         data = df['Data'].tolist()
         df.columns = [tool]
         resultDf[tool] = df[tool]
+        print(f"Result data of tool '{tool}' has been added.")
 
     index = resultDf.index
     time = []
     for i in timeDf.index:
         time.append(dt.datetime(2020, 1, 1) + dt.timedelta(hours=i))
 
+    print(f"Time Column will be set.")
     resultDf['Time'] = time
 
     # resort 'reference' to front
