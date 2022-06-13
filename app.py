@@ -67,12 +67,7 @@ app.layout = html.Div(
                 ),
             ]),
 
-            html.Div([
-                html.Div(id='text-div',
-                         style={'margin': '10px 0px'}),
 
-                html.Img(id="testcase-img"),
-            ]),
 
             html.Div([
 
@@ -84,7 +79,12 @@ app.layout = html.Div(
                 ]),
             ]),
 
+            html.Div([
+                html.Div(id='text-div',
+                         style={'margin': '10px 0px'}),
 
+                html.Img(id="testcase-img"),
+            ]),
 
 
             html.H3(
