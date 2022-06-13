@@ -28,10 +28,22 @@ body {
 }
 
 a {
-  display: block;
+    display: block;
 }
 
 ul {
-  list-style-position: outside;
-  margin-left: 15px;
+    list-style-position: outside;
+    margin-left: 15px;
+}
+
+#btn-testcase-data {
+    width: 100%;
+}
+
+#weightfactor-table {
+    margin: 20px 0px;
+}
+
+#text-div {
+
 }

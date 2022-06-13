@@ -75,24 +75,16 @@ app.layout = html.Div(
                     html.Div([
                         html.Button('Download Aufgabenstellung inkl. Daten', id='btn-testcase-data', n_clicks=0),
                         dcc.Download(id="download-testcase-data")
-                    ], style={'verticalAlign': 'middle', 'display': 'inline'}),
+                    ], style={'verticalAlign': 'middle', 'margin': '20px 0px'}),
                 ]),
             ]),
 
             html.Div([
-                html.Div(id='text-div',
-                         style={'margin': '10px 0px'}),
-
-                html.Img(id="testcase-img"),
+                html.Div(id='text-div', style={'margin': '10px 0px'}),
+                html.Img(id="testcase-img", style={'margin': '20px auto'}),
             ]),
 
-
-            html.H3(
-                children='Optionen',
-                style={
-                    'textAlign': 'left',
-                }
-            ),
+            html.H3(children='Optionen', style={'textAlign': 'left'}),
 
             html.Div([
                 dcc.Checklist(['Zeige Evaluierungsdaten'], [],
