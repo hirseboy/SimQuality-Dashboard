@@ -344,6 +344,9 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
                     EVALUATIONDF = EVALUATIONDF.drop([norm], axis=1)
 
         searchterm = testcase[2:]
+        print(f"Reading data for search term '{searchterm}'.")
+        print(EVALUATIONDF)
+
         EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Test Case'] == searchterm].drop(['Test Case'], axis=1)
         EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Variable'] == testcase_variant].drop(['Variable'], axis=1)
 
