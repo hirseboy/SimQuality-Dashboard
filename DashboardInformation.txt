@@ -1,0 +1,9 @@
+**Version: _0.8.3_**
+
+Dieses Dashboard wurde im Rahmen von SimQuality erstellt.
+
+Das Dashboard ist derzeit noch in der Beta-Phase und wird noch aktualisiert.
+Die gezeigten Datensätze der Programme können noch Fehler enthalten.
+
+Bei Fragen & Kritik bitte an:
+[Stephan Hirth](mailto:stephan.hirth@tu-dresden.de?subject=SimQuality-Dashboard)
