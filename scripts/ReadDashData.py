@@ -66,6 +66,13 @@ def readCommentFile(testCaseDir, testCaseName):
 
     return str(lines)
 
+def readDashboardInformation():
+    path = os.path.join(os.getcwd(), "DashboardInformation.txt")
+    with open(path, encoding="utf-8") as f:
+        lines = f.read()
+
+    return str(lines)
+
 # Reads a csv file specified by a path and returns a dict with
 # all entries from column 1 as keys and all entries from column 2
 # as values
