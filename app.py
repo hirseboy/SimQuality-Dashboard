@@ -321,7 +321,6 @@ def clean_data(selected_testcase, checkstate):
     [Output('testcase-graph', 'figure'),
     Output('evaluation-table', 'data'),
     Output('loading-data', 'children')],
-    Output('error-div', 'children'),
     Input('testcase-variant-dropdown', 'value'),
     State('testcase-dropdown', 'value'),
     Input('statistical-checkstate', 'value')
@@ -330,13 +329,12 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
     norms = ['CVRMSE [%]','Daily Amplitude CVRMSE [%]','MBE','RMSEIQR [%]','MSE [%]','NMBE [%]','Average [-]',
              'NRMSE [%]','RMSE [%]','RMSLE [%]','R squared [-]','std dev [-]','Maximum [-]','Minimum [-]','Fehlercode',
              'Max Difference [-]']
-
-    errorText = ""
-
     try:
+        print(f"Reading test case '{testcase}' and variable '{testcase_variant}'.")
+
         resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
 
-
+        print(f"Converting 'result.tsv' with evaluation results.")
         EVALUATIONDF = EVALUATIONDATA.copy()
         if not checksate:
             for norm in norms:
@@ -347,6 +345,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
         EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Test Case'] == searchterm].drop(['Test Case'], axis=1)
         EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Variable'] == testcase_variant].drop(['Variable'], axis=1)
 
+        print(f"Updating figure with all needed data.")
         fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant,
                       labels={"y": testcase_variant})
         fig.data[0].update(mode='markers')
@@ -370,7 +369,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
             figline.name = namesDict[figline.name]
 
 
-
+        print(f"Converting rating to coloring.")
         def function(x):
             return '🟩' if x == 'Gold' else (
                 '🟨' if x == 'Silver' else (
@@ -389,7 +388,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
         print(str(e))
         raise PreventUpdate
 
-    return fig, EVALUATIONDF, "", errorText
+    return fig, EVALUATIONDF, ""
 
 @app.callback(
     Output("download-testcase-data", "data"),
