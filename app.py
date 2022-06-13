@@ -332,6 +332,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
 
     #### READING ALL EVALUATION DATA ####
     try:
+        print(f"\n##################################################\n")
         print(f"Reading test case '{testcase}' and variable '{testcase_variant}'.")
 
         resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
