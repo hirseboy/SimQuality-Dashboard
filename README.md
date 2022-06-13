@@ -49,3 +49,10 @@ Test Case	Variable	ToolID	Tool Name	Version	Unit	Editor	Fehlercode	Average [-]	C
 All needed libs to run the Dashboard on a local machine are registered inside the _requirements.txt_ and can be installed via pip (https://pypi.org/project/pip/) using the following command (start console inside the project directory):
 
 `pip install requirements.txt`
+
+**How to generate a requirements.txt file automatically for a python server?**
+
+To do so you can directly use pipenv with the following command (Python 3):
+
+`pip3 freeze > requirements1.txt`
+
