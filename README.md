@@ -54,5 +54,5 @@ All needed libs to run the Dashboard on a local machine are registered inside th
 
 To do so you can directly use pipenv with the following command (Python 3):
 
-`pip3 freeze > requirements1.txt`
+`pip3 freeze > requirements.txt`
 
