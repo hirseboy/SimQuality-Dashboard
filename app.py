@@ -339,6 +339,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
 
         print(f"Converting 'result.tsv' with evaluation results.")
         EVALUATIONDF = EVALUATIONDATA.copy()
+        print(EVALUATIONDF)
         if not checksate:
             for norm in norms:
                 if norm in EVALUATIONDF.columns:
