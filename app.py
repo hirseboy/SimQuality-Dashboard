@@ -11,6 +11,7 @@ import cProfile
 from dash import Dash, dcc, dash_table, html
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
+import dash_bootstrap_components as dbc
 
 sys.path.append(os.path.join(os.getcwd(), 'scripts'))
 from ReadDashData import *
@@ -35,6 +36,7 @@ global EVALUATIONDF
 EVALUATIONDF = EVALUATIONDATA.copy()
 
 SUBDIRS = sorted(readTestCaseDirectories(RESULTDIR))
+info = readDashboardInformation()
 
 try:
     TOOLCOLORS = readDict(os.path.join(RESULTDIR, "ToolColors.tsv"), False)
@@ -49,28 +51,21 @@ app.layout = html.Div(
     children=[
         # left div
         html.Div([
+            html.Img(src=app.get_asset_url('question-circle-solid.svg'),
+                     id="open", className="info-icon"),
+
             html.Img(src=app.get_asset_url('SimQuality_Dashboard_Logo.png'),
                      style={'width': '400px'}),
 
             html.Div([
-
-                html.H4(
-                    children='Testfall',
-                    style={
-                        'textAlign': 'left',
-                    }
-                ),
                 dcc.Dropdown(
                     options=[{'label': str(i).replace("-", " "), 'value': i} for i in SUBDIRS],
                     id="testcase-dropdown",
-                    value=SUBDIRS[0]
+                    value=SUBDIRS[0],
                 ),
             ]),
 
-
-
             html.Div([
-
                 html.Div([
                     html.Div([
                         html.Button('Download Aufgabenstellung inkl. Daten', id='btn-testcase-data', n_clicks=0),
@@ -82,13 +77,6 @@ app.layout = html.Div(
             html.Div([
                 html.Div(id='text-div', style={'margin': '10px 0px'}),
                 html.Img(id="testcase-img", style={'margin': '20px auto'}),
-            ]),
-
-            html.H3(children='Optionen', style={'textAlign': 'left'}),
-
-            html.Div([
-                dcc.Checklist(['Zeige Evaluierungsdaten'], [],
-                              id="statistical-checkstate", inline=True)
             ]),
 
             dash_table.DataTable(
@@ -119,13 +107,27 @@ app.layout = html.Div(
             html.Div(id='error-div',
                      style={'margin': '10px 0px'}),
 
+
             html.Div(
-                id='disclaimer',
-                children=['Version: 0.6',html.Br(),'BETA-VERSION, WIRD DERZEIT AKTUALISIERT. KEINE FINALEN DATEN, BITTE BEACHTEN!'],
-                style={
-                    'textAlign': 'left',
-                    'color': 'red',
-                }
+                [
+                    dbc.Modal(
+                        [
+                               dbc.ModalBody(
+                                dcc.Markdown(id='dashboard-information', style={'margin': '10px 0px'}, children=info)
+                            ),
+
+                            html.Div([
+                                dcc.Checklist(['Zeige Evaluierungsdaten'], [],
+                                              id="statistical-checkstate", inline=True)
+                            ]),
+
+                            dbc.ModalFooter(
+                                dbc.Button("Schließen", id="close", className="ml-auto")
+                            ),
+                        ],
+                        id="modal",
+                    ),
+                ]
             ),
         ], style={'padding': 30, 'flex': "1 1 20%", 'background': '#9898982e',
                     'position': 'relative'}),
@@ -142,6 +144,7 @@ app.layout = html.Div(
                         editable=False,
                         style_as_list_view=True,
                         sort_action='native',
+                        page_size=30,  # we have less data in this example, so setting to 20
                         style_data_conditional= [
                                                    {
                                                        'if': {
@@ -411,6 +414,15 @@ def func(n_clicks, value):
         zipTestCaseData(f"./dash_data/{value}/download_data", f"{value}-data")
     )
 
+@app.callback(
+    Output("modal", "is_open"),
+    [Input("open", "n_clicks"), Input("close", "n_clicks")],
+    [State("modal", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
 
 if __name__ == '__main__':
     app.title = "SimQuality Dashboard"
