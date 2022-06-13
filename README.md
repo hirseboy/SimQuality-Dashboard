@@ -21,14 +21,17 @@ _dash_data_:
 ```
 TF01-Sonnenstand
 |- Potsdam Altitude
-    |- TRNSYS.ftr
+    |- TRNSYS.ftr - _Result data for the test case of the specific tool. Saved in feather format for efficient reading and small data_ 
     |- NANDRAD.ftr
     |- ...
+    |- Comment.txt - _Contains the markdown text for the 'Erläuterungen'-tab_
+    |- TestCaseDescription.txt - _Contains the text for the short description on the left side_
+    |- WeightFactors.txt - _Contains the data of the table that is printed, if the 'Zeige Evaluierungsdaten' is checked_
 |- Potsdam Azimuth
 |- ...
 TF02-SolareLasten Isotrop
 ...
-Results.tsv
+Results.tsv - _Containes all the evaluation data, that is filtered and printed for each test case and variant_
 ```
 
 Inside the sub-directories all data for a specific tool e.g. TRNSYS is saved in the feather-format (https://pypi.org/project/feather-format/) with the tool Id as its name e.g. "TRNSYS.ftr".
