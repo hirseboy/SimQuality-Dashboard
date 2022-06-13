@@ -110,7 +110,7 @@ def convertToRatingPanda(evaluationDf, testcase):
 
     def function(x):
         return '🟩' if x == 'Gold' else (
-            '🟩' if x == 'Silver' else (
+            '🟨' if x == 'Silver' else (
                 '🟨' if x == 'Bronze' else '🟥'
             ))
 
@@ -165,7 +165,7 @@ def readDashData(resultdir, testcase, testcase_variant):
 
     index = resultDf.index
     time = []
-    for i in timeDf.index:
+    for i in resultDf.index:
         time.append(dt.datetime(2020, 1, 1) + dt.timedelta(hours=i))
 
     print(f"Time Column will be set.")
