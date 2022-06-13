@@ -62,6 +62,8 @@ app.layout = html.Div(
                     options=[{'label': str(i).replace("-", " "), 'value': i} for i in SUBDIRS],
                     id="testcase-dropdown",
                     value=SUBDIRS[0],
+                    clearable=False,
+                    searchable=False,
                 ),
             ]),
 

@@ -49,7 +49,7 @@ def readTestCaseDirectories(path):
             except Exception:
                 printError("Malformed directory name: {}".format(sd))
                 continue
-            dirs.append(sd)
+            dirs.append(sd.strip())
     return dirs
 
 def readTestCaseDescriptionFile(testCaseDir, testCaseName):
