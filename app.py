@@ -329,6 +329,8 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
     norms = ['CVRMSE [%]','Daily Amplitude CVRMSE [%]','MBE','RMSEIQR [%]','MSE [%]','NMBE [%]','Average [-]',
              'NRMSE [%]','RMSE [%]','RMSLE [%]','R squared [-]','std dev [-]','Maximum [-]','Minimum [-]','Fehlercode',
              'Max Difference [-]']
+
+    #### READING ALL EVALUATION DATA ####
     try:
         print(f"Reading test case '{testcase}' and variable '{testcase_variant}'.")
 
@@ -345,16 +347,24 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
         EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Test Case'] == searchterm].drop(['Test Case'], axis=1)
         EVALUATIONDF = EVALUATIONDF.loc[EVALUATIONDF['Variable'] == testcase_variant].drop(['Variable'], axis=1)
 
+        namesDict = dict()
+        for index, row in EVALUATIONDF.iterrows():
+            namesDict[row['ToolID']] = f"{row['Tool Name']} ({row['Version']})"
+
+
+    except Exception as e:
+        print(str(e))
+        print(f"Could not read evaluation data of test case '{testcase}' and variant '{testcase_variant}'")
+        raise PreventUpdate
+
+    #### UPDATING RESULT DIAGRAM ####
+    try:
         print(f"Updating figure with all needed data.")
         fig = px.line(resultDf, x="Time", y=resultDf.columns, template="simple_white", title=testcase_variant,
                       labels={"y": testcase_variant})
         fig.data[0].update(mode='markers')
         for figline in fig.data:
             figline.line.color = TOOLCOLORS[figline.name]
-
-        namesDict = dict()
-        for index, row in EVALUATIONDF.iterrows():
-            namesDict[row['ToolID']] = f"{row['Tool Name']} ({row['Version']})"
 
         fig.update_layout(
             legend_title="Tools",
@@ -367,26 +377,26 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
             if figline.name not in namesDict.keys():
                 continue
             figline.name = namesDict[figline.name]
-
-
-        print(f"Converting rating to coloring.")
-        def function(x):
-            return '🟩' if x == 'Gold' else (
-                '🟨' if x == 'Silver' else (
-                    '🟨' if x == 'Bronze' else '🟥'
-                ))
-
-        EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
-
-        def functionReference(x):
-            return '✔️' if x == True else ''
-
-        EVALUATIONDF['Reference'] = EVALUATIONDF['Reference'].apply(functionReference)
-        EVALUATIONDF = EVALUATIONDF.drop(['index'], axis=1).to_dict('records')
-
     except Exception as e:
         print(str(e))
+        print(f"Could not update figure of test case '{testcase}' and variant '{testcase_variant}'")
         raise PreventUpdate
+
+    print(f"Converting rating to coloring.")
+
+    def function(x):
+        return '🟩' if x == 'Gold' else (
+            '🟨' if x == 'Silver' else (
+                '🟨' if x == 'Bronze' else '🟥'
+            ))
+
+    EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
+
+    def functionReference(x):
+        return '✔️' if x == True else ''
+
+    EVALUATIONDF['Reference'] = EVALUATIONDF['Reference'].apply(functionReference)
+    EVALUATIONDF = EVALUATIONDF.drop(['index'], axis=1).to_dict('records')
 
     return fig, EVALUATIONDF, ""
 
