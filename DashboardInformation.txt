@@ -1,9 +1,41 @@
-**Version: _0.8.3_**
+**Dashboard-Version: _0.8.3_**
+
+# Algemeine Informationen
 
 Dieses Dashboard wurde im Rahmen von SimQuality erstellt.
 
 Das Dashboard ist derzeit noch in der Beta-Phase und wird noch aktualisiert.
 Die gezeigten Datensätze der Programme können noch Fehler enthalten.
+
+# Dashboard Nutzung
+
+Auf der linken Seite des Dashboard kann der jeweilige Testfall selektiert werden.
+Anschließend werden im rechten Bereich des Fensters die Informationen aktualisiert.
+
+## Gesamtübersicht
+
+In dem _**Gesamtübersicht**_-Tab finden sich die einzelnen Varianten des Testfalls mit den jeweiligen Ausgaben.
+Da bestimmte Varianten mehrere Ausgaben enthalten können, sind diese in der Regel gekennzeichnet mit
+"Variante X ...". Weiterhin werden farbige Ampel angezeigt, die in Abhängigkeit des SimQuality-Scores
+gesetzt werden. Dieser Score wird auf Grundlage von statistischen Kenngrößen bestimmt. In analytischen
+Testfällen, die aus der DIN EN ISO 13791 stammen (Testfall 03 und 09) wird eine feste Abweichung analog derzeit
+Norm definiert. 
+
+Die Ampelkriterien sind wie folgt:
+- 🟩 > *90% SimQ-Score* - Sehr gute Übereinstummung
+- 🟨 > *80% SimQ-Score* - Gute & Ausreichende Übereinstimmung
+- 🟥 < *80% SimQ-Score* - Nicht Ausreichend, nicht bestanden  
+
+In dem _**Erläuterungen**_-Tab werden Hinweise & Erläuterungen zu dem Testfall gegeben, die während der Bearbeitung
+aufgetreten sind. Aber auch weitere Informationen zu den Programmen und den Abweichungen, die zum Beispiel aus
+unterschiedlichen Modellen resultieren, werden erklärt.
+
+In dem _**Variablenanalyse**_-Tab können die Testfälle detailliert betrachtet werden. Hier kann über eine zweite Dropbox
+die jeweilige Variable selektriert und näher betrachtet werden. Dabei wird ein Diagramm mit allen Kurvenverläufen als 
+auch eine Tabelle mit allen Informationen dargestellt. Wenn die Auswertung im Detail erfolgen soll, können über die
+unten befindliche Checkbox _Zeige Evaluierungsdaten_ alle statistische Evaluierungsgrößen betrachtet werden. Die Referenz
+für jeden Testfall ist immer mit schwarzen Kreisen dargestellt. Mit Klick auf die Linie können einzelne Tools ausgeblendet 
+werden. Mit Doppel-Klick auf eine Linie wird nur noch diese im Diagramm dargestellt.
 
 Bei Fragen & Kritik bitte an:
 [Stephan Hirth](mailto:stephan.hirth@tu-dresden.de?subject=SimQuality-Dashboard)
