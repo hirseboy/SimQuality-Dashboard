@@ -188,6 +188,7 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  padding: 20px;
 }
 
 .modal-backdrop {
@@ -267,7 +268,7 @@ ul {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 800px;
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
