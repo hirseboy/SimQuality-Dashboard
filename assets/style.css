@@ -36,8 +36,18 @@ ul {
     margin-left: 15px;
 }
 
+hr {
+  margin: 20px 0px;
+  border-color: white;
+}
+
 #btn-testcase-data {
     width: 100%;
+}
+
+#btn-overview {
+    width: 100%;
+    margin-top:20px;
 }
 
 #weightfactor-table {
