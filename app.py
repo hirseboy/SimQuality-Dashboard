@@ -6,7 +6,10 @@ import os
 
 import dash.exceptions
 import pandas as pd
+import pd as pd
 import plotly.express as px
+import plotly.express as px
+import plotly.graph_objects as pg
 import cProfile
 from dash import Dash, dcc, dash_table, html
 from dash.dependencies import Input, Output, State
@@ -56,6 +59,10 @@ app.layout = html.Div(
 
             html.Img(src=app.get_asset_url('SimQuality_Dashboard_Logo.png'),
                      style={'width': '400px'}),
+
+            html.Button('Zeige Gesamtüberblick', id='btn-overview', n_clicks=0),
+
+            html.Hr(),
 
             html.Div([
                 dcc.Dropdown(
@@ -127,7 +134,27 @@ app.layout = html.Div(
                                 dbc.Button("Schließen", id="close", className="ml-auto")
                             ),
                         ],
-                        id="modal",
+                        id="modal-declaration",
+                    ),
+                ]
+            ),
+
+            html.Div(
+                [
+                    dbc.Modal(
+                        [
+                            dbc.ModalBody(
+                                dcc.Graph(
+                                    id='simquality-overview',
+                                    responsive=True,
+                                    style={'height': '60vh'}
+                                ),
+                            ),
+                            dbc.ModalFooter(
+                                dbc.Button("Schließen", id="close-overview", className="ml-auto")
+                            ),
+                        ],
+                        id="modal-overview",
                     ),
                 ]
             ),
@@ -138,8 +165,7 @@ app.layout = html.Div(
         html.Div([
 
             dcc.Tabs(id="tabs-example-graph", value='overall-rating', children=[
-
-                dcc.Tab(label='Gesamtbewertung', value='overall-rating', children=[
+                dcc.Tab(label='Testfallbewertung', value='overall-rating', children=[
 
                     dash_table.DataTable(
                         id='rating-table',
@@ -176,13 +202,23 @@ app.layout = html.Div(
 
                 ]),
 
-                dcc.Tab(label='Erläuterung', value='comment', children=[
+                dcc.Tab(label='Testfall-Polardiagramm', value='polar-graph', children=[
+
+                    dcc.Graph(
+                        id='testcase-polar-graph',
+                        responsive=True,
+                        style={'height': '60vh'}
+                    ),
+
+                ]),
+
+                dcc.Tab(label='Testfallerläuterung', value='comment', children=[
 
                     dcc.Markdown(id='comment-div', style={'margin': '10px 0px'})
 
                 ]),
 
-                dcc.Tab(label='Variablenanalyse', value='variable-analysis', children=[
+                dcc.Tab(label='Testfall-Variablenanalyse', value='variable-analysis', children=[
 
                     dcc.Dropdown(id="testcase-variant-dropdown"),
 
@@ -276,6 +312,8 @@ app.layout = html.Div(
     Output('testcase-img', 'src'),
     Output('rating-table', 'data'),
     Output('weightfactor-table', 'data'),
+    Output('simquality-overview', 'figure'),
+    Output('testcase-polar-graph', 'figure'),
     Input('testcase-dropdown', 'value'),
     Input('statistical-checkstate', 'value')
 )
@@ -296,6 +334,78 @@ def clean_data(selected_testcase, checkstate):
     global EVALUATIONDATA
     EVALUATIONDATA = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t", engine="pyarrow").reset_index()
 
+    # Create polar plot
+    scatterDf = convertToPolarPlotData(EVALUATIONDATA)
+
+    # Create 3D scatter plot
+    polarTestCaseDf = convertToPolarPlotTestCaseData(EVALUATIONDATA, selected_testcase)
+
+    # fig = pg.Figure(pg.Scatter3d(
+    #                     x=EVALUATIONDATA['Tool Name'],
+    #                     y=EVALUATIONDATA['Test Case'],
+    #                     z=EVALUATIONDATA['Variable'],
+    #                     mode = 'markers',
+    #                     text = 'Überblick',
+    #                     marker = dict(
+    #                         sizemode = 'diameter',
+    #                         sizeref = 50, # info on sizeref: https://plotly.com/python/reference/scatter/#scatter-marker-sizeref
+    #                         size = EVALUATIONDATA['SimQ-Score [%]'],
+    #                         color = EVALUATIONDATA['SimQ-Score [%]'],
+    #                         colorscale = 'turbo',
+    #                         )
+    #                 )
+    # )
+
+    fig = pg.Figure()
+
+    for key in scatterDf.keys():
+        r = list(scatterDf[key].values())
+        r.insert(len(r), r[0])
+
+        theta = list(scatterDf[key].keys())
+        theta.insert(len(theta), theta[0])
+
+        fig.add_trace(pg.Scatterpolar(
+            r=r,
+            theta=theta,
+            name=key
+        ))
+
+
+    fig.update_layout(
+        template='simple_white',
+    )
+
+    fig_test_case = pg.Figure()
+
+    for key in polarTestCaseDf.keys():
+        r = list(polarTestCaseDf[key].values())
+        r.insert(len(r), r[0])
+
+        theta = list(polarTestCaseDf[key].keys())
+        theta.insert(len(theta), theta[0])
+
+        fig_test_case.add_trace(pg.Scatterpolar(
+            r=r,
+            theta=theta,
+            name=key
+        ))
+
+    fig_test_case.update_layout(
+        template='simple_white',
+    )
+
+    colorDict = dict()
+    for index, row in EVALUATIONDATA.iterrows():
+        toolName = f"{row['Tool Name']} ({row['Version']})"
+        colorDict[toolName] = TOOLCOLORS[row['ToolID']]
+
+    for figline in fig.data:
+        figline.line.color = colorDict[figline.name]
+
+    for figline in fig_test_case.data:
+        figline.line.color = colorDict[figline.name]
+
     ratingDf = convertToRatingPanda(EVALUATIONDATA, selected_testcase)
 
     weightFactorDf = pd.DataFrame()
@@ -309,7 +419,7 @@ def clean_data(selected_testcase, checkstate):
     return [{'label': i, 'value': i} for i in variables], \
            variables[0], testCaseDescription, testCaseComment, \
            app.get_asset_url(image), ratingDf.to_dict('records'), \
-           weightFactorDf.to_dict('records')
+           weightFactorDf.to_dict('records'), fig, fig_test_case
 
 
 # Figure is updated
@@ -378,6 +488,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
             if figline.name not in namesDict.keys():
                 continue
             figline.name = namesDict[figline.name]
+
     except Exception as e:
         print(str(e))
         print(f"Could not update figure of test case '{testcase}' and variant '{testcase_variant}'")
@@ -416,11 +527,21 @@ def func(n_clicks, value):
     )
 
 @app.callback(
-    Output("modal", "is_open"),
+    Output("modal-declaration", "is_open"),
     [Input("open", "n_clicks"), Input("close", "n_clicks")],
-    [State("modal", "is_open")],
+    [State("modal-declaration", "is_open")],
 )
 def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+
+@app.callback(
+    Output("modal-overview", "is_open"),
+    [Input("btn-overview", "n_clicks"), Input("close-overview", "n_clicks")],
+    [State("modal-overview", "is_open")],
+)
+def toggle_modal_overview(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
