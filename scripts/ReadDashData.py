@@ -123,6 +123,48 @@ def convertToRatingPanda(evaluationDf, testcase):
 
     return ratingDf
 
+def convertToPolarPlotData(evaluationDf):
+    # we convert our data to a 3D scatter plot
+
+    # iterate through panda dataframe
+    toolData = dict()
+    for index, row in evaluationDf.iterrows():
+        keys = toolData.keys()
+
+        toolName = f"{row['Tool Name']} ({row['Version']})"
+
+        if toolName not in toolData.keys():
+            toolData[toolName] = dict()
+            toolData[toolName][row['Test Case']] = row['SimQ-Score [%]']
+        elif row['Test Case'] not in toolData[toolName].keys():
+            toolData[toolName][row['Test Case']] = row['SimQ-Score [%]']
+
+        toolData[toolName][row['Test Case']] = \
+            ( toolData[toolName][row['Test Case']] + row['SimQ-Score [%]'] ) / 2
+
+    return toolData
+
+def convertToPolarPlotTestCaseData(evaluationDf, testcase):
+    # we convert our data to a 3D scatter plot
+    # first we take only variables containing to the test case
+    searchterm = testcase[2:]
+    tempDf = evaluationDf.loc[evaluationDf['Test Case'] == searchterm].drop(['Test Case'], axis=1)
+
+    # iterate through panda dataframe
+    toolData = dict()
+    for index, row in tempDf.iterrows():
+        keys = toolData.keys()
+
+        toolName = f"{row['Tool Name']} ({row['Version']})"
+
+        if toolName not in toolData.keys():
+            toolData[toolName] = dict()
+            toolData[toolName][row['Variable']] = row['SimQ-Score [%]']
+        elif row['Variable'] not in toolData[toolName].keys():
+            toolData[toolName][row['Variable']] = row['SimQ-Score [%]']
+
+    return toolData
+
 def stripVariable(v):
     p = v.find("(mean)")
     if p == -1:
