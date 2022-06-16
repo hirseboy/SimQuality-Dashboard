@@ -357,7 +357,7 @@ def clean_data(selected_testcase, checkstate):
     # )
 
     fig = pg.Figure()
-
+    theta = []
     for key in scatterDf.keys():
         r = list(scatterDf[key].values())
         r.insert(len(r), r[0])
@@ -393,6 +393,21 @@ def clean_data(selected_testcase, checkstate):
 
     fig_test_case.update_layout(
         template='simple_white',
+        polar = dict(
+            angularaxis = dict(
+                showgrid=True,
+                linewidth=1,
+                showline=True,
+                linecolor='black'
+            ),
+            radialaxis=dict(
+                range=[0,100],
+                showgrid=True,
+                linewidth=1,
+                showline=True,
+                linecolor='black'
+            ),
+        )
     )
 
     colorDict = dict()
@@ -405,6 +420,42 @@ def clean_data(selected_testcase, checkstate):
 
     for figline in fig_test_case.data:
         figline.line.color = colorDict[figline.name]
+
+    r=[]
+    for t in theta:
+        r.insert(0, 80)
+
+    fig_test_case.add_trace(
+        pg.Scatterpolar(
+        mode="lines",
+        r=r,
+        theta=theta,
+        showlegend =False,
+        line=dict(smoothing=1,
+                  color="yellow",
+                  shape="spline",
+                  dash='dot',
+                  width=1),
+        )
+    )
+
+    r=[]
+    for t in theta:
+        r.insert(0, 90)
+
+    fig_test_case.add_trace(
+        pg.Scatterpolar(
+        mode="lines",
+        r=r,
+        theta=theta,
+        showlegend =False,
+        line=dict(smoothing=1,
+                  color="green",
+                  shape="spline",
+                  dash='dot',
+                  width=1),
+        )
+    )
 
     ratingDf = convertToRatingPanda(EVALUATIONDATA, selected_testcase)
 
