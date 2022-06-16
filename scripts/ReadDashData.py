@@ -109,10 +109,8 @@ def convertToRatingPanda(evaluationDf, testcase):
     ratingDf = pd.DataFrame.from_dict(convertDict, orient='index').reset_index()
 
     def function(x):
-        return '🟩' if x == 'Gold' else (
-            '🟨' if x == 'Silver' else (
-                '🟨' if x == 'Bronze' else '🟥'
-            ))
+        return '🟩' if x == 'Green' else (
+            '🟨' if x == 'Yellow' else '🟥')
 
     for col in ratingDf.columns:
         if col == "index":
