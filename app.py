@@ -548,10 +548,8 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
     print(f"Converting rating to coloring.")
 
     def function(x):
-        return '🟩' if x == 'Gold' else (
-            '🟨' if x == 'Silver' else (
-                    '🟨' if x == 'Bronze' else '🟥'
-            ))
+        return '🟩' if x == 'Green' else (
+            '🟨' if x == 'Yellow' else '🟥')
 
     EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
 
