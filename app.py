@@ -495,6 +495,13 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
         resultDf = readDashData(RESULTDIR, testcase, testcase_variant)
 
         print(f"Converting 'result.tsv' with evaluation results.")
+
+        global EVALUATIONDATA
+        if EVALUATIONDATA.empty:
+            print(f"Evaluation dataframe is empty. Trying to re-read 'results.tsv'")
+            EVALUATIONDATA = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t",
+                                         engine="pyarrow").reset_index()
+
         EVALUATIONDF = EVALUATIONDATA.copy()
         print(EVALUATIONDF)
         if not checksate:
