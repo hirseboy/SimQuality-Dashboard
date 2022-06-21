@@ -1,7 +1,24 @@
 # Anmerkungen zum Testfall
 
-## Probleme bei der Durchführung
+## Probleme bei der Modellierung/Durchführung der Prüffälle
 
-	
-## Bewertung
+Einige Simulationsprogramme verwenden außenseitig funktionale Ansätze,
+um den konvektiven Wärmeübergangskoeffizienten automatisch aus gegebener
+Windrichtung und Windgeschwindigkeit zu berechnen. Bei diesem Programmen
+ist es nicht direkt möglich, feste Werte für die außenseitigen
+Übergangskoeffizienten wie in der Aufgabenstellung gefordert anzugeben.
 
+Ein Lösungsansatz bestand darin, die Windgeschwindigkeiten entsprechend
+der Umrechnungsformel so im Klimadatensatz anzugeben, dass für im
+Programm die geforderten Übergangskoeffizienten berechnet werden. Dies
+war jedoch bei einigen Programmen nicht ausreichend, da diese zudem eine
+ausrichtungsabhängige Berechnung durchführen, wodurch nur jeweils eine
+Wandfläche die richtigen Übergangskoeffizienten erhält. Dennoch waren
+die äußeren Übergangskoeffizienten auch bei diesen Programmen nahe der
+geforderten 8 W/mK.
+
+Eine weiter Lösung für das Problem mit den außenseitigen
+Übergangskoeffizienten bestand darin, den Prüfraum als komplett
+innenliegenden Raum zu modellieren. In den umgebenden Räumen konnte dann
+das geforderte Lufttemperaturprofil z.B. über eine ideal geregelte
+Beheizung eingestellt werden.
