@@ -357,6 +357,7 @@ def clean_data(selected_testcase, checkstate):
     # )
 
     fig = pg.Figure()
+    thetaList = []
     theta = []
     for key in scatterDf.keys():
         r = list(scatterDf[key].values())
@@ -364,6 +365,9 @@ def clean_data(selected_testcase, checkstate):
 
         theta = list(scatterDf[key].keys())
         theta.insert(len(theta), theta[0])
+
+        if len(thetaList) < len(theta):
+            thetaList = theta
 
         fig.add_trace(pg.Scatterpolar(
             r=r,
@@ -374,6 +378,66 @@ def clean_data(selected_testcase, checkstate):
 
     fig.update_layout(
         template='simple_white',
+        polar=dict(
+            angularaxis=dict(
+                showgrid=True,
+                linewidth=1,
+                showline=True,
+                linecolor='black'
+            ),
+            radialaxis=dict(
+                range=[0, 100],
+                showgrid=True,
+                linewidth=1,
+                showline=True,
+                linecolor='black'
+            ),
+        )
+    )
+
+    colorDict = dict()
+    for index, row in EVALUATIONDATA.iterrows():
+        toolName = f"{row['Tool Name']} ({row['Version']})"
+        colorDict[toolName] = TOOLCOLORS[row['ToolID']]
+
+    for figline in fig.data:
+        figline.line.color = colorDict[figline.name]
+
+
+    r=[]
+    for t in thetaList:
+        r.insert(0, 80)
+
+    fig.add_trace(
+        pg.Scatterpolar(
+        mode="lines",
+        r=r,
+        theta=thetaList,
+        showlegend =False,
+        line=dict(smoothing=1,
+                  color="yellow",
+                  shape="spline",
+                  dash='dot',
+                  width=1),
+        )
+    )
+
+    r=[]
+    for t in thetaList:
+        r.insert(0, 90)
+
+    fig.add_trace(
+        pg.Scatterpolar(
+        mode="lines",
+        r=r,
+        theta=thetaList,
+        showlegend =False,
+        line=dict(smoothing=1,
+                  color="green",
+                  shape="spline",
+                  dash='dot',
+                  width=1),
+        )
     )
 
     fig_test_case = pg.Figure()
@@ -409,14 +473,6 @@ def clean_data(selected_testcase, checkstate):
             ),
         )
     )
-
-    colorDict = dict()
-    for index, row in EVALUATIONDATA.iterrows():
-        toolName = f"{row['Tool Name']} ({row['Version']})"
-        colorDict[toolName] = TOOLCOLORS[row['ToolID']]
-
-    for figline in fig.data:
-        figline.line.color = colorDict[figline.name]
 
     for figline in fig_test_case.data:
         figline.line.color = colorDict[figline.name]
