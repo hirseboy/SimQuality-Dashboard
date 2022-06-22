@@ -137,6 +137,9 @@ def convertToPolarPlotData(evaluationDf):
         elif row['Test Case'] not in toolData[toolName].keys():
             toolData[toolName][row['Test Case']] = row['SimQ-Score [%]']
 
+        if row['SimQ-Score [%]'] < 1e-4:
+            continue
+
         toolData[toolName][row['Test Case']] = \
             ( toolData[toolName][row['Test Case']] + row['SimQ-Score [%]'] ) / 2
 
