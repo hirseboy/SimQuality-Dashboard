@@ -50,6 +50,11 @@ hr {
     margin-top:20px;
 }
 
+#btn-testcase-report {
+    width: 100%;
+    margin-top:20px;
+}
+
 #weightfactor-table {
     margin: 20px 0px;
 }

@@ -147,7 +147,16 @@ app.layout = html.Div(
                                 dcc.Graph(
                                     id='simquality-overview',
                                     responsive=True,
-                                    style={'height': '60vh'}
+                                    style={'height': '60vh'},
+                                    config={
+                                        'toImageButtonOptions': {
+                                            'format': 'svg',  # one of png, svg, jpeg, webp
+                                            'filename': 'custom_image',
+                                            'height': 200,
+                                            'width': 800,
+                                            'scale': 1  # Multiply title/legend/axis/canvas sizes by this factor
+                                        }
+                                    }
                                 ),
                             ),
                             dbc.ModalFooter(
@@ -207,15 +216,24 @@ app.layout = html.Div(
                     dcc.Graph(
                         id='testcase-polar-graph',
                         responsive=True,
-                        style={'height': '60vh'}
+                        style={'height': '60vh'},
+                        config = {
+                          'toImageButtonOptions': {
+                            'format': 'svg', # one of png, svg, jpeg, webp
+                            'filename': 'custom_image',
+                            'height': 600,
+                            'width': 1000,
+                            'scale': 2 # Multiply title/legend/axis/canvas sizes by this factor
+                          }
+                        }
                     ),
 
                 ]),
 
                 dcc.Tab(label='Testfallerläuterung', value='comment', children=[
-
+                    html.Button('Download Report (enthält nicht immer aktuelle Daten)', id='btn-testcase-report', n_clicks=0),
+                    dcc.Download(id="download-testcase-report"),
                     dcc.Markdown(id='comment-div', style={'margin': '10px 0px'})
-
                 ]),
 
                 dcc.Tab(label='Testfall-Variablenanalyse', value='variable-analysis', children=[
@@ -225,7 +243,16 @@ app.layout = html.Div(
                     dcc.Graph(
                         id='testcase-graph',
                         responsive=True,
-                        style={'height': '60vh'}
+                        style={'height': '50vh'},
+                        config = {
+                            'toImageButtonOptions': {
+                                'format': 'svg',  # one of png, svg, jpeg, webp
+                                'filename': 'custom_image',
+                                'height': 200,
+                                'width': 800,
+                                'scale': 1  # Multiply title/legend/axis/canvas sizes by this factor
+                            }
+                        }
                     ),
 
                     dash_table.DataTable(
@@ -474,6 +501,14 @@ def clean_data(selected_testcase, checkstate):
         )
     )
 
+    colorDict = dict()
+    for index, row in EVALUATIONDATA.iterrows():
+        toolName = f"{row['Tool Name']} ({row['Version']})   "
+        colorDict[toolName] = TOOLCOLORS[row['ToolID']]
+
+    for figline in fig.data:
+        figline.line.color = colorDict[figline.name]
+
     for figline in fig_test_case.data:
         figline.line.color = colorDict[figline.name]
 
@@ -611,8 +646,8 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
     print(f"Converting rating to coloring.")
 
     def function(x):
-        return '🟩' if x == 'Green' else (
-            '🟨' if x == 'Yellow' else '🟥')
+        return '🟩' if x == 'Perfect' else (
+            '🟨' if x == 'Good' else '🟥')
 
     EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
 
@@ -637,6 +672,19 @@ def func(n_clicks, value):
     return dcc.send_file(
         zipTestCaseData(f"./dash_data/{value}/download_data", f"{value}-data")
     )
+
+@app.callback(
+    Output("download-testcase-report", "data"),
+    Input("btn-testcase-report", "n_clicks"),
+    State("testcase-dropdown", "value"),
+    prevent_initial_call=True,
+)
+def func(n_clicks, value):
+    if n_clicks is None:
+        raise dash.exceptions.PreventUpdate
+    # zip all data in data folder
+    shutil.copyfile(f"./dash_data/{value}/Report.pdf", f"./dash_data/{value}/{value}-Report.pdf")
+    return dcc.send_file(f"./dash_data/{value}/{value}-Report.pdf")
 
 @app.callback(
     Output("modal-declaration", "is_open"),
