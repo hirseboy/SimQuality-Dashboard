@@ -25,6 +25,8 @@ def readVariables(testCaseDir, testCaseName):
             continue
         if dir.endswith('.png'):
             continue
+        if dir.endswith('.pdf'):
+            continue
         if dir == "download_data":
             continue
         cleanedDirs.append(dir)
@@ -109,8 +111,8 @@ def convertToRatingPanda(evaluationDf, testcase):
     ratingDf = pd.DataFrame.from_dict(convertDict, orient='index').reset_index()
 
     def function(x):
-        return '🟩' if x == 'Green' else (
-            '🟨' if x == 'Yellow' else '🟥')
+        return '🟩' if x == 'Perfect' else (
+            '🟨' if x == 'Good' else '🟥')
 
     for col in ratingDf.columns:
         if col == "index":
@@ -129,7 +131,7 @@ def convertToPolarPlotData(evaluationDf):
     for index, row in evaluationDf.iterrows():
         keys = toolData.keys()
 
-        toolName = f"{row['Tool Name']} ({row['Version']})"
+        toolName = f"{row['Tool Name']} ({row['Version']})   "
 
         if toolName not in toolData.keys():
             toolData[toolName] = dict()
@@ -156,7 +158,7 @@ def convertToPolarPlotTestCaseData(evaluationDf, testcase):
     for index, row in tempDf.iterrows():
         keys = toolData.keys()
 
-        toolName = f"{row['Tool Name']} ({row['Version']})"
+        toolName = f"{row['Tool Name']} ({row['Version']})   "
 
         if toolName not in toolData.keys():
             toolData[toolName] = dict()
