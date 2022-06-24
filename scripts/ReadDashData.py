@@ -112,7 +112,7 @@ def convertToRatingPanda(evaluationDf, testcase):
 
     def function(x):
         return '🟩' if x == 'Perfect' else (
-            '🟨' if x == 'Good' else '🟥')
+            '🟨' if x == 'Good' else ( '-' if x == 'Not Possible' else '🟥'))
 
     for col in ratingDf.columns:
         if col == "index":
@@ -139,7 +139,7 @@ def convertToPolarPlotData(evaluationDf):
         elif row['Test Case'] not in toolData[toolName].keys():
             toolData[toolName][row['Test Case']] = row['SimQ-Score [%]']
 
-        if row['SimQ-Score [%]'] < 1e-4:
+        if float(row['SimQ-Score [%]']) == -99:
             continue
 
         toolData[toolName][row['Test Case']] = \
