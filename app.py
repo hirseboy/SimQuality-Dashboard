@@ -428,7 +428,8 @@ def clean_data(selected_testcase, checkstate):
         colorDict[toolName] = TOOLCOLORS[row['ToolID']]
 
     for figline in fig.data:
-        figline.line.color = colorDict[figline.name]
+        name = str(figline.name).strip()
+        figline.line.color = colorDict[name]
 
 
     r=[]
@@ -503,14 +504,24 @@ def clean_data(selected_testcase, checkstate):
 
     colorDict = dict()
     for index, row in EVALUATIONDATA.iterrows():
-        toolName = f"{row['Tool Name']} ({row['Version']})   "
+        toolName = f"{row['Tool Name']} ({row['Version']})"
         colorDict[toolName] = TOOLCOLORS[row['ToolID']]
 
     for figline in fig.data:
-        figline.line.color = colorDict[figline.name]
+        name = str(figline.name).strip()
+
+        if name not in colorDict.keys():
+            continue
+
+        figline.line.color = colorDict[name]
 
     for figline in fig_test_case.data:
-        figline.line.color = colorDict[figline.name]
+        name = str(figline.name).strip()
+
+        if name not in colorDict.keys():
+            continue
+
+        figline.line.color = colorDict[name]
 
     r=[]
     for t in theta:
