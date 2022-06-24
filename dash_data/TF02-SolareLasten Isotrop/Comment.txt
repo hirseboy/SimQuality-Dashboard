@@ -2,6 +2,17 @@
 
 ## Probleme bei der Durchführung
 
+_**TAS**_ kann keine unterstündlichen Ausgaben erzeugen und ist in diesem Testfall nicht enthalten.
+
+Weiterhin ist die Rückrechnung der Stundenmittelwerte der Strahlungslasten aus dem Klimadatensatz in minütliche Schritte erforderlich.
+Dazu muss der Sonnenstand der jeweiligen Programmes verwendet werden und es sollten die jeweiligen stündlichen Strahlungsintegrallasten eingehalten werden.
 	
 ## Bewertung
 
+- TAS 
+- NANDRAD
+- TRNSYS
+- AixLib
+- ETU Simulation
+- THERAKLES
+- IDA ICE
