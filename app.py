@@ -658,7 +658,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
 
     def function(x):
         return '🟩' if x == 'Perfect' else (
-            '🟨' if x == 'Good' else '🟥')
+            '🟨' if x == 'Good' else ( '-' if x == 'Not Possible' else '🟥'))
 
     EVALUATIONDF['SimQ-Rating'] = EVALUATIONDF['SimQ-Rating'].apply(function)
 
