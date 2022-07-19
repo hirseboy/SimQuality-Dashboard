@@ -5,8 +5,8 @@
 Schwierigkeiten, die sich bei der Durchführung der
 Sonnenstandsberechnung ergeben können:
 
--   **Beachtung der äquatorbezogenen Azimut-Definition im amerikanischen
-    Kontext**
+-   Beachtung der **äquatorbezogenen Azimut-Definition** im amerikanischen
+    Kontext
 
     -   In Europa ist die Definiton wie folgt: N 0°, O 90°, S
         180°, W 270°
