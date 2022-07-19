@@ -22,3 +22,27 @@ Eine weiter Lösung für das Problem mit den außenseitigen
 innenliegenden Raum zu modellieren. In den umgebenden Räumen konnte dann
 das geforderte Lufttemperaturprofil z.B. über eine ideal geregelte
 Beheizung eingestellt werden.
+
+## Bewertung
+
+### TRNSYS
+
+### NANDRAD
+
+### TAS 
+
+### AixLib
+
+### IDA ICE
+
+### ETU Simulation### TRNSYS
+
+### NANDRAD
+
+### TAS 
+
+### AixLib
+
+### IDA ICE
+
+### ETU Simulation
