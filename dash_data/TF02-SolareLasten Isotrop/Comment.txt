@@ -9,10 +9,18 @@ Dazu muss der Sonnenstand der jeweiligen Programmes verwendet werden und es soll
 	
 ## Bewertung
 
-- TAS 
-- NANDRAD
-- TRNSYS
-- AixLib
-- ETU Simulation
-- THERAKLES
-- IDA ICE
+### TRNSYS
+
+TRNSYS besteht alle Testfallvarianten.
+
+### NANDRAD
+
+NANDRAD besteht alle Testfallvarianten.
+
+### AixLib
+
+AixLib besteht alle Testfallvarianten.
+
+### ETU Simulation
+
+ETU Simulation besteht alle Testfallvarianten.
