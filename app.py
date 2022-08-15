@@ -122,7 +122,10 @@ app.layout = html.Div(
                     dbc.Modal(
                         [
                                dbc.ModalBody(
-                                dcc.Markdown(id='dashboard-information', style={'margin': '10px 0px'}, children=info)
+                                dcc.Markdown(id='dashboard-information',
+                                             style={'margin': '10px 0px',
+                                                    },
+                                             children=info)
                             ),
 
                             html.Div([
@@ -233,7 +236,7 @@ app.layout = html.Div(
                 dcc.Tab(label='Testfallerläuterung', value='comment', children=[
                     html.Button('Download Report (enthält nicht immer aktuelle Daten)', id='btn-testcase-report', n_clicks=0),
                     dcc.Download(id="download-testcase-report"),
-                    dcc.Markdown(id='comment-div', style={'margin': '10px 0px'})
+                    dcc.Markdown(id='comment-div', style={'margin': '10px 0px', 'height': '700px', 'overflow': 'scroll'})
                 ]),
 
                 dcc.Tab(label='Testfall-Variablenanalyse', value='variable-analysis', children=[
