@@ -1,18 +1,33 @@
 # Anmerkungen zum Testfall
 
-## Probleme bei der Durchführung
+## Probleme bei der Modellierung/Durchführung
 
+In diesem Testfall wird das Durchschwingen von dynamischen Außenlufttemperaturänderungen untersucht.
+Damit spielt die thermische Speicherung in den Bauteilen eine erheblich größere Rolle und die Abbildung
+von thermischen Speicherkapazitäten wird näher untersucht.
 	
 ## Bewertung
 
 ### TRNSYS
 
+TRNSYS besteht alle Testfallvarianten.
+
 ### NANDRAD
+
+TRNSYS besteht alle Testfallvarianten.
 
 ### TAS 
 
+TRNSYS besteht alle Testfallvarianten.
+
 ### AixLib
+
+ETU Simulation besteht nur Variante 01. Lediglich Variante 03 Raum B und Variante 03 Raum B bestehen weiterhin die Prüfung.
 
 ### IDA ICE
 
+TRNSYS besteht alle Testfallvarianten.
+
 ### ETU Simulation
+
+ETU Simulation besteht nur Variante 01. Lediglich Variante 04 Raum A besteht weiterhin die Prüfung.
