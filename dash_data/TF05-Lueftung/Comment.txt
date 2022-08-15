@@ -31,7 +31,7 @@ Monatsbilanzen auftreten können (siehe 1.1 und 1.2). Dies passiert vor allem im
 Das bedeutet, dass die Validierung mittel der Monantsbilanzen kritisch zu sehen ist, und man zwingend Stun-
 denmittelwerte verwenden sollte. Die Aufgabenstellung wird dahingehend angepasst.
 
-![Mittelwert/Momentanwert](./assets/MittelwertMomentanwert.png)
+![Mittelwert/Momentanwert](./assets/MittelwertMomentanwert.png "Mittelwerte / Momentanwerte im Vergleich")
 	
 ## Bewertung
 
