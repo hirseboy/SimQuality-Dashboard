@@ -27,22 +27,28 @@ Beheizung eingestellt werden.
 
 ### TRNSYS
 
-### NANDRAD
+TRNSYS besteht den Testfall in allen Varianten.
 
-### TAS 
+### THERAKLES
 
-### AixLib
-
-### IDA ICE
-
-### ETU Simulation### TRNSYS
+THERAKLES besteht den Testfall in allen Varianten.
 
 ### NANDRAD
 
+NANDRAD besteht den Testfall in allen Varianten.
+
 ### TAS 
+
+TAS besteht 3 / 4 Überprüfungen. Variante 02 wird nicht bestanden.
 
 ### AixLib
 
+AixLib besteht 2 / 4 Überprüfungen. Variante 01 und 03 werden nicht bestanden.
+
 ### IDA ICE
+
+IDA ICE besteht 2 / 4 Überprüfungen. Variante 01 und 03 werden nicht bestanden.
 
 ### ETU Simulation
+
+ETU Simulation besteht 2 / 4 Überprüfungen. Variante 01 und 03 werden nicht bestanden.
