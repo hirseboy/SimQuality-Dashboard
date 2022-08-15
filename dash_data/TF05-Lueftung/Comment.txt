@@ -39,6 +39,10 @@ denmittelwerte verwenden sollte. Die Aufgabenstellung wird dahingehend angepasst
 
 TRNSYS besteht alle Testfallvarianten.
 
+### THERAKLES
+
+THERAKLES besteht alle Testfallvarianten.
+
 ### NANDRAD
 
 NANDRAD besteht alle Testfallvarianten.
