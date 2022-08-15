@@ -22,7 +22,7 @@ TRNSYS besteht alle Testfallvarianten.
 
 ### AixLib
 
-ETU Simulation besteht nur Variante 01. Lediglich Variante 03 Raum B und Variante 03 Raum B bestehen weiterhin die Prüfung.
+ETU Simulation besteht nur Variante 01. Lediglich Variante 03 Raum B und Variante 04 Raum B bestehen weiterhin die Prüfung.
 
 ### IDA ICE
 
