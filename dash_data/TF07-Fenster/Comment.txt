@@ -2,17 +2,39 @@
 
 ## Probleme bei der Durchführung
 
-	
+In diesem Testfall sind mehrere Punkte bei der Modellierung der Fenster zu betrachten:
+- Es existieren einfache und detaillierte Fenstermodelle. In den detaillierten Fenstermodellen, werden
+alle im Fenster stattfindenen Prozesse bis hin zur Abbildung der Speicherkapaziätät der Verglasung (nicht bei allen Modellen) und Konvektionsprozesse im Scheibenzwischenraum abgebildet.
+Einfache Modelle bilden lediglich die transmittierte Strahlung als auch die Wärmetransmission übber das Fensterpaket ab.
+- Einfache Modelle können dabei auch einen festen SHGC-Wert (kein Stand der Technik, sollte niemals verwendet werden) und winkelabhängige SHGC-Werte, die anhand des Sonnenstandes interpoliert werden, enthalten.
+- Die Könvektionsübergänge der Scheibenpakete und die langwelligen Emissionsgrade müssen korrekt abgebildet werden.
+- Die Abbildung der thermischen Parameter der Scheibenpakete
+
 ## Bewertung
 
 ### TRNSYS
 
+TRNSYS erfüllte alle Prüfvarianten.
+
 ### NANDRAD
+
+NANDRAD erfüllte alle Prüfvarianten.
 
 ### TAS 
 
+TAS erfüllt bezüglich der Raumlufttemperatur alle Prüfvarianten. TAS kann jedoch keinen statischen SHGC-Wert abbilden, deswegen sind diese Werte nicht enthalten.
+Dies ist jedoch völlig ausreichend!
+
 ### AixLib
+
+AixLib kann keinen winkelabhängigen SHGC-Wert abbilden und weist auch bei der Überprüfung der Wärmetransmission deutliche Abweichungen auf.
+Fenstermodelle sind als kritisch zu bewerten.
 
 ### IDA ICE
 
+IDA ICE kann keinen statischen SHGC-Wert abbilden (sollte eh nicht verwendet werden) und besteht deshalb nur Prüfvariante 03.
+Dies ist absolut ausreichend!
+
 ### ETU Simulation
+
+ETU Simulation erfüllte alle Prüfvarianten.

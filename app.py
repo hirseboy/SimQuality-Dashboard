@@ -233,12 +233,6 @@ app.layout = html.Div(
 
                 ]),
 
-                dcc.Tab(label='Testfallerläuterung', value='comment', children=[
-                    html.Button('Download Report (enthält nicht immer aktuelle Daten)', id='btn-testcase-report', n_clicks=0),
-                    dcc.Download(id="download-testcase-report"),
-                    dcc.Markdown(id='comment-div', style={'margin': '10px 0px', 'height': '700px', 'overflow': 'scroll'})
-                ]),
-
                 dcc.Tab(label='Testfall-Variablenanalyse', value='variable-analysis', children=[
 
                     dcc.Dropdown(id="testcase-variant-dropdown"),
@@ -686,19 +680,6 @@ def func(n_clicks, value):
     return dcc.send_file(
         zipTestCaseData(f"./dash_data/{value}/download_data", f"{value}-data")
     )
-
-@app.callback(
-    Output("download-testcase-report", "data"),
-    Input("btn-testcase-report", "n_clicks"),
-    State("testcase-dropdown", "value"),
-    prevent_initial_call=True,
-)
-def func(n_clicks, value):
-    if n_clicks is None:
-        raise dash.exceptions.PreventUpdate
-    # zip all data in data folder
-    shutil.copyfile(f"./dash_data/{value}/Report.pdf", f"./dash_data/{value}/{value}-Report.pdf")
-    return dcc.send_file(f"./dash_data/{value}/{value}-Report.pdf")
 
 @app.callback(
     Output("modal-declaration", "is_open"),

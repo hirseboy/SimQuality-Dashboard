@@ -2,6 +2,8 @@
 
 ## Probleme bei der Durchführung
 
+- Einige Simulationswerkzeuge enthalten keine Fußbodenheizungsmodelle un können lediglich Variante 01 abbilden
+- Ebenso ist die Parametrisierung der Fußbodenheizungsmodelle ab Variante 02 aufwändig. Dafür müssen diverse Parameter korrekt gesetzt sein
 	
 ## Bewertung
 
@@ -13,6 +15,9 @@
 
 ### AixLib
 
+
 ### IDA ICE
+
+IDA ICE kann keine 
 
 ### ETU Simulation
