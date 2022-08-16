@@ -233,6 +233,10 @@ app.layout = html.Div(
 
                 ]),
 
+                dcc.Tab(label='Testfallerläuterung', value='comment', children=[
+                    dcc.Markdown(id='comment-div', style={'margin': '10px 0px', 'height': '700px', 'overflow-y': 'scroll'}, mathjax=True)
+                ]),
+
                 dcc.Tab(label='Testfall-Variablenanalyse', value='variable-analysis', children=[
 
                     dcc.Dropdown(id="testcase-variant-dropdown"),
