@@ -1,2 +1,2 @@
-python app.py
+python my_app.py
 pause
