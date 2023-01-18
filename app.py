@@ -362,7 +362,7 @@ def clean_data(selected_testcase, checkstate):
         raise Exception(f"Could not read test case description of test case {selected_testcase}.")
 
     global EVALUATIONDATA
-    EVALUATIONDATA = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t", engine="pyarrow").reset_index()
+    EVALUATIONDATA = pd.read_csv(os.path.join(RESULTDIR, "Results.tsv"), encoding='utf-8', sep="\t").reset_index()
 
     # Create polar plot
     scatterDf = convertToPolarPlotData(EVALUATIONDATA)
