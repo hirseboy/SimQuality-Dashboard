@@ -25,7 +25,7 @@ RESULTDIR = "dash_data"
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-app = Dash(__name__, external_stylesheets=external_stylesheets, title='SimQuality Dashboard')
+my_app = Dash(__name__, external_stylesheets=external_stylesheets, title='SimQuality Dashboard')
 external_stylesheets = [my_app.get_asset_url('style.css')]
 
 my_app.renderer = 'var renderer = new DashRenderer();'
