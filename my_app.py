@@ -1,4 +1,4 @@
-# Run this app with `python app.py` and
+# Run this app with `python my_app.py` and
 # visit http://127.0.0.1:8050/ in your web browser.
 
 import sys
@@ -26,10 +26,10 @@ RESULTDIR = "dash_data"
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = Dash(__name__, external_stylesheets=external_stylesheets, title='SimQuality Dashboard')
-external_stylesheets = [app.get_asset_url('style.css')]
+external_stylesheets = [my_app.get_asset_url('style.css')]
 
-app.renderer = 'var renderer = new DashRenderer();'
-server = app.server
+my_app.renderer = 'var renderer = new DashRenderer();'
+server = my_app.server
 
 TOOLCOLORS = dict()
 
@@ -51,15 +51,15 @@ except IOError as e:
     print(f"Could not read 'ToolColors.tsv' file.")
     exit(1)
 
-app.layout = html.Div(
+my_app.layout = html.Div(
     style={'display': 'flex', 'flex-direction': 'row', 'box-sizing': 'border-box', 'height': '100vh'},
     children=[
         # left div
         html.Div([
-            html.Img(src=app.get_asset_url('question-circle-solid.svg'),
+            html.Img(src=my_app.get_asset_url('question-circle-solid.svg'),
                      id="open", className="info-icon"),
 
-            html.Img(src=app.get_asset_url('SimQuality_Dashboard_Logo.png'),
+            html.Img(src=my_app.get_asset_url('SimQuality_Dashboard_Logo.png'),
                      style={'width': '400px'}),
 
             html.Button('Zeige Gesamtüberblick', id='btn-overview', n_clicks=0),
@@ -334,7 +334,7 @@ app.layout = html.Div(
 
 
 # Dropdown menu to choose variable is updated
-@app.callback(
+@my_app.callback(
     Output('testcase-variant-dropdown', 'options'),
     Output('testcase-variant-dropdown', 'value'),
     Output('text-div', 'children'),
@@ -574,12 +574,12 @@ def clean_data(selected_testcase, checkstate):
 
     return [{'label': i, 'value': i} for i in variables], \
            variables[0], testCaseDescription, testCaseComment, \
-           app.get_asset_url(image), ratingDf.to_dict('records'), \
+           my_app.get_asset_url(image), ratingDf.to_dict('records'), \
            weightFactorDf.to_dict('records'), fig, fig_test_case
 
 
 # Figure is updated
-@app.callback(
+@my_app.callback(
     [Output('testcase-graph', 'figure'),
     Output('evaluation-table', 'data'),
     Output('loading-data', 'children')],
@@ -673,7 +673,7 @@ def update_testcase_variant_data(testcase_variant, testcase, checksate):
 
     return fig, EVALUATIONDF, ""
 
-@app.callback(
+@my_app.callback(
     Output("download-testcase-data", "data"),
     Input("btn-testcase-data", "n_clicks"),
     State("testcase-dropdown", "value"),
@@ -687,7 +687,7 @@ def func(n_clicks, value):
         zipTestCaseData(f"./dash_data/{value}/download_data", f"{value}-data")
     )
 
-@app.callback(
+@my_app.callback(
     Output("modal-declaration", "is_open"),
     [Input("open", "n_clicks"), Input("close", "n_clicks")],
     [State("modal-declaration", "is_open")],
@@ -697,7 +697,7 @@ def toggle_modal(n1, n2, is_open):
         return not is_open
     return is_open
 
-@app.callback(
+@my_app.callback(
     Output("modal-overview", "is_open"),
     [Input("btn-overview", "n_clicks"), Input("close-overview", "n_clicks")],
     [State("modal-overview", "is_open")],
@@ -708,5 +708,5 @@ def toggle_modal_overview(n1, n2, is_open):
     return is_open
 
 if __name__ == '__main__':
-    app.title = "SimQuality Dashboard"
-    app.run_server(debug=True)
+    my_app.title = "SimQuality Dashboard"
+    my_app.run_server(debug=True)
