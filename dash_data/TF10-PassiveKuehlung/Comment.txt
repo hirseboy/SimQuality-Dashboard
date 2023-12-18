@@ -5,19 +5,4 @@
 - Einige Simulationswerkzeuge enthalten keine Fußbodenheizungsmodelle un können lediglich Variante 01 abbilden
 - Ebenso ist die Parametrisierung der Fußbodenheizungsmodelle ab Variante 02 aufwändig. Dafür müssen diverse Parameter korrekt gesetzt sein
 	
-## Bewertung
 
-### TRNSYS
-
-### NANDRAD
-
-### TAS 
-
-### AixLib
-
-
-### IDA ICE
-
-IDA ICE kann keine 
-
-### ETU Simulation
