@@ -18,6 +18,8 @@ from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 import dash_bootstrap_components as dbc
 
+print(os.getcwd())
+
 sys.path.append(os.path.join(os.getcwd(), 'scripts'))
 from ReadDashData import *
 
@@ -396,15 +398,25 @@ def clean_data(selected_testcase, checkstate):
         theta = list(scatterDf[key].keys())
         theta.insert(len(theta), theta[0])
 
+        #theta.sorted()
+
         if len(thetaList) < len(theta):
             thetaList = theta
 
         fig.add_trace(pg.Scatterpolar(
+            mode="markers",
             r=r,
             theta=theta,
-            name=key
+            name=key,
+            marker=dict(
+                size=15,  # Set the marker size here
+                # You can also customize color, line properties, etc.
+            )
         ))
 
+
+    # Assuming you have the Plotly Graph Objects imported as pg
+    # and your data is correctly formatted in scatterDf dictionary.
 
     fig.update_layout(
         template='simple_white',
@@ -413,7 +425,9 @@ def clean_data(selected_testcase, checkstate):
                 showgrid=True,
                 linewidth=1,
                 showline=True,
-                linecolor='black'
+                linecolor='black',
+                categoryorder='array',
+                categoryarray=thetaList
             ),
             radialaxis=dict(
                 range=[0, 100],
