@@ -495,9 +495,14 @@ def clean_data(selected_testcase, checkstate):
         theta.insert(len(theta), theta[0])
 
         fig_test_case.add_trace(pg.Scatterpolar(
+            mode="markers",
             r=r,
             theta=theta,
-            name=key
+            name=key,
+            marker=dict(
+                size=15,  # Set the marker size here
+                # You can also customize color, line properties, etc.
+            )
         ))
 
     fig_test_case.update_layout(
