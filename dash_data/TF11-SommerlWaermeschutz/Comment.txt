@@ -1,0 +1,18 @@
+# Anmerkungen zum Testfall
+
+## Probleme bei der Durchführung
+
+	
+## Bewertung
+
+### TRNSYS
+
+### NANDRAD
+
+### TAS 
+
+### AixLib
+
+### IDA ICE
+
+### ETU Simulation

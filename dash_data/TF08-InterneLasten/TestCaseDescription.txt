@@ -1,0 +1,1 @@
+Für die Berechnung der korrekten Wärmebilanz des Raumluftknotens ist die richtige Abbildung von internen Lasten wie Personen, elektrische Geräte und Licht notwendig. Der Testfall 08 prüft die Funktionalität eines Modells bzw. die Modellimplementierung/Software hinsichtlich der Bestimmung der Internen Lasten. 

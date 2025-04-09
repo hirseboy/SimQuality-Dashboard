@@ -1,0 +1,64 @@
+# Anmerkungen zum Testfall
+
+## Probleme bei der Durchführung
+
+Bei der Erstellung des Testfalles gibt es gewisse Randbedingungen/Modifikationen, die bei der Erstellung be-
+trachtet werden müssen. Einige Programme, wie IDA ICE und TAS, können die Feuchteberechnung nicht
+deaktivieren und bilanzieren latente Wärmeströme stets mit. Um dies zu umgehen muss in der Wetterdatei eine
+Luftfeuchtigkeit nahe null (z.B. 1%) gesetzt werden und die relative Luftfeuchtigkeit der Raumluft ebenfalls
+nahe null zum Startzeitpunkt gesetzt werden oder anfänglich eine hohe Luftwechselrate angesetzt werden. Um
+die Startbedingungen anzugleich, werden in den ersten 20 Tagen des Jahres konstante klimatische Randbedin-
+gungen gesetzt und der Vergleich der Programme anschließend ab Februar durchgeführt. Weiterhin wird die
+Dichte und Wärmekapazität der Luft festgesetzt, da über die Wärmekapazität und die Luftwechselrate die Wär-
+meströme direkt zusammenhängen über Q_Lüftung = n · V_Raum · ρ · cp. Differenzen bei diesen Randbedingungen
+würden jedoch nur kleine Abweichungen erzeugen, sollen aber der Vollständigkeit halber erwähnt werden.
+
+Zusammenfassend können folgende Probleme genannt werden:
+
+1. Festsetzung der Luftfeuchtigkeit nahe null (z.B. 1%)
+2. Festsetzung der Luftdichte und Wärmekapazität
+3. korrekte Abbildung des erhöhten Nachtluftwechsels mittels eines Zeitplanes
+
+Weiterhin besteht die Problematik des Vergleiches von Momentanwerten zum Stundenende und Stundenmittel-
+werten bei Wärmeströmen. Dazu wurde in THERAKLES Variante 03, in der sich stark ändernde Luftwechsel-
+raten geprüft werden, einerseits Momentanwerten zum Stundenende (THERAKLES) und Stundenmittelwerte
+(THERAKLES MEAN) als Simulationsausgabe betrachtet. Dabei wird ersichtlich, dass der qualitative Verlauf
+sehr ähnlich aber um eine halbe Stunde nach vorn versetzt ist, was durch die Mittlung bedingt ist. Jedoch bei
+der Erstellung der Monantsbilanzen der Lüftungswärmeströme bei stark schwankenden Luftwechselraten und
+Temperaturdifferenzen zwischen Innen- und Außenluft durch das Rechteck-Integral starke Abweichungen in den
+Monatsbilanzen auftreten können (siehe 1.1 und 1.2). Dies passiert vor allem im August.
+
+Das bedeutet, dass die Validierung mittel der Monantsbilanzen kritisch zu sehen ist, und man zwingend Stun-
+denmittelwerte verwenden sollte. Die Aufgabenstellung wird dahingehend angepasst.
+
+![Mittelwert/Momentanwert](./assets/MittelwertMomentanwert.png "Mittelwerte / Momentanwerte im Vergleich")
+	
+## Bewertung
+
+### TRNSYS
+
+TRNSYS besteht alle Testfallvarianten.
+
+### THERAKLES
+
+THERAKLES besteht alle Testfallvarianten.
+
+### NANDRAD
+
+NANDRAD besteht alle Testfallvarianten.
+
+### TAS 
+
+TAS besteht alle Testfallvarianten.
+
+### AixLib
+
+AixLib besteht alle Testfallvarianten.
+
+### IDA ICE
+
+IDA ICE besteht alle Testfallvarianten.
+
+### ETU Simulation
+
+ETU Simulation besteht alle Testfallvarianten.

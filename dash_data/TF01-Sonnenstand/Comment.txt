@@ -1,0 +1,54 @@
+# Anmerkungen zum Testfall
+
+## Probleme bei der Durchführung
+
+Schwierigkeiten, die sich bei der Durchführung der
+Sonnenstandsberechnung ergeben können:
+
+-   Beachtung der **äquatorbezogenen Azimut-Definition** im amerikanischen
+    Kontext
+
+    -   In Europa ist die Definiton wie folgt: N 0°, O 90°, S
+        180°, W 270°
+
+    -   In Amerika ist die Definition meist: N 0°, O -90°,
+        S 0°, W 90°
+
+-   Beachtung der Defintion des Längengrades:
+
+    -   In Europa ist der Längengrad Richtung Osten postiv definiert
+        ausgehend vom Null-Meridian
+
+    -   In Amerika ist der Längengrad Richtung Westen postiv definiert
+        ausgehend vom Null-Meridian
+
+-   Die Sonnenstände hängen maßgebend von der richtigen Zeitzone des
+    Ortes ab. Sonst wird der eigentlich korrekte Sonnenstand zu einem
+    falschen Zeitpunkt geschrieben.
+	
+	
+## Bewertung
+
+### TRNSYS
+
+Sonnenstandsmodelle bestehen die Prüfung.
+
+### NANDRAD
+
+Sonnenstandsmodelle bestehen die Prüfung.
+
+### TAS 
+
+Sonnenstandsmodelle bestehen die Prüfung.
+
+### AixLib
+
+Sonnenstandsmodelle bestehen die Prüfung.
+
+### IDA ICE
+
+Sonnenstandsmodelle bestehen die Prüfung.
+
+### ETU Simulation
+
+Sonnenstandsmodelle bestehen die Prüfung.

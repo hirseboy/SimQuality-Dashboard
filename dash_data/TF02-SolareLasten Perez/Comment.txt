@@ -1,0 +1,31 @@
+# Anmerkungen zum Testfall
+
+## Probleme bei der Durchführung
+
+Es existieren prinzipiell isotrope und anisotrope (z.B. Perez) Strahlungsmodelle, die unterschiedliche Strahlungslasten erzeugen.
+	
+## Bewertung
+
+### TRNSYS
+
+TRNSYS besteht alle Testfallvarianten.
+
+### THERAKLES
+
+THERAKLES besteht alle Testfallvarianten.
+
+### NANDRAD
+
+NANDRAD besteht alle Testfallvarianten.
+
+### IDA ICE
+
+IDA ICE besteht alle Testfallvarianten.
+
+### ETU Simulation
+
+ETU Simulation besteht alle Testfallvarianten.
+
+### HottCAD
+
+ETU Simulation besteht alle Testfallvarianten.

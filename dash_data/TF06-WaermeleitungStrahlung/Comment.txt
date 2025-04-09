@@ -1,0 +1,50 @@
+# Anmerkungen zum Testfall
+
+## Probleme bei der Durchführung
+
+Einerseits ist bei der Durchführung der Testfälle für einige Programme (IDA ICE, TAS) der festgesetzte Wär-
+meübergangskoeﬃzient proplematisch. Dieser kann zwar bei IDA ICE gesetzt werden, ist jedoch aufgrund der
+Modelierung im „detailled mode“ aufwändig und wird wegen der bereits in den vorherhigen Testfällen gewählten
+Randbedingungen durch die Festsetzung der Windgeschwindigkeit belassen. Damit entstehen bei IDA ICE für
+alle Oberﬂächen Übergangskoeﬃzienten nahe dem geforderdten Wert von $h = 8 \frac{W}{m^2\cdot K}$. Weiterhin war in einer
+ursprünglichen Ergebnisablage für das Programm TAS die Raumlufttemperatur im Schnitt um $\Delta T = 2 K$ höher im
+Vergleich zu den anderen Simulationsprogrammen, die den Testfall absolviert haben, was eine deutlich zu große
+Abweichung darstellte. Dies lag in einer fehlerhaften Dokumentation des Tools, das die Formel zur Berechnung
+des außenliegenden Wärmeübergangskoeﬃzienten falsch angegeben hatte.
+Weiterhin sorgen die unterschiedlichen Wandersatzmodelle (Finite-Volumen-Methode, Conduction-Transfer-
+Function, etc.) für unterschiedliche Kapazitäten der Wände, was wiederum zu einer anderen Dämpfung der
+thermischen Lasten, die durch die kurzwellige Solarstrahlung entsteht führt. Das erzeugt damit auch abwei-
+chende Raumlufttemperaturen, wie bereits in Testfall 04 „Validierung der Wärmeleitung und -speicherung in
+Bauteilen unter dynamischen Randbedingungen“ aufgetreten ist.
+Letzlich muss auch auf die korrekte Interpretation der Klimadaten geachtet werden, da sonst die kurzwelligen
+Strahlungslasten mit einem Zeitversatz auf den Raumluftknoten wirken (siehe ETU Simulation).
+	
+## Bewertung
+
+### TRNSYS
+
+TRNSYS besteht alle Testfallvarianten.
+
+### THERAKLES
+
+THERAKLES besteht alle Testfallvarianten.
+
+### NANDRAD
+
+NANDRAD besteht alle Testfallvarianten.
+
+### TAS 
+
+TAS besteht alle Testfallvarianten.
+
+### AixLib
+
+AixLib besteht Testfallvariante 01 nicht.
+
+### IDA ICE
+
+IDA ICE besteht alle Testfallvarianten.
+
+### ETU Simulation
+
+ETU Simulation besteht alle Testfallvarianten.

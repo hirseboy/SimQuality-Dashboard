@@ -25,7 +25,7 @@ RESULTDIR = "dash_data"
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-my_app = Dash(__name__, external_stylesheets=external_stylesheets, title='MultiSource Dashboard')
+my_app = Dash(__name__, external_stylesheets=external_stylesheets, title='SimQuality Dashboard')
 external_stylesheets = [my_app.get_asset_url('style.css')]
 
 my_app.renderer = 'var renderer = new DashRenderer();'
@@ -59,7 +59,7 @@ my_app.layout = html.Div(
             html.Img(src=my_app.get_asset_url('question-circle-solid.svg'),
                      id="open", className="info-icon"),
 
-            html.Img(src=my_app.get_asset_url('MultiSource_Dashboard_Logo.png'),
+            html.Img(src=my_app.get_asset_url('SimQuality_Dashboard_Logo.png'),
                      style={'width': '400px'}),
 
             html.Button('Zeige Gesamtüberblick', id='btn-overview', n_clicks=0),
@@ -708,5 +708,5 @@ def toggle_modal_overview(n1, n2, is_open):
     return is_open
 
 if __name__ == '__main__':
-    my_app.title = "MultiSource Dashboard"
-    my_app.run(debug=True)
+    my_app.title = "SimQuality Dashboard"
+    my_app.run_server(debug=True)
