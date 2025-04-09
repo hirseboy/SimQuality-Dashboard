@@ -1,1 +1,0 @@
-Für die Berechnung der korrekten Wärmebilanz des Raumluftknotens ist die richtige Abbildung von thermischen Konditionierungskomponenten im Raum notwendig. Der nachfolgend beschriebene Testfall prüft die Funktionalität eines Modells bzw. die Modellimplementierung/Software hinsichtlich der Bestimmung der Wärmebilanzen von Konditionierungssystemen. 
